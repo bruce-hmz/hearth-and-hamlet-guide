@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { HearthMark } from "./hearth-mark";
 import { STEAM_URL } from "@/lib/site";
 
 const NAV = [
@@ -23,7 +22,13 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="wrap">
         <Link href="/" className="brand">
-          <HearthMark />
+          <img
+            className="brand__logo"
+            src="/logo/logo.png"
+            alt=""
+            width={34}
+            height={34}
+          />
           <span>
             Hearth <span style={{ color: "var(--ash)" }}>&amp;</span> Hamlet
             <small>Guide</small>

@@ -34,6 +34,14 @@ export const metadata: Metadata = {
   },
   description:
     "Fan-made Hearth and Hamlet guide hub: beginner walkthrough, town layouts, tech tree roadmap, buildings list, and best settings.",
+  icons: {
+    icon: [
+      { url: "/logo/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/logo/favicon_io/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/logo/favicon_io/apple-touch-icon.png",
+  },
+  manifest: "/logo/favicon_io/site.webmanifest",
 };
 
 export default function RootLayout({

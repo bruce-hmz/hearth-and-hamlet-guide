@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { HearthMark } from "./hearth-mark";
 import { STEAM_URL } from "@/lib/site";
 
 export function SiteFooter() {
@@ -10,7 +9,13 @@ export function SiteFooter() {
           <div>
             <h2>About this guide</h2>
             <p style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}>
-              <HearthMark size={20} />
+              <img
+                className="footer-logo"
+                src="/logo/logo.png"
+                alt=""
+                width={32}
+                height={32}
+              />
               <strong style={{ color: "var(--wheat)" }}>
                 Hearth &amp; Hamlet Community Guide
               </strong>

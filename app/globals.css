@@ -133,7 +133,14 @@ a:hover { color: #f09a58; text-decoration-color: currentColor; }
   white-space: nowrap;
 }
 .brand:hover { color: var(--wheat); }
-.brand .hearth-mark { flex: none; }
+.brand__logo {
+  display: block;
+  width: 34px;
+  height: 34px;
+  flex: none;
+  object-fit: contain;
+  border-radius: 50%;
+}
 .brand small {
   font-family: var(--font-mono);
   font-size: 0.62rem;
@@ -950,6 +957,13 @@ a:hover { color: #f09a58; text-decoration-color: currentColor; }
 }
 .site-footer p { font-size: 0.9rem; color: var(--straw); }
 .site-footer p + p { margin-top: 0.7rem; }
+.footer-logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: 50%;
+}
 .footer-links { list-style: none; padding: 0; display: grid; gap: 0.55rem; font-size: 0.92rem; }
 .footer-links a { color: var(--straw); text-decoration: none; }
 .footer-links a:hover { color: var(--ember); }
