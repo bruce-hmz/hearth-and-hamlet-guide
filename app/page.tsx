@@ -3,12 +3,36 @@ import type { Metadata } from "next";
 import { StageStrip } from "@/components/stage-strip";
 import { GameFigure, TrailerFeature } from "@/components/game-media";
 import { GUIDE_PAGES, GUIDE_ORDER } from "@/content/pages";
-import { STEAM_URL } from "@/lib/site";
+import { SITE_URL, STEAM_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
-  title: "Hearth and Hamlet Guide & Wiki – Medieval Citybuilder Clicker",
+  title: "Hearth and Hamlet Guide & Wiki: Layouts, Tech Tree, Tips",
   description:
-    "Comprehensive strategy guide and wiki for Hearth and Hamlet. Town layouts, worker allocation, tech tree progression, and best settings.",
+    "Complete Hearth and Hamlet guide: town layouts, worker allocation, tech tree priorities, best settings and save backups. Start your campfire kingdom right.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    title: "Hearth and Hamlet Guide & Wiki",
+    description:
+      "Town layouts, worker allocation, tech tree priorities and best settings — a community guide for Hearth and Hamlet.",
+    url: "/",
+    type: "website",
+    siteName: "Hearth and Hamlet Guide",
+    images: [
+      {
+        url: "/img/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hearth and Hamlet Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hearth and Hamlet Guide & Wiki",
+    description:
+      "Town layouts, worker allocation, tech tree priorities and best settings for Hearth and Hamlet.",
+    images: ["/img/og-cover.jpg"],
+  },
 };
 
 const STAGES = [
@@ -17,6 +41,21 @@ const STAGES = [
   { name: "Town", note: "Coordinate research, trade, and policies as the economy expands" },
   { name: "Kingdom", note: "Shape a realm with magic, defenses, and long-term upgrades" },
 ];
+
+// Homepage card labels stay short: the full page h1s (e.g. "Hearth and Hamlet
+// Beginner Guide") would repeat the game title eight times on this page and
+// push keyword density into stuffing territory. Only the two card titles that
+// match real long-tail queries keep the full name.
+const CARD_LABELS: Record<string, string> = {
+  guide: "Beginner Guide: Campfire to Settlement",
+  tips: "Tips and Tricks for Every Stage",
+  layout: "Best Town Layouts",
+  "tech-tree": "Tech Tree & Research Roadmap",
+  buildings: "Buildings List",
+  "best-settings": "Best Settings & Performance",
+  "save-file-location": "Hearth and Hamlet Save File Location",
+  codes: "Hearth and Hamlet Codes",
+};
 
 const CARD_DESCRIPTIONS: Record<string, string> = {
   guide:
@@ -72,12 +111,59 @@ const CARD_MEDIA: Record<string, { src: string; alt: string }> = {
   },
   "save-file-location": {
     src: "/img/game-7.webp",
-    alt: "A developed Hearth and Hamlet town",
+    alt: "A developed town worth backing up",
   },
   codes: {
     src: "/img/game-12.webp",
     alt: "A story dialog over the game world",
   },
+};
+
+const FAQ_ITEMS = [
+  {
+    q: "Is Hearth and Hamlet on Steam?",
+    a: "Yes. The game is developed by Phorust Studios, published by Runic Forge and Gamersky Games, and sold on Steam for Windows and SteamOS/Linux. It launched on August 19, 2026, and ships with 24 achievements.",
+  },
+  {
+    q: "Where are Hearth and Hamlet save files stored?",
+    a: "Saves are stored locally on your PC. The save file location guide shows the community-reported Windows path, how to confirm it on your own machine, and the safe steps for backing up or moving a settlement before you edit game files or switch computers.",
+  },
+  {
+    q: "What should I research first?",
+    a: "Tier 1 food and gathering upgrades pay for themselves fastest in almost every run. The tech tree guide walks a full priority order through Tier 4, including when kingdom policies and magical research become worth the cost.",
+  },
+  {
+    q: "Are there working codes right now?",
+    a: "No verified redemption system was found in the official material we reviewed. The codes page tracks the current status, explains where an official system would appear, and shows the date we last checked it.",
+  },
+  {
+    q: "Will it run on a low-end PC?",
+    a: "Yes. It is a lightweight 2D citybuilder. The best settings guide covers readable resolution choices, an FPS cap for long idle sessions, and the input checks that matter once late-game towns get visually dense.",
+  },
+  {
+    q: "How current are these guides?",
+    a: "Each page shows the date it was last reviewed. The codes page is re-checked most often because a redemption system can appear at any time, while deeper strategy pages are revisited whenever the game ships a meaningful update.",
+  },
+];
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Hearth and Hamlet Guide",
+  url: SITE_URL,
+};
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
 };
 
 export default function HomePage() {
@@ -93,7 +179,7 @@ export default function HomePage() {
             <div className="hero__inner">
               <span className="eyebrow">Community Strategy Hub</span>
               <h1 className="hero__title">
-                Hearth <em>&amp;</em> Hamlet
+                Hearth and Hamlet <em>Guide</em>
               </h1>
               <p className="hero__lede">
                 Begin with a lone campfire and build a thriving medieval
@@ -156,7 +242,6 @@ export default function HomePage() {
           </p>
           <div className="card-grid">
             {GUIDE_ORDER.map((slug, i) => {
-              const page = GUIDE_PAGES[slug];
               const soon = slug === "codes";
               return (
                 <Link
@@ -171,7 +256,7 @@ export default function HomePage() {
                       alt={CARD_MEDIA[slug].alt}
                       width={600}
                       height={338}
-                      loading="eager"
+                      loading="lazy"
                       decoding="async"
                     />
                   </span>
@@ -179,7 +264,7 @@ export default function HomePage() {
                   <span className="card__no">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <span className="card__title">{page.h1}</span>
+                  <span className="card__title">{CARD_LABELS[slug]}</span>
                   <span className="card__desc">
                     {CARD_DESCRIPTIONS[slug]}
                   </span>
@@ -208,20 +293,19 @@ export default function HomePage() {
             <p className="section-lede">
               The official launch trailer shows the actual building scale,
               click-to-gather loop, town interfaces, and late-game settlement
-              density our guides refer to.
+              density our guides refer to. Watch it once and the stills below
+              start to make sense — each one maps to a guide on this page.
             </p>
             <div className="media-mini-grid" aria-label="Gameplay stills">
               <GameFigure
                 src="/img/game-9.webp"
                 alt="A river district in Hearth and Hamlet"
                 caption="Terrain & districts"
-                eager
               />
               <GameFigure
                 src="/img/game-8.webp"
                 alt="The research book in Hearth and Hamlet"
                 caption="Research & policies"
-                eager
               />
             </div>
           </div>
@@ -265,6 +349,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ---------- gameplay loop ---------- */}
+      <section className="section">
+        <div className="wrap">
+          <div className="split__prose">
+            <span className="eyebrow">Core Loop</span>
+            <h2 className="section-title">How a run unfolds</h2>
+            <p>
+              Every kingdom follows the same loop: gather, build, assign,
+              research. You place a production building, send workers to staff
+              it, and watch raw materials accumulate while the settlement hums
+              along. Early on, the loop is hands-on — you click to chop wood,
+              harvest food, and shepherd your first families past each
+              bottleneck.
+            </p>
+            <p>
+              As research unlocks automation and multi-tier upgrades, the loop
+              starts running itself in the background. Your attention shifts
+              from individual clicks to district planning: where housing should
+              sit relative to production, which trade goods are worth shipping,
+              and how tax policy trades worker happiness against steady income.
+            </p>
+            <p>
+              Idle players are covered too. Because production keeps ticking
+              while the game runs in the background, a cap on frames per
+              second and a few sensible options turn a long session into
+              dependable overnight progress instead of a space heater. The
+              best settings guide lists the exact options we use.
+            </p>
+            <p>
+              The four-stage arc at the top of this page — Campfire, Village,
+              Town, Kingdom — mirrors that shift. The guides above break each
+              stage into concrete decisions, so you always know which upgrade
+              to aim for next. They are written for players who want a direct
+              answer: if food ran out in the first hour, if happiness dipped
+              after the last tax change, or if a research branch feels wasted,
+              the matching guide addresses that one bottleneck without a long
+              walkthrough. Every page keeps the same format — one question, one
+              answer, with screenshots where placement matters.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* ---------- FAQ ---------- */}
+      <section className="section section--alt" id="faq">
+        <div className="wrap">
+          <span className="eyebrow">FAQ</span>
+          <h2 className="section-title">Frequently asked questions</h2>
+          <div className="faq">
+            {FAQ_ITEMS.map((item) => (
+              <details key={item.q}>
+                <summary>{item.q}</summary>
+                <div className="faq__a">
+                  <p>{item.a}</p>
+                </div>
+              </details>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ---------- final CTA ---------- */}
       <section className="section">
         <div className="wrap">
@@ -289,6 +434,15 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
     </>
   );
 }

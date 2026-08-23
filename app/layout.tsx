@@ -34,6 +34,21 @@ export const metadata: Metadata = {
   },
   description:
     "Fan-made Hearth and Hamlet guide hub: beginner walkthrough, town layouts, tech tree roadmap, buildings list, and best settings.",
+  openGraph: {
+    type: "website",
+    siteName: "Hearth and Hamlet Guide",
+    images: [
+      {
+        url: "/img/og-cover.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Hearth and Hamlet Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
   icons: {
     icon: [
       { url: "/logo/favicon_io/favicon-32x32.png", sizes: "32x32", type: "image/png" },

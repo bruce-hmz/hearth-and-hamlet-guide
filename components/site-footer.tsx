@@ -15,6 +15,8 @@ export function SiteFooter() {
                 alt=""
                 width={32}
                 height={32}
+                loading="lazy"
+                decoding="async"
               />
               <strong style={{ color: "var(--wheat)" }}>
                 Hearth &amp; Hamlet Community Guide
@@ -26,9 +28,9 @@ export function SiteFooter() {
               and performance settings.
             </p>
             <p>
-              Hearth and Hamlet is developed by Phorust Studios and published
-              by Runic Forge. This unofficial fan site is not affiliated with
-              or endorsed by them.
+              The game is developed by Phorust Studios and published by Runic
+              Forge. This unofficial fan site is not affiliated with or
+              endorsed by them.
             </p>
             <p>
               Gameplay screenshots and the launch trailer are official
@@ -50,7 +52,7 @@ export function SiteFooter() {
             <ul className="footer-links">
               <li>
                 <a href={STEAM_URL} target="_blank" rel="noopener noreferrer">
-                  Hearth and Hamlet on Steam ↗
+                  Official Steam Page ↗
                 </a>
               </li>
             </ul>

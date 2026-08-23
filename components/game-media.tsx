@@ -46,7 +46,7 @@ export function TrailerFeature() {
       </video>
       <figcaption>
         <span className="badge badge--ember">Official video</span>
-        <span>Hearth and Hamlet — Launch Trailer</span>
+        <span>Launch Trailer</span>
         <span className="media-credit">Source: Steam / Phorust Studios</span>
       </figcaption>
     </figure>
