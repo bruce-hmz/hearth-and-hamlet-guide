@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import type { GuidePageMeta } from "@/content/pages";
-import { GAME_VERSION, LAST_REVIEWED } from "@/content/pages";
+import { DATE_PUBLISHED, GAME_VERSION, LAST_REVIEWED } from "@/content/pages";
 import { GAME_NAME, SITE_URL, STEAM_URL } from "@/lib/site";
 import { GameFigure } from "./game-media";
 
@@ -17,6 +17,7 @@ export function GuideArticle({
   children: ReactNode;
 }) {
   const articleSources = page.sources ?? SOURCES;
+  const reviewed = page.lastReviewed ?? LAST_REVIEWED;
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -25,7 +26,14 @@ export function GuideArticle({
         headline: page.h1,
         url: `${SITE_URL}/${page.slug}/`,
         inLanguage: "en",
-        dateModified: LAST_REVIEWED,
+        datePublished: DATE_PUBLISHED,
+        dateModified: reviewed,
+        image: [`${SITE_URL}/img/og-cover.jpg`],
+        author: {
+          "@type": "Organization",
+          name: "Hearth & Hamlet Community Guide",
+          url: `${SITE_URL}/about/`,
+        },
         publisher: {
           "@type": "Organization",
           name: "Hearth & Hamlet Community Guide",
@@ -84,7 +92,7 @@ export function GuideArticle({
               <p className="lede">{page.description}</p>
               <div className="article-meta">
                 <span>
-                  Reviewed <strong>{LAST_REVIEWED}</strong>
+                  Reviewed <strong>{reviewed}</strong>
                 </span>
                 <span>
                   Game version <strong>{GAME_VERSION}</strong>

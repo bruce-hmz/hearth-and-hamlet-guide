@@ -25,8 +25,11 @@ export type GuidePageMeta = {
   toc: TocItem[];
   prev?: { slug: string; title: string };
   next?: { slug: string; title: string };
+  /** Page-specific review date; defaults to LAST_REVIEWED. */
+  lastReviewed?: string;
 };
 
+export const DATE_PUBLISHED = "2026-08-21";
 export const LAST_REVIEWED = "2026-08-21";
 export const GAME_VERSION = "Release build";
 
@@ -62,12 +65,15 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       },
     ],
     toc: [
+      { id: "overview", label: "What kind of game is this?" },
       { id: "stages", label: "The four kingdom stages" },
       { id: "resources", label: "Core resources explained" },
       { id: "workers", label: "Worker allocation basics" },
       { id: "opening", label: "Opening moves" },
+      { id: "policies", label: "Run your kingdom your way" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-25",
     next: { slug: "tips", title: "Tips & Tricks" },
   },
   tips: {
@@ -103,9 +109,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     toc: [
       { id: "food", label: "Keep food ahead of population" },
       { id: "happiness", label: "Happiness vs. taxes" },
+      { id: "milestones", label: "The at-least-once rule" },
+      { id: "research", label: "Make research pay twice" },
       { id: "mistakes", label: "Common early mistakes" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-25",
     prev: { slug: "guide", title: "Beginner Guide" },
     next: { slug: "layout", title: "Town Layouts" },
   },
@@ -137,10 +146,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     ],
     toc: [
       { id: "adjacency", label: "How to think about adjacency" },
+      { id: "terrain", label: "Work with the terrain" },
       { id: "grids", label: "A flexible starter grid" },
       { id: "districts", label: "Industry vs. housing districts" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-25",
     prev: { slug: "tips", title: "Tips & Tricks" },
     next: { slug: "tech-tree", title: "Tech Tree" },
   },
@@ -176,10 +187,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     ],
     toc: [
       { id: "overview", label: "Research system overview" },
+      { id: "branches", label: "Confirmed branch themes" },
       { id: "order", label: "Recommended unlock order" },
       { id: "policies", label: "Kingdom Policies" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-25",
     prev: { slug: "layout", title: "Town Layouts" },
     next: { slug: "buildings", title: "Buildings" },
   },
@@ -238,6 +251,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "accessibility", label: "Accessibility & input checks" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-25",
     prev: { slug: "buildings", title: "Buildings" },
     next: { slug: "save-file-location", title: "Save File Location" },
   },
@@ -287,6 +301,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "redeem", label: "How redemption would work" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-25",
     prev: { slug: "save-file-location", title: "Save File Location" },
   },
 };

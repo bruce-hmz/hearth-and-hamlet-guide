@@ -41,6 +41,66 @@ export default function TechTreePage() {
       </section>
 
       <section>
+        <h2 id="branches">Confirmed branch themes</h2>
+        <p>
+          The official Steam material does not publish a complete node list,
+          but it names the themes the research tree permanently unlocks. The
+          table below separates what is officially confirmed from what remains
+          unspecified.
+        </p>
+        <div className="table-scroll">
+          <table className="data-table">
+            <caption>Research themes named in official material</caption>
+            <thead>
+              <tr>
+                <th scope="col">Theme</th>
+                <th scope="col">What the official page confirms</th>
+                <th scope="col">Not yet documented publicly</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Advanced architecture</td>
+                <td>Named as a permanent unlock category of the research tree.</td>
+                <td>Individual building unlocks and their prerequisites.</td>
+              </tr>
+              <tr>
+                <td>Civic policies</td>
+                <td>Laws and policies, taxation rules, worker rules affecting morale, city guard drafts.</td>
+                <td>Exact morale and income math per policy.</td>
+              </tr>
+              <tr>
+                <td>Alchemy</td>
+                <td>Alchemical labs are part of the advanced building system.</td>
+                <td>Lab tech prerequisites and crafting costs.</td>
+              </tr>
+              <tr>
+                <td>Magic</td>
+                <td>Magical academies unlock mid-to-late game automation and resource transmutation spells.</td>
+                <td>Spell list, casting costs, and academy requirements.</td>
+              </tr>
+              <tr>
+                <td>Trade</td>
+                <td>Trade routes with neighbouring kingdoms and strange new lands.</td>
+                <td>Route unlock conditions and exchange rates.</td>
+              </tr>
+              <tr>
+                <td>Military</td>
+                <td>Soldiers can be recruited to protect the expanding realm.</td>
+                <td>Raid timing and defense strength values.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          Use the in-game research panel as the authority for the current
+          version&apos;s node names, costs, and ordering — this table exists
+          so you know which systems are officially confirmed to exist before
+          you plan around them.
+        </p>
+      </section>
+
+      <section>
         <h2 id="order">Recommended unlock order</h2>
         <p>
           There is no single fixed order that fits every town. A safe roadmap is

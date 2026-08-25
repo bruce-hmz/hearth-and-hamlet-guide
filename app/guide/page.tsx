@@ -13,6 +13,44 @@ export default function GuidePage() {
   return (
     <GuideArticle page={page}>
       <section>
+        <h2 id="overview">What kind of game is this?</h2>
+        <p>
+          The official Steam page describes Hearth and Hamlet as a{" "}
+          <em>medieval citybuilder clicker</em> that blends resource
+          management, in-depth upgrade trees, and relaxing idle gameplay. In
+          practice that means you are doing two things at once: actively
+          deciding what to build, research, and staff next, and letting the
+          settlement keep producing while you plan. It is a single-player
+          game, and it ships with 24 Steam achievements.
+        </p>
+        <p>
+          The world is presented in pixel art — the official description
+          highlights lakes, rivers, magical swamps, and faraway lands — and
+          the building range runs from simple tents to taverns, castles,
+          magical academies, and defensive fortifications. At the time of
+          writing the game is listed at US$7.99 on Steam, supports Windows
+          and SteamOS/Linux, and offers full audio and text in seven
+          languages: English, Simplified and Traditional Chinese, German,
+          Japanese, Russian, and Korean.
+        </p>
+        <p>
+          Steam user reviews stood at <em>Mostly Positive</em> — about 79% of
+          roughly 780 reviews — when this page was last reviewed. That is
+          context rather than a quality claim; for a launch-window game the
+          number will keep moving.
+        </p>
+        <div className="callout callout--moss">
+          <span className="callout__icon" aria-hidden="true">✦</span>
+          <p>
+            <strong>If you have played idle or incremental games:</strong>{" "}
+            expect a similar low-pressure loop, but with citybuilder
+            decisions — worker allocation, layout, and research order — doing
+            the heavy lifting.
+          </p>
+        </div>
+      </section>
+
+      <section>
         <h2 id="stages">The four kingdom stages</h2>
         <p>
           Hearth and Hamlet begins at a campfire and grows toward a full kingdom.
@@ -157,7 +195,10 @@ export default function GuidePage() {
           <li>
             <strong>Upgrade resource structures before the next settlement level.</strong>
             Umer specifically recommends improving the fishing, lumber, quarry, and
-            iron-production facilities before advancing the town square again.
+            iron-production facilities before advancing the town square again — and
+            recommends upgrading each of them <em>at least once</em>. According to
+            his guide, those upgrades increase both the per-facility resource output
+            and the resource storage capacity, so they pay twice.
           </li>
           <li>
             <strong>Prepare a defense.</strong> Once the Town Guards building is
@@ -175,8 +216,66 @@ export default function GuidePage() {
       </section>
 
       <section>
+        <h2 id="policies">Run your kingdom your way</h2>
+        <p>
+          Beyond construction and research, the official Steam page promotes a
+          governance layer under the banner <q>run your kingdom your way</q>:
+          you set laws and policies, including taxation rules and worker rules
+          that affect morale, and you decide when to draft citizens into the
+          city guard. These civic choices are permanent steering decisions for
+          your realm rather than one-off toggles.
+        </p>
+        <ul>
+          <li>
+            <strong>Taxation rules</strong> raise income, but worker morale is
+            part of the same system — push rates only when you have a concrete
+            purchase in mind.
+          </li>
+          <li>
+            <strong>Worker rules</strong> influence how your population feels
+            about their jobs; morale and output interact.
+          </li>
+          <li>
+            <strong>City guard drafts</strong> convert civilians into
+            protection for an expanding realm; the official description
+            confirms soldiers exist to defend it.
+          </li>
+        </ul>
+        <p>
+          The exact morale math is not published in the official material, so
+          change one policy at a time and read the in-game feedback before
+          committing further. Our{" "}
+          <a href="/tips/">tips page</a> covers the happiness-versus-taxes
+          trade-off in more detail, and the{" "}
+          <a href="/tech-tree/">tech tree guide</a> shows where policies sit in
+          the research order.
+        </p>
+      </section>
+
+      <section>
         <h2 id="faq">FAQ</h2>
         <div className="faq">
+          <details>
+            <summary>Is Hearth and Hamlet an idle game?</summary>
+            <div className="faq__a">
+              <p>
+                It blends both. The official description pairs resource
+                management and upgrade trees with relaxing idle gameplay, so
+                production continues while you plan, but worker allocation and
+                research decisions reward active attention.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>How much does Hearth and Hamlet cost?</summary>
+            <div className="faq__a">
+              <p>
+                The game is listed at US$7.99 on Steam at the time of writing.
+                Check the store page for current pricing and any regional
+                differences.
+              </p>
+            </div>
+          </details>
           <details>
             <summary>What should I do first in Hearth and Hamlet?</summary>
             <div className="faq__a">

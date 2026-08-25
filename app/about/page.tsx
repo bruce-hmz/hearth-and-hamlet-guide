@@ -4,6 +4,7 @@ import { STEAM_URL } from "@/lib/site";
 export const metadata: Metadata = {
   title: "About This Guide",
   description: "About the Hearth & Hamlet community guide.",
+  alternates: { canonical: "/about/" },
 };
 
 export default function AboutPage() {

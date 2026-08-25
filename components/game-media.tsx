@@ -13,12 +13,17 @@ export function GameFigure({
   className = "",
   eager = false,
 }: GameFigureProps) {
+  // 600px variants sit next to the 1200px originals (game-N-600.webp).
+  const small = src.replace(/\.webp$/, "-600.webp");
+  const srcSet = small !== src ? `${small} 600w, ${src} 1200w` : undefined;
   return (
     <figure className={`game-figure ${className}`.trim()}>
       {/* Static export: official Steam media is stored locally and pre-compressed. */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src={src}
+        srcSet={srcSet}
+        sizes="(min-width: 760px) 620px, 92vw"
         alt={alt}
         width={1200}
         height={675}

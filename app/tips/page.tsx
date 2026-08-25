@@ -69,6 +69,74 @@ export default function TipsPage() {
       </section>
 
       <section>
+        <h2 id="milestones">The at-least-once rule</h2>
+        <p>
+          Umer&apos;s guide frames progression around one central object: the
+          camp, which later becomes the town square. Advancing the town square
+          is the big milestone — but his recommended rule is to earn it.
+          Before moving to the next town-square level, upgrade each of the
+          four core production facilities <strong>at least once</strong>:
+        </p>
+        <ul>
+          <li>Fishing hut (food)</li>
+          <li>Lumber structure (wood)</li>
+          <li>Quarry (stone)</li>
+          <li>Iron mining (iron)</li>
+        </ul>
+        <p>
+          The reason is twofold: according to the same guide, facility
+          upgrades increase the <strong>per-facility resource output</strong>{" "}
+          and the <strong>resource storage capacity</strong> at the same time.
+          A town that levels its square on schedule but leaves gathering at
+          base capacity tends to hit a supply wall immediately after — the
+          classic &quot;new tier, empty storerooms&quot; stall.
+        </p>
+        <div className="callout callout--moss">
+          <span className="callout__icon" aria-hidden="true">✦</span>
+          <p>
+            <strong>Checkpoint habit:</strong> before clicking the next
+            town-square upgrade, scan the four facilities. If any is still at
+            its base level, upgrade that one first.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="research">Make research pay twice</h2>
+        <p>
+          Research is usually described by what it unlocks, but Umer&apos;s
+          guide points out a second benefit that matters for the early
+          economy: research rewards can include a{" "}
+          <strong>larger workforce</strong> and{" "}
+          <strong>more resource gain per second</strong>. Those two effects
+          compound with everything else on this page.
+        </p>
+        <ul>
+          <li>
+            A bigger workforce makes the even-split baseline stronger — every
+            production lane gets more hands without re-planning.
+          </li>
+          <li>
+            Higher gain per second means temporary focused allocation clears
+            shortages faster, so you return to balance sooner.
+          </li>
+          <li>
+            Both effects make the next research purchase easier to afford,
+            which is why Umer recommends prioritizing research before
+            upgrading individual structures.
+          </li>
+        </ul>
+        <p>
+          The exact buffs available at each stage vary with your build and
+          game version; treat &quot;workforce + resource rate&quot; as the
+          pattern to look for in the research panel rather than a fixed
+          upgrade list. Our{" "}
+          <a href="/tech-tree/">tech tree guide</a> covers the priority
+          framework in depth.
+        </p>
+      </section>
+
+      <section>
         <h2 id="mistakes">Common early mistakes</h2>
         <p>
           The following pitfalls are derived from Muhammad Haris Umer&apos;s published
@@ -149,6 +217,27 @@ export default function TipsPage() {
                 The official description connects worker rules with morale and taxation
                 with income, but it does not document an exact happiness multiplier.
                 Keep morale healthy without relying on an unverified coefficient.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Do building upgrades also increase storage?</summary>
+            <div className="faq__a">
+              <p>
+                Yes, according to Umer&apos;s Into Indie Games guide: upgrading
+                a production facility increases both its resource output and
+                its storage capacity. That dual effect is why the
+                at-least-once rule exists.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>What does research give besides unlocks?</summary>
+            <div className="faq__a">
+              <p>
+                Umer&apos;s guide credits early research with buffs such as a
+                larger workforce and more resource gain per second, on top of
+                the permanent unlocks. Exact buffs vary by game version.
               </p>
             </div>
           </details>

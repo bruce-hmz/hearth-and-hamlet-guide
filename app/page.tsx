@@ -153,6 +153,27 @@ const websiteJsonLd = {
   url: SITE_URL,
 };
 
+// Entity data verified against the official Steam store page (2026-08-25).
+const gameJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  name: "Hearth and Hamlet",
+  url: STEAM_URL,
+  description:
+    "Medieval citybuilder clicker that blends resource management, in-depth upgrade trees, and relaxing idle gameplay.",
+  genre: ["Casual", "Simulation", "Strategy"],
+  gamePlatform: ["PC", "SteamOS"],
+  playMode: "SinglePlayer",
+  datePublished: "2026-08-19",
+  developer: { "@type": "Organization", name: "Phorust Studios" },
+  publisher: [
+    { "@type": "Organization", name: "Runic Forge" },
+    { "@type": "Organization", name: "Gamersky Games" },
+  ],
+  sameAs: [STEAM_URL],
+  numberOfPlayers: { "@type": "QuantitativeValue", value: 1 },
+};
+
 const faqJsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
@@ -253,6 +274,8 @@ export default function HomePage() {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src={CARD_MEDIA[slug].src}
+                      srcSet={`${CARD_MEDIA[slug].src.replace(/\.webp$/, "-600.webp")} 600w, ${CARD_MEDIA[slug].src} 1200w`}
+                      sizes="(min-width: 1000px) 300px, (min-width: 640px) 42vw, 92vw"
                       alt={CARD_MEDIA[slug].alt}
                       width={600}
                       height={338}
@@ -438,6 +461,10 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(gameJsonLd) }}
       />
       <script
         type="application/ld+json"

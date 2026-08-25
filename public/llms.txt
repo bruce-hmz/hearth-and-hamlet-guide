@@ -1,0 +1,25 @@
+# Hearth and Hamlet Guide
+
+Fan-made community strategy guide for Hearth and Hamlet, the medieval
+citybuilder clicker by Phorust Studios (Steam app 4315040). Evidence-first
+pages: facts are checked against the official Steam page and attributed
+community sources; strategy advice is labeled as guidance.
+
+Site: https://hearthandhamlet.guide/
+
+## Pages
+
+- [Home](https://hearthandhamlet.guide/): Guide hub for Hearth and Hamlet — beginner walkthrough, layouts, tech tree, buildings, settings, saves, codes status.
+- [Beginner Guide](https://hearthandhamlet.guide/guide/): Campfire-to-kingdom walkthrough: stages, resources, worker allocation, opening moves.
+- [Tips & Tricks](https://hearthandhamlet.guide/tips/): Early-game tips: food vs population, happiness and taxes, common mistakes.
+- [Town Layouts](https://hearthandhamlet.guide/layout/): City planning: adjacency thinking, a flexible starter grid, industry vs housing districts.
+- [Tech Tree](https://hearthandhamlet.guide/tech-tree/): Research system: permanent unlocks, recommended order, kingdom policies, magic.
+- [Buildings](https://hearthandhamlet.guide/buildings/): Building roles and progression: production, housing, services, late-game structures.
+- [Best Settings](https://hearthandhamlet.guide/best-settings/): Official PC requirements, resolution choices, FPS cap for idle sessions.
+- [Save File Location](https://hearthandhamlet.guide/save-file-location/): Community-reported Windows save path with backup steps.
+- [Codes Status](https://hearthandhamlet.guide/codes/): Current redemption-code status — no verified public code system found as of the last review.
+
+## Sources
+
+- Official Steam page: https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/
+- Into Indie Games early-game guide: https://intoindiegames.com/tips-and-guides/hearth-and-hamlet-best-early-game-tips-and-tricks/

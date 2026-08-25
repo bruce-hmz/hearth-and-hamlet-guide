@@ -25,7 +25,7 @@ export function SiteHeader() {
           <img
             className="brand__logo"
             src="/logo/logo.png"
-            alt=""
+            alt="Hearth and Hamlet Guide"
             width={34}
             height={34}
           />

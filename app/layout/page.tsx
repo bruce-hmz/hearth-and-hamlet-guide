@@ -38,6 +38,44 @@ export default function LayoutPage() {
       </section>
 
       <section>
+        <h2 id="terrain">Work with the terrain</h2>
+        <p>
+          The official Steam page describes a pixel-art world of{" "}
+          <strong>lakes, rivers, magical swamps, and faraway lands</strong>.
+          For layout purposes that terrain is not decoration — it is free
+          district boundary. Water features give you a readable edge between
+          industry and housing without spending a tile on a separator, and a
+          river or lakeshore naturally caps how far a district can sprawl in
+          one direction.
+        </p>
+        <ul>
+          <li>
+            <strong>Let water divide districts.</strong> Production on one
+            side, housing and services on the other, keeps both zones easy to
+            read at a glance — same principle as the districts section below,
+            implemented by the map instead of by roads.
+          </li>
+          <li>
+            <strong>Keep the shorelines partly open.</strong> Late-game
+            systems (trade, expeditions to faraway lands) tend to arrive with
+            their own structure needs; a fully walled-in shoreline is expensive
+            to undo.
+          </li>
+          <li>
+            <strong>Treat swamps and odd corners as expansion reserves.</strong>{" "}
+            Land that is awkward for your current buildings is cheap to reserve
+            and easy to regret filling.
+          </li>
+        </ul>
+        <p>
+          The official material does not document terrain-specific bonuses or
+          penalties, so treat this as planning guidance: use the shape of the
+            map to make your districts legible, not to chase an unverified
+          adjacency effect.
+        </p>
+      </section>
+
+      <section>
         <h2 id="grids">Starter layout patterns</h2>
         <p>
           There is no single verified best grid for every map. Terrain, current unlocks, worker
@@ -126,6 +164,10 @@ export default function LayoutPage() {
           <details>
             <summary>Does the City Hall give a radial adjacency bonus?</summary>
             <div className="faq__a"><p>The official Steam description does not publish such a formula. Do not design the entire town around a claimed City Hall radius unless you can confirm the effect in the current game build.</p></div>
+          </details>
+          <details>
+            <summary>Does terrain matter for the layout?</summary>
+            <div className="faq__a"><p>The official world description includes lakes, rivers, magical swamps, and faraway lands. No terrain-specific bonus is documented, so use terrain as free district boundaries and expansion reserves rather than as a source of adjacency effects.</p></div>
           </details>
           <details>
             <summary>Should housing and production always be separated?</summary>

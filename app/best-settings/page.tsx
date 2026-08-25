@@ -72,9 +72,14 @@ export default function BestSettingsPage() {
         </div>
 
         <h3>Official PC requirements</h3>
+        <p>
+          Requirements below were verified against the official Steam store
+          page on 2026-08-25. Hearth and Hamlet also ships on SteamOS and
+          Linux.
+        </p>
         <div className="table-scroll">
           <table className="data-table">
-            <caption>Steam system requirements</caption>
+            <caption>Steam system requirements — Windows</caption>
             <thead>
               <tr>
                 <th scope="col">Component</th>
@@ -85,8 +90,13 @@ export default function BestSettingsPage() {
             <tbody>
               <tr>
                 <td>Operating system</td>
-                <td>Windows 10</td>
+                <td>Windows 10 (64-bit)</td>
                 <td>Windows 11</td>
+              </tr>
+              <tr>
+                <td>Processor</td>
+                <td>Intel Core i3 @ 3.2 GHz</td>
+                <td>Intel Core i5-2400 @ 3.1 GHz</td>
               </tr>
               <tr>
                 <td>Memory</td>
@@ -111,6 +121,52 @@ export default function BestSettingsPage() {
             </tbody>
           </table>
         </div>
+        <div className="table-scroll">
+          <table className="data-table">
+            <caption>Steam system requirements — SteamOS &amp; Linux</caption>
+            <thead>
+              <tr>
+                <th scope="col">Component</th>
+                <th scope="col">Minimum</th>
+                <th scope="col">Recommended</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Operating system</td>
+                <td>Ubuntu 20.04+ or SteamOS</td>
+                <td>Ubuntu 20.04+ or SteamOS</td>
+              </tr>
+              <tr>
+                <td>Processor</td>
+                <td>Intel Core i3 @ 3.2 GHz</td>
+                <td>Intel Core i5-2400 @ 3.1 GHz</td>
+              </tr>
+              <tr>
+                <td>Memory</td>
+                <td>8 GB RAM</td>
+                <td>8 GB RAM</td>
+              </tr>
+              <tr>
+                <td>Graphics</td>
+                <td>GeForce GTX 650 or Radeon HD 7770</td>
+                <td>GeForce GTX 750 Ti or Radeon R7 260X</td>
+              </tr>
+              <tr>
+                <td>Storage</td>
+                <td>1 GB available space</td>
+                <td>1 GB available space</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>
+          The 1 GB storage footprint and decade-old baseline GPUs confirm the
+          game&apos;s lightweight 2D presentation: almost any desktop PC built
+          in the last ten years clears the minimum, and laptops with
+          integrated graphics are worth testing at 1600×900 if the frame rate
+          dips in dense late-game towns.
+        </p>
       </section>
 
       <section>

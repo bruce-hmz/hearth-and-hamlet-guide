@@ -28,6 +28,11 @@ export default function CodesPage() {
           redemption system. Until an official source or a working in-game
           interface confirms one, this page will not publish unverified strings.
         </p>
+        <p>
+          <strong>Last full check: 2026-08-25.</strong> The official Steam
+          page and the developer material reviewed for this site still showed
+          no redemption feature or public promo codes on that date.
+        </p>
 
         <h3>What counts as a verified code?</h3>
         <ul>
