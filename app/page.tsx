@@ -68,6 +68,12 @@ const CARD_DESCRIPTIONS: Record<string, string> = {
     "Understand the research branches, what new systems they open, and how policies fit into your kingdom's wider progression.",
   buildings:
     "Browse the settlement's production, housing, service, magical, and defensive structures by the role each one plays.",
+  trade:
+    "Set up expeditions, read each kingdom's demand tiers, and learn when a shipment is worth sending - straight from verified interface screens.",
+  difficulty:
+    "Compare all four difficulty modes with official completion rates, pick the right challenge, and prep for no-defeat and Intense runs.",
+  combat:
+    "Understand the soldier-from-population rule, happiness thresholds, and battle resolution so raid defense stops feeling like a coin flip.",
   "best-settings":
     "Tune the PC experience for a clear, comfortable view of busy settlements and dependable play during longer sessions.",
   "save-file-location":
@@ -104,6 +110,18 @@ const CARD_MEDIA: Record<string, { src: string; alt: string }> = {
   buildings: {
     src: "/img/game-5.webp",
     alt: "A dense town with many different buildings",
+  },
+  trade: {
+    src: "/img/game-3.webp",
+    alt: "The expedition interface showing destination demand levels",
+  },
+  difficulty: {
+    src: "/img/game-6.webp",
+    alt: "The soldier recruitment panel showing army costs and strength",
+  },
+  combat: {
+    src: "/img/game-6.webp",
+    alt: "The Hearth and Hamlet soldier recruitment panel showing costs, strength, and upkeep",
   },
   "best-settings": {
     src: "/img/game-7.webp",

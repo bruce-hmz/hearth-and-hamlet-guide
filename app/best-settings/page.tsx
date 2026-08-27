@@ -170,14 +170,48 @@ export default function BestSettingsPage() {
       </section>
 
       <section>
-        <h2 id="fps">FPS cap for idle sessions</h2>
+        <h2 id="fps">The 60 FPS cap &amp; how to lift it</h2>
         <p>
-          A 60 FPS ceiling is a <strong>practical recommendation</strong> for a
-          game that may remain open during long idle sessions. It is not a claim
-          that Hearth and Hamlet exposes a confirmed built-in 60 FPS selector.
-          If the current build does not offer a frame limiter, use your GPU
-          driver&apos;s per-game frame-rate control.
+          The 60 FPS ceiling on PC is <strong>confirmed build behavior, not a
+          rough guess</strong>. An inspection of the v1.0.04 files posted in the
+          game&apos;s Steam discussion hub shows{" "}
+          <code>application/run/max_fps</code> locked to 60 in the exported
+          engine settings, so the cap holds no matter what the in-game V-Sync
+          toggle says, and Windows players report the identical limit. For idle
+          sessions this is convenient: the game already runs at exactly the
+          pace recommended below, with zero configuration.
         </p>
+
+        <h3>Lifting the cap on a high-refresh display</h3>
+        <p>
+          On 120&ndash;170 Hz monitors the stock cap leaves visible smoothness
+          behind. The fix that has worked for Linux players (and matches what
+          Windows players report) is a launch option rather than any settings
+          menu: add <code>--max-fps 0</code> to the game&apos;s Steam launch
+          options, then start normally and let V-Sync govern pacing. In your
+          Steam library, right-click Hearth and Hamlet, choose Properties, and
+          type <code>--max-fps 0</code> into the Launch Options box. The report
+          that established this fix comes from a 170 Hz display running an RX
+          7800 XT on the Linux native build; results on other GPUs have not
+          been independently verified.
+        </p>
+
+        <div className="callout">
+          <span className="callout__icon" aria-hidden="true">✦</span>
+          <div>
+            <p>
+              <strong>Keep the stock 60 cap for idle play.</strong> Extra
+              frames do not speed up townsfolk or taxes; an uncapped overnight
+              session just burns GPU power rendering a picture nobody is
+              watching.
+            </p>
+            <p>
+              Lift the cap only for active play on a high-refresh display, and
+              consider removing the launch argument again before long AFK
+              sessions.
+            </p>
+          </div>
+        </div>
 
         <div className="callout">
           <span className="callout__icon" aria-hidden="true">✦</span>
@@ -201,8 +235,11 @@ export default function BestSettingsPage() {
             long-session issue from a consistently heavy scene.
           </li>
           <li>
-            <strong>Set a driver-level frame cap.</strong> Try 60 FPS first, then
-            30 FPS for unattended sessions if load remains high.
+            <strong>Return to stock launch options.</strong> If you added{" "}
+            <code>--max-fps 0</code> while chasing high-refresh smoothness,
+            take it out again before troubleshooting idle load. Once the built-in
+            60 cap is restored, a driver-level 30 FPS limit is the next lever
+            for unattended sessions near minimum-spec hardware.
           </li>
           <li>
             <strong>Reduce resolution one step.</strong> Test 1920×1080, then
@@ -217,6 +254,67 @@ export default function BestSettingsPage() {
             using the dedicated GPU on dual-GPU laptops.
           </li>
         </ol>
+      </section>
+
+      <section>
+        <h2 id="crashes">Crash &amp; VRAM fixes</h2>
+        <p>
+          Since release, some players have hit startup failures, crashes during
+          loading, or graphical glitches. Two official threads define the state
+          of play. First, the pinned Bug Reports post states that switching the
+          renderer to Vulkan resolves or greatly improves these problems in the
+          large majority of cases, and multiple Linux players confirmed their
+          crashes stopped after choosing Vulkan at launch. Second, the
+          developer&apos;s August 25 Ongoing Development Update identifies
+          systems whose VRAM is exhausted, or which rely on shared video memory,
+          as the remaining source &mdash; mostly laptops and, less often, the
+          Steam Deck &mdash; and commits to a substantial backend stability
+          patch.
+        </p>
+
+        <h3>What to try first</h3>
+        <ol>
+          <li>
+            <strong>Relaunch in Vulkan mode.</strong> Use Steam&apos;s
+            launch-option dialog (the selection window that appears when you
+            press Play, or Set Launch Options in Properties) and pick the
+            Vulkan entry. This is the developer-recommended first move and the
+            one with the strongest public track record.
+          </li>
+          <li>
+            <strong>Verify game files.</strong> In Steam, open Properties →
+            Installed Files → Verify integrity. This catches corrupted installs
+            after failed patches.
+          </li>
+          <li>
+            <strong>Free up video memory before launching.</strong> Close
+            hardware-accelerated browsers, video editors, and other games;
+            shared-VRAM laptops are the hardest-hit category per the developer&apos;s
+            own diagnosis.
+          </li>
+          <li>
+            <strong>Test on battery power versus plugged in.</strong> Laptops
+            sometimes downclock integrated GPUs on battery; plug in before
+            concluding the fix failed.
+          </li>
+          <li>
+            <strong>Wait for the patch if none of the above holds.</strong>{" "}
+            The developer describes the rework as &ldquo;a very large change to
+            the back end,&rdquo; so affected configurations are acknowledged
+            upstream rather than user-error; report persisting cases on the
+            official Discord or Bug Reports thread.
+          </li>
+        </ol>
+
+        <div className="callout callout--moss">
+          <span className="callout__icon" aria-hidden="true">✦</span>
+          <p>
+            <strong>Save-file safety:</strong> none of the crash reports link
+            this problem to town data corruption, so keep playing your save once
+            the game starts reliably. Store backups locally as described on our{" "}
+            <a href="/save-file-location">save file location page</a>.
+          </p>
+        </div>
       </section>
 
       <section>
@@ -262,9 +360,26 @@ export default function BestSettingsPage() {
             <summary>Does Hearth and Hamlet have a built-in FPS cap?</summary>
             <div className="faq__a">
               <p>
-                We have not independently verified a built-in limiter in the
-                current version. If no option appears in-game, set a per-game
-                maximum frame rate through the NVIDIA or AMD driver software.
+                Yes. Version 1.0.04 fixes the frame rate at 60 through the
+                engine&apos;s exported settings, and the V-Sync toggle cannot
+                override it. High-refresh-display owners can remove the cap
+                temporarily with <code>--max-fps 0</code> in Steam launch
+                options, as covered above.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Hearth and Hamlet keeps crashing. How do I fix it?</summary>
+            <div className="faq__a">
+              <p>
+                Try the Vulkan renderer first: pick it in Steam&apos;s launch
+                dialog before the game starts. The developer reports this alone
+                clears most crash and glitch cases, especially on Linux.
+                Remaining failures concentrate on systems out of VRAM, laptops
+                sharing main memory with the GPU, and some Steam Decks; a
+                backend patch targeting them was announced on August 25, 2026.
+                Until it ships, verify files, close VRAM-hungry apps, and use
+                the pinned Bug Reports thread for persistent cases.
               </p>
             </div>
           </details>

@@ -216,14 +216,97 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         caption: "A developed town combines production, housing, services, trade, research, and defense.",
       },
     },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Broken task is to pay 40,000 gold - Hearth and Hamlet Steam discussion",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025223107/",
+      },
+    ],
     toc: [
       { id: "production", label: "Production buildings" },
+      { id: "storage", label: "Storage & the gold cap" },
       { id: "housing", label: "Housing & services" },
       { id: "wonder", label: "Late-game structures" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-27",
     prev: { slug: "tech-tree", title: "Tech Tree" },
-    next: { slug: "best-settings", title: "Best Settings" },
+    next: { slug: "trade", title: "Trade" },
+  },
+  trade: {
+    slug: "trade",
+    eyebrow: "Trade",
+    h1: "Hearth and Hamlet Trade Guide",
+    title: "Hearth and Hamlet Trade Guide: Demand Tiers & Profit Rules",
+    description:
+      "How Hearth and Hamlet trade works: setting up expeditions, reading demand tiers, community timing rules, trading past the gold cap, and both trade achievements.",
+    canonicalKeyword: "hearth and hamlet trade",
+    heroImage: {
+      src: "/img/game-3.webp",
+      alt: "The Hearth and Hamlet expedition interface showing a destination map with demand levels and trade goods",
+      caption: "The Shipwright expedition screen: pick transport, destination, and goods, then read each kingdom demand before sending.",
+    },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Tips for trade? - Hearth and Hamlet Steam discussion",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325282177/",
+      },
+    ],
+    toc: [
+      { id: "overview", label: "How trade works" },
+      { id: "destinations", label: "Destinations & transport" },
+      { id: "demand", label: "Reading demand tiers" },
+      { id: "timing", label: "When a trade is worth it" },
+      { id: "gold-cap", label: "Trading past the gold cap" },
+      { id: "achievements", label: "Trade achievements" },
+      { id: "faq", label: "FAQ" },
+    ],
+    lastReviewed: "2026-08-27",
+    prev: { slug: "buildings", title: "Buildings" },
+    next: { slug: "difficulty", title: "Difficulty" },
+  },
+  difficulty: {
+    slug: "difficulty",
+    eyebrow: "Difficulty",
+    h1: "Hearth and Hamlet Difficulty Guide",
+    title: "Hearth and Hamlet Difficulty Modes & Intense Survival Guide",
+    description:
+      "All four Hearth and Hamlet difficulty modes compared with official completion rates, which mode fits your run, and the two brutal challenges: no-defeat wins and Intense.",
+    canonicalKeyword: "hearth and hamlet difficulty",
+    heroImage: {
+      src: "/img/game-6.webp",
+      alt: "The soldier recruitment interface showing costs, happiness impact, and army strength in Hearth and Hamlet",
+      caption: "On the higher difficulties, the recruit-soldiers panel becomes your most-visited screen.",
+    },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Intense impossible without defeat? - Hearth and Hamlet Steam discussion",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325296211/",
+      },
+    ],
+    toc: [
+      { id: "modes", label: "The four difficulty modes" },
+      { id: "picking", label: "Which difficulty should you pick?" },
+      { id: "unlocks", label: "Special completion achievements" },
+      { id: "undefeated", label: "No-defeat runs" },
+      { id: "intense", label: "Intense mode strategy" },
+      { id: "faq", label: "FAQ" },
+    ],
+    lastReviewed: "2026-08-27",
+    prev: { slug: "trade", title: "Trade" },
+    next: { slug: "combat", title: "Combat" },
   },
   "best-settings": {
     slug: "best-settings",
@@ -231,7 +314,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     h1: "Hearth and Hamlet Best Settings",
     title: "Hearth and Hamlet Best Settings for Performance & Idle Play",
     description:
-      "Practical Hearth and Hamlet PC settings guidance using the official requirements, readable resolution choices, FPS caps, and idle-play troubleshooting.",
+      "Practical Hearth and Hamlet PC settings guidance: official requirements, resolution picks, the confirmed 60 FPS cap and its launch-option fix, Vulkan-mode crash workarounds, and idle-play tuning.",
     canonicalKeyword: "hearth and hamlet best settings",
     heroImage: {
       src: "/img/game-7.webp",
@@ -247,13 +330,74 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     },
     toc: [
       { id: "graphics", label: "Graphics & resolution" },
-      { id: "fps", label: "FPS cap for idle sessions" },
+      { id: "fps", label: "The 60 FPS cap & how to lift it" },
+      { id: "crashes", label: "Crash & VRAM fixes" },
       { id: "accessibility", label: "Accessibility & input checks" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-25",
-    prev: { slug: "buildings", title: "Buildings" },
+    lastReviewed: "2026-08-27",
+    prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "save-file-location", title: "Save File Location" },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "[issue] 60 FPS cap on Linux native build (v1.0.04) - Steam discussion",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325310943/",
+      },
+      {
+        name: "Ongoing Development Update - Phorust [developer], Aug 25, 2026",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711648941/",
+      },
+      {
+        name: "Bug Reports (pinned) - Vulkan launch-mode guidance from Phorust",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711549152/",
+      },
+    ],
+  },
+  combat: {
+    slug: "combat",
+    eyebrow: "Combat",
+    h1: "Hearth and Hamlet Combat Guide",
+    title: "Hearth and Hamlet Combat Guide: Soldiers, Garrisons & Battles",
+    description:
+      "How Hearth and Hamlet combat works: the soldier-from-population rule, happiness thresholds, raid timing, garrison size for Ashenholt's 120-soldier fight, and why battles feel opaque.",
+    canonicalKeyword: "hearth and hamlet combat",
+    heroImage: {
+      src: "/img/game-6.webp",
+      alt: "The Hearth and Hamlet recruit-soldiers panel showing army strength, upkeep, and happiness impact",
+      caption: "Army strength is rented from your workforce; the panel tracks what each extra soldier costs your economy.",
+    },
+    toc: [
+      { id: "basics", label: "How soldiers work" },
+      { id: "battles", label: "Resolving battles" },
+      { id: "raids", label: "Raids & defense timing" },
+      { id: "ashenholt", label: "The 120-soldier Ashenholt fight" },
+      { id: "faq", label: "FAQ" },
+    ],
+    lastReviewed: "2026-08-27",
+    prev: { slug: "difficulty", title: "Difficulty" },
+    next: { slug: "best-settings", title: "Best Settings" },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Losing workers even after winning a battle with 0 losses - answered Steam thread",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025274130/",
+      },
+      {
+        name: "[Spoiler][BUG] Quest completes automatically even if you fail? - Steam thread with dev reply",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025077571/",
+      },
+      {
+        name: "Intense impossible without defeat? - Steam discussion",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325296211/",
+      },
+    ],
   },
   "save-file-location": {
     slug: "save-file-location",
@@ -312,6 +456,9 @@ export const GUIDE_ORDER = [
   "layout",
   "tech-tree",
   "buildings",
+  "trade",
+  "difficulty",
+  "combat",
   "best-settings",
   "save-file-location",
   "codes",
