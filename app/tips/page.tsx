@@ -2,6 +2,7 @@ import { GameFigure } from "@/components/game-media";
 import { GuideArticle } from "@/components/guide-article";
 import { guideMetadata } from "@/components/guide-shell";
 import { GUIDE_PAGES } from "@/content/pages";
+import Link from "next/link";
 
 export const metadata = guideMetadata("tips");
 
@@ -40,6 +41,56 @@ export default function TipsPage() {
           <p>
             <strong>Use balance as a checkpoint, not a rule.</strong> Equal allocation
             helps expose shortages; focused allocation is how you clear them.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <h2 id="midgame">Mid-game: trade &amp; defense</h2>
+        <p>
+          The early-game rules above keep a town alive; two mid-game systems
+          decide whether it gets rich. Both are covered in depth on their own
+          pages, but the short version belongs here because players hit them
+          back to back.
+        </p>
+
+        <h3>Trading beats micro-managing wood and stone</h3>
+        <p>
+          In the trade-discussion thread, one player reports dropping wood and
+          stone workers almost entirely once trade is online &mdash; &ldquo;I
+          have no guys in wood or stone&rdquo; &mdash; because selling into
+          High or Very High demand and buying from Reduced/Low demand outperforms
+          domestic production. The same thread documents the demand cycle:
+          each shipment drops that market&apos;s demand tier by roughly one
+          level (restocking about a tier per further trade), so the reliable
+          route is rotating between kingdoms instead of draining one. Demand-tier
+          specifics and route cadence live on our{" "}
+          <Link href="/trade/">trade guide</Link>.
+        </p>
+
+        <h3>The 40,000-gold wall and how storage actually scales</h3>
+        <p>
+          Ashenholt&apos;s soldiers cost 40,000 gold, which appears right as
+          many players discover their storage cap sits near 25,250. The
+          dev-replied thread confirms the intended answers: manor upgrades add
+          gold storage, the +15,000 storage upgrade comes through the normal
+          progression, and pushing past 45&ndash;50k cap by that point is
+          expected. If your cap refuses to rise with no upgrades available,
+          note that one player&apos;s +15k upgrade silently failed to apply in
+          v1.0.02 and survived the 1.0.03 fix &mdash; resolved via Discord save
+          inspection. Verify your storage building level before assuming the
+          wall is genuine; full path on our{" "}
+          <Link href="/buildings/">buildings page</Link>.
+        </p>
+
+        <div className="callout callout--moss">
+          <span className="callout__icon" aria-hidden="true">&#10022;</span>
+          <p>
+            <strong>Sequencing tip:</strong> unlock trade first, then spend its
+            surplus on soldier upkeep before Ashenholt&apos;s demand arrives.
+            Trading also matters for achievements &mdash; Merchant Kingdom needs
+            20 Distant Kingdom shipments, while Steadfast Resolve demands you
+            never trade with Ashenholt at all.
           </p>
         </div>
       </section>
@@ -257,6 +308,30 @@ export default function TipsPage() {
                 Umer recommends beginning once Town Guards is unlocked. The official
                 Steam page confirms that soldiers protect the realm, but does not set a
                 mandatory training schedule.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Is trading worth it in the mid game?</summary>
+            <div className="faq__a">
+              <p>
+                Yes &mdash; multiple players report it outproducing wood and stone
+                workers entirely. Sell into High/Very High demand, buy from
+                Reduced/Low, and rotate kingdoms because each shipment drops the
+                local demand tier. Route details on our trade page.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>My gold storage is stuck below the 40,000-gold quest. What do I do?</summary>
+            <div className="faq__a">
+              <p>
+                Check three things before assuming a bug: manor upgrades (they add
+                gold storage), library-sold blueprints, and the +15,000 storage
+                upgrade in your progression path. One player&apos;s upgrade failed
+                to apply silently and needed a Discord save fix, so if storage
+                refuses to rise with upgrades visibly available, report it with
+                your save attached.
               </p>
             </div>
           </details>

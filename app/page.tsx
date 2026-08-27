@@ -74,6 +74,8 @@ const CARD_DESCRIPTIONS: Record<string, string> = {
     "Compare all four difficulty modes with official completion rates, pick the right challenge, and prep for no-defeat and Intense runs.",
   combat:
     "Understand the soldier-from-population rule, happiness thresholds, and battle resolution so raid defense stops feeling like a coin flip.",
+  achievements:
+    "Every achievement with its official global unlock rate, plus which rare ones to plan into your run before you get too comfortable.",
   "best-settings":
     "Tune the PC experience for a clear, comfortable view of busy settlements and dependable play during longer sessions.",
   "save-file-location":
@@ -122,6 +124,10 @@ const CARD_MEDIA: Record<string, { src: string; alt: string }> = {
   combat: {
     src: "/img/game-6.webp",
     alt: "The Hearth and Hamlet soldier recruitment panel showing costs, strength, and upkeep",
+  },
+  achievements: {
+    src: "/img/game-5.webp",
+    alt: "A fully developed Hearth and Hamlet city with a castle",
   },
   "best-settings": {
     src: "/img/game-7.webp",

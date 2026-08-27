@@ -111,10 +111,11 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "happiness", label: "Happiness vs. taxes" },
       { id: "milestones", label: "The at-least-once rule" },
       { id: "research", label: "Make research pay twice" },
+      { id: "midgame", label: "Mid-game: trade & defense" },
       { id: "mistakes", label: "Common early mistakes" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-25",
+    lastReviewed: "2026-08-27",
     prev: { slug: "guide", title: "Beginner Guide" },
     next: { slug: "layout", title: "Town Layouts" },
   },
@@ -183,6 +184,14 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Hearth and Hamlet: Best Early Game Tips and Tricks (Into Indie Games)",
         url: "https://intoindiegames.com/tips-and-guides/hearth-and-hamlet-best-early-game-tips-and-tricks/",
+      },
+      {
+        name: "Tips for trade? - Hearth and Hamlet Steam discussion",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325282177/",
+      },
+      {
+        name: "Broken task is to pay 40,000 gold - Steam thread with dev reply",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025223107/",
       },
     ],
     toc: [
@@ -379,7 +388,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     ],
     lastReviewed: "2026-08-27",
     prev: { slug: "difficulty", title: "Difficulty" },
-    next: { slug: "best-settings", title: "Best Settings" },
+    next: { slug: "achievements", title: "Achievements" },
     sources: [
       {
         name: "Hearth and Hamlet on Steam (Phorust Studios)",
@@ -396,6 +405,47 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Intense impossible without defeat? - Steam discussion",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325296211/",
+      },
+    ],
+  },
+  achievements: {
+    slug: "achievements",
+    eyebrow: "Achievements",
+    h1: "Hearth and Hamlet Achievements Guide",
+    title: "Hearth and Hamlet Achievements: Full List, Unlock Rates & Tips",
+    description:
+      "All 24 Hearth and Hamlet achievements with official global unlock rates: which mode-dependent ones to plan for, the 120-soldier army fight, Steadfast Resolve, and Flawless Victory.",
+    canonicalKeyword: "hearth and hamlet achievements",
+    heroImage: {
+      src: "/img/game-5.webp",
+      alt: "A fully developed Hearth and Hamlet city with a castle, the end-state most completion achievements track",
+      caption: "Most of the list unlocks naturally on the road to a fully upgraded kingdom.",
+    },
+    toc: [
+      { id: "list", label: "All 24 achievements" },
+      { id: "hardest", label: "The rare ones & how to plan them" },
+      { id: "synergies", label: "Combining achievements in one run" },
+      { id: "faq", label: "FAQ" },
+    ],
+    lastReviewed: "2026-08-27",
+    prev: { slug: "combat", title: "Combat" },
+    next: { slug: "best-settings", title: "Best Settings" },
+    sources: [
+      {
+        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Aug 27, 2026)",
+        url: "https://steamcommunity.com/stats/4315040/achievements",
+      },
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Intense impossible without defeat? - Steam discussion",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325296211/",
+      },
+      {
+        name: "[Spoiler][BUG] Quest completes automatically even if you fail? - Steam thread with dev reply",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025077571/",
       },
     ],
   },
@@ -424,7 +474,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "backup", label: "Back up your saves" },
       { id: "faq", label: "FAQ" },
     ],
-    prev: { slug: "best-settings", title: "Best Settings" },
+    prev: { slug: "achievements", title: "Achievements" },
     next: { slug: "codes", title: "Codes" },
   },
   codes: {
@@ -459,6 +509,7 @@ export const GUIDE_ORDER = [
   "trade",
   "difficulty",
   "combat",
+  "achievements",
   "best-settings",
   "save-file-location",
   "codes",
