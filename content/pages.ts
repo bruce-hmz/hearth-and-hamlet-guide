@@ -121,22 +121,22 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
   },
   layout: {
     slug: "layout",
-    eyebrow: "City Planning",
-    h1: "Hearth and Hamlet Best Layouts",
-    title: "Hearth and Hamlet Best Layout & City Planning Guide",
+    eyebrow: "Layout",
+    h1: "Hearth and Hamlet Layout Guide",
+    title: "Hearth and Hamlet Layout Guide: The Predetermined City & Building Order",
     description:
-      "Practical Hearth and Hamlet layout planning for readable districts, short routes, and room to expand without relying on unverified formulas.",
+      "How the Hearth and Hamlet layout works: the developer confirmed the city is predetermined, so progress is building order, upgrades, and terrain effects — not free city planning.",
     canonicalKeyword: "hearth and hamlet layout",
     heroImage: {
       src: "/img/game-1.webp",
       alt: "A fortified waterfront city layout in Hearth and Hamlet",
-      caption: "A readable district plan keeps related work together and preserves room for expansion.",
+      caption: "The map is a pre-designed diorama — your decisions are when and what to build, not where.",
     },
     sectionMedia: {
       districts: {
         src: "/img/game-9.webp",
         alt: "A river and waterfall district in Hearth and Hamlet",
-        caption: "Natural boundaries can help separate production and residential districts.",
+        caption: "Water features divide the fixed map into naturally readable districts.",
       },
     },
     sources: [
@@ -144,15 +144,23 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Hearth and Hamlet on Steam (Phorust Studios)",
         url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
       },
+      {
+        name: "Steam Discussion: couple questions (Phorust, developer)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561020200037325/",
+      },
+      {
+        name: "Steam Discussion: Where to increase magic-s storage",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711664607/",
+      },
     ],
     toc: [
-      { id: "adjacency", label: "How to think about adjacency" },
-      { id: "terrain", label: "Work with the terrain" },
-      { id: "grids", label: "A flexible starter grid" },
-      { id: "districts", label: "Industry vs. housing districts" },
+      { id: "how-it-works", label: "The layout is predetermined" },
+      { id: "terrain", label: "What terrain does" },
+      { id: "order", label: "Building order in a fixed map" },
+      { id: "districts", label: "Reading the districts" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-25",
+    lastReviewed: "2026-08-27",
     prev: { slug: "tips", title: "Tips & Tricks" },
     next: { slug: "tech-tree", title: "Tech Tree" },
   },
