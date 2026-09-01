@@ -1,10 +1,11 @@
+import Link from "next/link";
 import { GuideArticle } from "@/components/guide-article";
 import { GameFigure } from "@/components/game-media";
 import { guideMetadata } from "@/components/guide-shell";
 import { GUIDE_PAGES } from "@/content/pages";
 
 const description =
-  "Hearth and Hamlet research guide: permanent unlocks, practical early priorities, policy trade-offs, and when to pursue alchemy and magic.";
+  "Hearth and Hamlet research guide: named early research picks, practical priorities, policy trade-offs, the Magic Academy branch, and late-game Undead-siege research.";
 
 export const metadata = { ...guideMetadata("tech-tree"), description };
 
@@ -32,10 +33,13 @@ export default function TechTreePage() {
         <div className="callout callout--moss">
           <span className="callout__icon" aria-hidden="true">✦</span>
           <p>
-            <strong>Plan around outcomes, not tier labels.</strong> The public
-            sources confirm a multi-branch research system, but they do not
-            document a complete launch-version node list, exact costs, or a
-            universal numbered tier order.
+            <strong>Plan around outcomes, not tier labels.</strong> Official
+            sources confirm a multi-branch research system but publish no
+            node list or tier order. A community wiki has catalogued 323
+            research entries from build 1.0.04 &mdash; the named nodes below
+            come from that catalogue, and the 1.0.05 and 1.0.06 patch notes
+            announced no research-tree changes. Confirm exact costs in your
+            in-game panel.
           </p>
         </div>
       </section>
@@ -170,6 +174,118 @@ export default function TechTreePage() {
           can use it now, and check that the purchase will not empty resources
           needed for food, housing, or the next essential building.
         </p>
+
+        <p>
+          For the first tier specifically, these named nodes (community wiki
+          catalogue, build 1.0.04) are cheap, always useful, and fit the
+          framework above:
+        </p>
+        <ul>
+          <li>
+            <strong>Construction Advisor</strong> (Keep 1 + Carpenter 1)
+            &mdash; notifies you when you can afford a building upgrade, so
+            you stop re-checking every panel.
+          </li>
+          <li>
+            <strong>Critical Success I</strong> (Keep 1) &mdash; a 2% chance
+            of a critical success when personally harvesting.
+          </li>
+          <li>
+            <strong>Extra Accommodation</strong> (Tavern 1) &mdash; +8 max
+            population.
+          </li>
+          <li>
+            <strong>Apprenticeships</strong> (Library 1) &mdash; +2 global
+            resource harvesting.
+          </li>
+          <li>
+            <strong>Research Advisor</strong> (Keep 2 + Library 1) &mdash;
+            notifies you when new research becomes available, which matters
+            because many nodes stay hidden behind building levels you have
+            not reached yet.
+          </li>
+          <li>
+            <strong>The Sturdy Tools line</strong> (production building 1&ndash;2
+            + Blacksmith 1) &mdash; roughly +50&ndash;100% production of that
+            one resource; buy the entry matching your current bottleneck.
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="undead">Late-game research: the Undead siege</h2>
+        <p>
+          Building the Keep triggers a quest chain that runs through the
+          cathedral and ends in the Ancient Evil siege &mdash; repeated
+          zombie-horde battles that players in the Steam thread call the
+          biggest challenge in the game. Two research nodes decide whether
+          that phase drains your treasury or funds it:
+        </p>
+        <ul>
+          <li>
+            <strong>Consecrated Weapons</strong> (Church level 4) &mdash;
+            +20% damage to Undead and prevents Undead from reviving. Players
+            describe this as the node that makes the horde fights trivial,
+            and also warn that it sits at the end of the church upgrade line
+            (&ldquo;behind the cathedral&rdquo;) &mdash; a two-step
+            investment: building levels first, research second.
+          </li>
+          <li>
+            <strong>Battle Loot: Undead</strong> (Mage Tower level 3) &mdash;
+            unlocks battle rewards for defeating Undead. Player-reported
+            yields run roughly 50,000&ndash;100,000 gold and magic per horde
+            fight, which turns the siege into your best late-game income as
+            long as you keep the research current.
+          </li>
+        </ul>
+        <p>
+          For how many soldiers to bring and how the waves behave, see the{" "}
+          <Link href="/combat/">combat guide</Link> &mdash; soldier count
+          scales from population, and that rule is what the siege punishes
+          hardest. Surviving the siege is also the{" "}
+          <Link href="/achievements/">Ancient Evil achievement</Link>, so the
+          research pays into a guaranteed unlock most runs reach anyway.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="magic">Magic research and the Magic Academy</h2>
+        <p>
+          The most common magic mistake is hunting the research panel for a
+          way to buy magic. There isn&apos;t one: the quest that asks you to
+          acquire magic by trading is completed from the{" "}
+          <strong>buying side of a trade expedition</strong>, as the
+          developer confirmed in the Steam thread after two players reported
+          losing an hour to the search. The step-by-step lives in our{" "}
+          <Link href="/trade/">trade guide FAQ</Link>; what the research tree
+          does own is the Magic Academy branch (catalogued as the Mage Tower
+          in the community wiki):
+        </p>
+        <ul>
+          <li>
+            <strong>Magical Trade Goods</strong> (Mage Tower 2 + Market 3)
+            &mdash; unlocks Magical Trade Goods. This is the research the
+            developer pointed to when players asked where the &ldquo;trade
+            magic&rdquo; tech lives.
+          </li>
+          <li>
+            <strong>Enchant Weapons I / II</strong> (Mage Tower 2 / 4)
+            &mdash; unlocks and upgrades the soldier-attack enchant shop
+            items (+3, then +6 attack).
+          </li>
+          <li>
+            <strong>Enchant Armour I / II</strong> (Mage Tower 2 / 4)
+            &mdash; the defence counterpart (+10, then +20 soldier defence).
+          </li>
+          <li>
+            <strong>Mana Tap</strong> (Mage Tower 3) &mdash; unlocks a shop
+            item worth +50% magic production.
+          </li>
+          <li>
+            <strong>Battle Loot: Undead</strong> (Mage Tower 3) &mdash; the
+            siege-income node covered above.
+          </li>
+        </ul>
       </section>
 
       <section>
@@ -223,8 +339,8 @@ export default function TechTreePage() {
 
         <p>
           Alchemical labs and magical academies are also confirmed parts of the
-          game&apos;s advanced building system. Public material does not establish
-          their exact prerequisites or costs, so use the in-game research panel
+          game&apos;s advanced building system. Official material does not
+          establish their exact prerequisites or costs, so use the in-game research panel
           as the authority for the current version.
         </p>
       </section>
@@ -254,13 +370,29 @@ export default function TechTreePage() {
             </div>
           </details>
           <details>
+            <summary>Do I need a research tech to buy magic?</summary>
+            <div className="faq__a">
+              <p>
+                No. The developer confirmed that buying magic happens on the
+                buying side of a trade expedition, not through any research
+                node. The related <em>Magical Trade Goods</em> research (Magic
+                Academy branch, with a level 3 Market requirement) is a
+                separate unlock. The full walkthrough is in our{" "}
+                <Link href="/trade/">trade guide FAQ</Link>.
+              </p>
+            </div>
+          </details>
+          <details>
             <summary>When should I pursue alchemy or magic?</summary>
             <div className="faq__a">
               <p>
                 Treat alchemical labs and magical academies as later goals. Build
                 toward them after food, housing, and core production are stable;
-                confirm their current prerequisites in the in-game tree before
-                committing resources.
+                the Academy branch&apos;s early entries (Enchant Weapons,
+                Magical Trade Goods) need only Mage Tower level 2 plus a level
+                3 Market, while the siege-critical nodes (Consecrated Weapons,
+                Battle Loot: Undead) are worth budgeting for before you build
+                the Keep.
               </p>
             </div>
           </details>

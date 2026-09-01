@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { GuideArticle } from "@/components/guide-article";
 import { guideMetadata } from "@/components/guide-shell";
 import { GUIDE_PAGES } from "@/content/pages";
@@ -237,6 +238,8 @@ export default function TradePage() {
               - <em>Magical Trade Goods</em> - but it lives in the Magic
               Academy branch, not the early research flow, and the quest
               description was reworded in a patch to point at the trade step.
+              That branch&apos;s nodes and requirements are broken down in
+              our <Link href="/tech-tree/">tech tree guide</Link>.
             </p></div>
           </details>
           <details>

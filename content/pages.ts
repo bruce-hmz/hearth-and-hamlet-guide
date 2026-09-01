@@ -174,7 +174,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     h1: "Hearth and Hamlet Tech Tree Guide",
     title: "Hearth and Hamlet Tech Tree & Research Order Guide",
     description:
-      "Hearth and Hamlet research guide covering permanent unlocks, priority decisions, policies, magic, and advanced building progression.",
+      "Hearth and Hamlet research guide covering permanent unlocks, named early research picks, Undead-siege research, the Magic Academy branch, and policies.",
     canonicalKeyword: "hearth and hamlet tech tree",
     heroImage: {
       src: "/img/game-8.webp",
@@ -194,6 +194,18 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
       },
       {
+        name: "Hearth and Hamlet Wiki — research catalogue (community, build 1.0.04)",
+        url: "https://hearthandhamlet.wikitactics.com/research",
+      },
+      {
+        name: "Where is research to trade magic? - Steam thread with dev reply",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711687245/",
+      },
+      {
+        name: "ancient evil debuff - Steam thread",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025095273/",
+      },
+      {
         name: "Hearth and Hamlet: Best Early Game Tips and Tricks (Into Indie Games)",
         url: "https://intoindiegames.com/tips-and-guides/hearth-and-hamlet-best-early-game-tips-and-tricks/",
       },
@@ -210,10 +222,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "overview", label: "Research system overview" },
       { id: "branches", label: "Confirmed branch themes" },
       { id: "order", label: "Recommended unlock order" },
+      { id: "undead", label: "Late-game Undead-siege research" },
+      { id: "magic", label: "Magic & the Magic Academy" },
       { id: "policies", label: "Kingdom Policies" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-25",
+    lastReviewed: "2026-09-02",
     prev: { slug: "layout", title: "Town Layouts" },
     next: { slug: "buildings", title: "Buildings" },
   },
