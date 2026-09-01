@@ -31,7 +31,7 @@ export type GuidePageMeta = {
 
 export const DATE_PUBLISHED = "2026-08-21";
 export const LAST_REVIEWED = "2026-08-21";
-export const GAME_VERSION = "Release build";
+export const GAME_VERSION = "v1.0.06 (Aug 29, 2026)";
 
 export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
   guide: {
@@ -102,6 +102,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
       },
       {
+        name: "Starvation is so hard - Steam thread with community food-scaling math",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618403189/",
+      },
+      {
         name: "Hearth and Hamlet: Best Early Game Tips and Tricks (Into Indie Games)",
         url: "https://intoindiegames.com/tips-and-guides/hearth-and-hamlet-best-early-game-tips-and-tricks/",
       },
@@ -115,7 +119,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "mistakes", label: "Common early mistakes" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-27",
+    lastReviewed: "2026-08-31",
     prev: { slug: "guide", title: "Beginner Guide" },
     next: { slug: "layout", title: "Town Layouts" },
   },
@@ -273,8 +277,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
       },
       {
-        name: "Tips for trade? - Hearth and Hamlet Steam discussion",
+        name: "Tips for trade? - Steam thread with developer answers on demand tiers and item values",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325282177/",
+      },
+      {
+        name: "Where is research to trade magic? - Steam thread with developer answer on buying magic via expeditions",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711687245/",
       },
     ],
     toc: [
@@ -286,7 +294,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "achievements", label: "Trade achievements" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-27",
+    lastReviewed: "2026-09-01",
     prev: { slug: "buildings", title: "Buildings" },
     next: { slug: "difficulty", title: "Difficulty" },
   },
@@ -321,7 +329,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "intense", label: "Intense mode strategy" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-27",
+    lastReviewed: "2026-08-31",
     prev: { slug: "trade", title: "Trade" },
     next: { slug: "combat", title: "Combat" },
   },
@@ -352,13 +360,21 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "accessibility", label: "Accessibility & input checks" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-27",
+    lastReviewed: "2026-08-31",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "save-file-location", title: "Save File Location" },
     sources: [
       {
         name: "Hearth and Hamlet on Steam (Phorust Studios)",
         url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Known Issues (pinned, updated Aug 29, 2026) - UI Scaling and crash status",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711553284/",
+      },
+      {
+        name: "Patch 1.0.06 notes, Aug 29, 2026 - VRAM/memory optimisation and 16 GB recommendation",
+        url: "https://store.steampowered.com/news/app/4315040/view/1842212951304898/",
       },
       {
         name: "[issue] 60 FPS cap on Linux native build (v1.0.04) - Steam discussion",
@@ -394,13 +410,21 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "ashenholt", label: "The 120-soldier Ashenholt fight" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-27",
+    lastReviewed: "2026-08-31",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "achievements", title: "Achievements" },
     sources: [
       {
         name: "Hearth and Hamlet on Steam (Phorust Studios)",
         url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Some numbers seem of? - Steam thread with developer answers on crits and stats",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325416550/",
+      },
+      {
+        name: "Bug: Skeletons are too strong at maximum difficulty - Steam thread with developer reply",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618315688/",
       },
       {
         name: "Losing workers even after winning a battle with 0 losses - answered Steam thread",
@@ -435,20 +459,24 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "synergies", label: "Combining achievements in one run" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-27",
+    lastReviewed: "2026-09-01",
     prev: { slug: "combat", title: "Combat" },
     next: { slug: "best-settings", title: "Best Settings" },
     sources: [
       {
-        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Aug 27, 2026)",
+        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 1, 2026)",
         url: "https://steamcommunity.com/stats/4315040/achievements",
+      },
+      {
+        name: "Ashenholt Achievement conditions - Steam thread with developer reply on per-save tracking",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325474422/",
       },
       {
         name: "Hearth and Hamlet on Steam (Phorust Studios)",
         url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
       },
       {
-        name: "Intense impossible without defeat? - Steam discussion",
+        name: "Intense impossible without defeat? - Hearth and Hamlet Steam discussion",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325296211/",
       },
       {
@@ -482,8 +510,19 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "backup", label: "Back up your saves" },
       { id: "faq", label: "FAQ" },
     ],
+    lastReviewed: "2026-08-31",
     prev: { slug: "achievements", title: "Achievements" },
     next: { slug: "codes", title: "Codes" },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Is there autosave? - Steam thread with developer answer",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618341692/",
+      },
+    ],
   },
   codes: {
     slug: "codes",
@@ -505,6 +544,39 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     ],
     lastReviewed: "2026-08-25",
     prev: { slug: "save-file-location", title: "Save File Location" },
+    next: { slug: "similar-games", title: "Similar Games" },
+  },
+  "similar-games": {
+    slug: "similar-games",
+    eyebrow: "Post-Game",
+    h1: "Games Like Hearth and Hamlet",
+    title: "Games Like Hearth and Hamlet: What to Play After Finishing",
+    description:
+      "Finished Hearth and Hamlet? What the developer says about replayability, what is still worth doing in your save, and seven similar city builders worth trying next.",
+    canonicalKeyword: "games like hearth and hamlet",
+    heroImage: {
+      src: "/img/game-12.webp",
+      alt: "A Hearth and Hamlet story dialog shown over the finished kingdom",
+      caption: "When the coronation scene plays out, the question becomes what to build next.",
+    },
+    toc: [
+      { id: "overview", label: "What the developer says comes next" },
+      { id: "in-game", label: "Still left to do in your save" },
+      { id: "list", label: "Games like Hearth and Hamlet" },
+      { id: "faq", label: "FAQ" },
+    ],
+    lastReviewed: "2026-09-01",
+    prev: { slug: "codes", title: "Codes" },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Games like this - unanswered Steam thread asking for similar games",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618463556/",
+      },
+    ],
   },
 };
 
@@ -521,4 +593,5 @@ export const GUIDE_ORDER = [
   "best-settings",
   "save-file-location",
   "codes",
+  "similar-games",
 ] as const;

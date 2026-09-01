@@ -43,6 +43,50 @@ export default function TipsPage() {
             helps expose shortages; focused allocation is how you clear them.
           </p>
         </div>
+
+        <h3>Starving anyway? The mid-game food escalation</h3>
+        <p>
+          Food problems do not end with the early game &mdash; the most common
+          complaint in the game&apos;s Steam forum is starvation &ldquo;even
+          though I&apos;ve almost maxed out the food production buildings,&rdquo;
+          including on the chillest mode. The community&apos;s answer, worked out
+          in that thread, is that food output scales through three systems, and
+          maxing buildings alone skips two of them:
+        </p>
+        <ul>
+          <li>
+            <strong>Research multipliers are the big lever.</strong> Upgrading
+            the <strong>Blacksmith</strong> unlocks the food-buff research line
+            for the Fisher and Farm &mdash; worth roughly{" "}
+            <strong>+50% to +100% output</strong> &mdash; while{" "}
+            <strong>Workshop</strong> upgrades unlock the same line for the
+            Hunter. Stack the smaller +10% bonuses on top, and buy the{" "}
+            <strong>+Max Worker</strong> research for food buildings so the
+            multipliers have hands to work with.
+          </li>
+          <li>
+            <strong>Global production bonuses compound.</strong> The
+            Blacksmith, Carpenter, and Workshop each carry a global production
+            bonus, and the Town Center, Church, Public House, Alchemist, and
+            Roads add more (some tied to specific materials). There is also a
+            Town Center upgrade that raises <em>every</em> building&apos;s
+            productivity scaling with your population &mdash; thread
+            participants call it a must-buy.
+          </li>
+          <li>
+            <strong>Staffing follows a curve, not a flat split.</strong> In the
+            early game a few Hunter workers feed everyone; once the market
+            unlocks you want a <strong>full Hunter plus a few Farm workers</strong>;
+            after ships unlock, the community standard is a{" "}
+            <strong>full Hunter and a full Farm</strong>.
+          </li>
+        </ul>
+        <p>
+          Two economy-side notes from the same discussion: max out laborers
+          before paying for upgrades rather than after, and disband armies you
+          are not actively using &mdash; idle upkeep quietly eats the food
+          surplus you thought you had.
+        </p>
       </section>
 
       <section>
@@ -308,6 +352,19 @@ export default function TipsPage() {
                 Umer recommends beginning once Town Guards is unlocked. The official
                 Steam page confirms that soldiers protect the realm, but does not set a
                 mandatory training schedule.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Why is everyone starving even with maxed food buildings?</summary>
+            <div className="faq__a">
+              <p>
+                Because building level is only one of three food systems. The
+                food research lines behind the Blacksmith (Fisher/Farm,
+                +50&ndash;100%) and Workshop (Hunter), the global production
+                bonuses, and the right staffing curve (full Hunter, then plus
+                Farm workers as markets and ships unlock) do most of the heavy
+                lifting. The food section above has the full breakdown.
               </p>
             </div>
           </details>

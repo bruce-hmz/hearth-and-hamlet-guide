@@ -35,6 +35,20 @@ export default function CombatPage() {
           a lost battle hurts morale less than an unprotected town would.
         </p>
 
+        <p>
+          A separate dev-answered thread settles two combat-math questions.
+          First, <strong>research applies to existing soldiers instantly</strong>
+          &mdash; &ldquo;purchasing a new research should immediately change all
+          the guards&apos; stats. No retrain necessary.&rdquo; Second,{" "}
+          <strong>a normal critical hit is a x12 multiplier</strong> (the
+          developer raised it from x10 because the difference was hard to see),
+          and he notes the crit value &ldquo;changes over time.&rdquo; The same
+          reply explains why in-game numbers sometimes look wrong: values carry
+          hidden decimals &mdash; &ldquo;it may look like you get 20 stone, but
+          in fact it is 20.48&rdquo; &mdash; and rounding those after
+          multiplication produces odd figures on screen.
+        </p>
+
         <div className="callout callout--moss">
           <span className="callout__icon" aria-hidden="true">&#10022;</span>
           <p>
@@ -84,8 +98,13 @@ export default function CombatPage() {
               </tr>
               <tr>
                 <td>Buffs and soldier stats</td>
-                <td>&ldquo;Use buffs etc. to increase the stats of your soldiers&rdquo; &mdash; quality partially substitutes for quantity.</td>
-                <td>Medium (single answered post)</td>
+                <td>&ldquo;Use buffs etc. to increase the stats of your soldiers&rdquo; &mdash; quality partially substitutes for quantity. Research applies to existing soldiers instantly, no retraining.</td>
+                <td>High (dev-confirmed on stat updates)</td>
+              </tr>
+              <tr>
+                <td>Critical hits</td>
+                <td>A normal crit multiplies damage x12 (developer-raised from x10); the value scales up over time.</td>
+                <td>High (dev-stated, August 2026)</td>
               </tr>
             </tbody>
           </table>
@@ -131,14 +150,33 @@ export default function CombatPage() {
           </li>
         </ol>
 
+        <h3>How big do raids get?</h3>
+        <p>
+          Raids scale with your population. One Intense-mode player reports
+          monster raids starting around the 200-population mark and growing from
+          there; the sharpest data point comes from a max-difficulty player who
+          met a skeleton wave of <strong>68 attackers against 400 population</strong>{" "}
+          &mdash; roughly one skeleton per six citizens &mdash; after clearing
+          the same runs against goblins and rats with far smaller forces. Asked
+          whether that wave was a bug, the developer answered that it is
+          &ldquo;intended to be very difficult,&rdquo; but added he has
+          &ldquo;had a few reports that the early game is too challenge,
+          especially the undead,&rdquo; and is &ldquo;considering turning it
+          down slightly.&rdquo; Treat skeleton-wave sizes as a live balance
+          target: check the patch notes after each update before sizing your
+          garrison.
+        </p>
+
         <div className="callout">
           <span className="callout__icon" aria-hidden="true">&#10022;</span>
           <p>
-            <strong>Intense mode note:</strong> the mode-specific thread records
-            a player who, across 8&ndash;12 restarts, could not survive the
-            first 15 minutes after unlocking the Town Guard, and no public reply
-            claims a clean opening on Intense yet. On the highest difficulty,
-            treat early guard duty as the real boss.
+            <strong>Intense mode note:</strong> Intense is no longer the
+            uncharted wall it was at launch &mdash; the developer has beaten it
+            without losing a battle and published his full strategy, and the
+            community has added staffing numbers for each wave. Our{" "}
+            <Link href="/difficulty/">difficulty guide</Link> breaks the whole
+            plan down; the short version is that early guard duty is still the
+            real boss, but it now has a documented answer.
           </p>
         </div>
       </section>
@@ -179,10 +217,15 @@ export default function CombatPage() {
         </p>
 
         <p>
-          Note: the developer replied on August 22 acknowledging the
-          auto-complete report as &ldquo;a new one&rdquo; to investigate; no fix
-          has shipped in the patch notes we reviewed as of August 27. Until it
-          lands, treat reloads around this fight as risky rather than routine.
+          Note: the developer first acknowledged the auto-complete report on
+          August 22 as &ldquo;a new one&rdquo; to investigate. Patch 1.0.06
+          (August 29) then took a second pass &mdash; its notes list a fix for
+          &ldquo;a very rare but stubborn bug that could cause the Ashenholt
+          army to fail to spawn, or the quest to be skipped after a failed
+          attempt,&rdquo; and the developer says he has &ldquo;added in enough
+          safeguards&rdquo; to resolve it, though the bug was never reliably
+          reproducible in his testing. The manual-save-before-activation habit
+          remains the only guaranteed rollback.
         </p>
       </section>
 
@@ -193,10 +236,12 @@ export default function CombatPage() {
             <summary>How many soldiers do I need to win battles?</summary>
             <div className="faq__a"><p>
               The only publicly confirmed number is 120 for the Ashenholt quest
-              army. Regular raids appear to scale earlier and smaller, and no
-              official table of attacker sizes exists. The community rule is
-              simple: fight above the marker, never under it, and replace losses
-              before the next engagement.
+              army &mdash; and later scripted fights need more (Intense players
+              report the third taxation event taking well over 120). Regular
+              raids scale with your population, from roughly the 200-population
+              mark, with documented skeleton waves of 68 attackers at 400
+              population. Fight above the marker, never under it, and replace
+              losses before the next engagement.
             </p></div>
           </details>
           <details>
@@ -232,22 +277,27 @@ export default function CombatPage() {
             <summary>My Ashenholt fight bugged after reloading. What now?</summary>
             <div className="faq__a"><p>
               Two failure modes are documented: an auto-completed win after
-              losing (developer acknowledged on August 22) and a stuck state
-              where the fight can no longer be started. If the quest auto-completed,
-              you keep progressing but with a false win in the log; if it locked,
-              report on the pinned Bug Reports thread and wait for a patch.
-              Until the state handling is fixed, save manually before activating
-              the battle instead of relying on reloads.
+              losing and a stuck state where the fight can no longer be
+              started. Patch 1.0.06 (August 29) targeted both &mdash; the
+              developer calls the safeguards he added a fix, offered save
+              repairs via Discord for still-affected players, and asked anyone
+              who hits it again to report with the save attached. If the quest
+              auto-completed you keep progressing with a false win in the log;
+              if it locks, use the pinned Bug Reports thread or Discord. The
+              manual save before activating the battle remains the only
+              guaranteed rollback.
             </p></div>
           </details>
           <details>
             <summary>Is combat different on Intense difficulty?</summary>
             <div className="faq__a"><p>
-              The mechanics are the same but the margins are not: the Intense
-              thread records 8&ndash;12 restarts failing to survive 15 minutes
-              past the Town Guard unlock, with no public clean-strategy claim.
-              Read our <Link href="/difficulty/">difficulty comparison</Link> for
-              completion-rate context before committing to a no-defeat Intense run.
+              The mechanics are the same but the margins are not: enemies jump
+              sharply at population thresholds, and the early undead waves are
+              tuned hard enough that the developer is considering softening
+              them. It is beatable without losses &mdash; the developer has
+              done exactly that and published the plan. Our{" "}
+              <Link href="/difficulty/">difficulty guide</Link> carries the full
+              strategy and completion-rate context.
             </p></div>
           </details>
         </div>

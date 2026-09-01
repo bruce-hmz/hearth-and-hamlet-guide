@@ -3,6 +3,7 @@ import { Fraunces, Source_Serif_4, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
+import { AdsterraInPagePush } from "@/components/adsterra";
 import { SITE_URL } from "@/lib/site";
 
 const fraunces = Fraunces({
@@ -70,6 +71,7 @@ export default function RootLayout({
       <body>
         <SiteHeader />
         <main id="main">{children}</main>
+        <AdsterraInPagePush />
         <SiteFooter />
       </body>
     </html>

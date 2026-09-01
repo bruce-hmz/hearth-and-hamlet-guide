@@ -12,7 +12,7 @@ export default function PrivacyPage() {
       <span className="eyebrow">Legal</span>
       <h1 className="section-title">Privacy Policy</h1>
       <div className="prose" style={{ maxWidth: "var(--wrap-article)", marginTop: "2rem" }}>
-        <p><strong>Effective date:</strong> August 21, 2026</p>
+        <p><strong>Effective date:</strong> August 31, 2026</p>
         <p>
           This policy explains what information may be handled when you visit
           Hearth &amp; Hamlet Community Guide. The site is currently a static
@@ -31,18 +31,29 @@ export default function PrivacyPage() {
 
         <h2>Analytics, cookies, and advertising</h2>
         <p>
-          We do not currently identify a specific analytics or advertising
-          service as active on this site. If analytics is introduced, it may use
-          cookies or similar technologies to measure visits and page usage. If
-          advertising is introduced, an advertising partner may use cookies or
-          comparable identifiers to deliver, limit, or measure ads.
+          This site displays advertising delivered by third-party advertising
+          networks. Ad scripts currently load from the domains
+          profitableratecpmnetwork.com and highrevenueformat.com. To deliver,
+          limit, and measure ads, these partners may use cookies, device
+          identifiers, or comparable technologies, and they may use information
+          about your visits to this and other sites to make the ads you see more
+          relevant. Ad content is served inside a frame controlled by the
+          partner; data handling within that frame follows the partner&apos;s
+          own privacy policy.
         </p>
         <p>
-          Before those services are enabled, this policy will be updated to name
-          the relevant providers and explain the choices available to visitors.
-          Where required, we will also present a consent or preference control.
-          You can restrict or remove cookies through your browser settings, but
-          doing so may affect features that rely on them in the future.
+          You can limit ad personalization through your browser settings by
+          blocking or deleting cookies, or through industry opt-out tools such
+          as the Digital Advertising Alliance&apos;s opt-out page
+          (optout.aboutads.info) or youronlinechoices.com. Blocking cookies will
+          not remove ads; it can make them less relevant to you.
+        </p>
+        <p>
+          If an analytics service is introduced later, it may use cookies or
+          similar technologies to measure visits and page usage. Before any new
+          tracking service is enabled, this policy will be updated to name the
+          provider and explain the choices available, and where required we will
+          present a consent or preference control.
         </p>
 
         <h2>External links</h2>

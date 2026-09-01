@@ -41,10 +41,18 @@ export function SiteFooter() {
             <h2>Guides</h2>
             <ul className="footer-links">
               <li><Link href="/guide/">Beginner Guide</Link></li>
+              <li><Link href="/tips/">Tips &amp; Tricks</Link></li>
               <li><Link href="/layout/">Town Layouts</Link></li>
               <li><Link href="/tech-tree/">Tech Tree</Link></li>
               <li><Link href="/buildings/">Buildings</Link></li>
+              <li><Link href="/trade/">Trade</Link></li>
+              <li><Link href="/difficulty/">Difficulty</Link></li>
+              <li><Link href="/combat/">Combat</Link></li>
+              <li><Link href="/achievements/">Achievements</Link></li>
               <li><Link href="/best-settings/">Best Settings</Link></li>
+              <li><Link href="/save-file-location/">Save File Location</Link></li>
+              <li><Link href="/codes/">Codes</Link></li>
+              <li><Link href="/similar-games/">Similar Games</Link></li>
             </ul>
           </div>
           <div>
@@ -53,6 +61,15 @@ export function SiteFooter() {
               <li>
                 <a href={STEAM_URL} target="_blank" rel="noopener noreferrer">
                   Official Steam Page ↗
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://discord.gg/yhPTGSE3nE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Official Discord ↗
                 </a>
               </li>
             </ul>

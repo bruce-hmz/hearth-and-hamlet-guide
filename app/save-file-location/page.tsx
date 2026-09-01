@@ -28,6 +28,18 @@ export default function SaveFileLocationPage() {
           </div>
         </div>
 
+        <h3>How saving works</h3>
+        <p>
+          Two save triggers are confirmed. Quitting the game saves, and the
+          developer has also confirmed in the Steam forum that the game{" "}
+          <strong>auto saves every minute</strong> on top of that. Practically,
+          this means your save folder&apos;s files stay fresh &mdash; even a
+          crash or power cut should cost you at most about a minute of
+          progress &mdash; and it is why every backup step below starts with{" "}
+          <em>closing the game first</em>: the folder keeps changing while the
+          process runs.
+        </p>
+
         <h3>Find the folder safely on Windows</h3>
         <ol>
           <li>Save your game, return to the main menu, and close it completely.</li>
@@ -110,6 +122,40 @@ export default function SaveFileLocationPage() {
       <section>
         <h2 id="faq">FAQ</h2>
         <div className="faq">
+          <details>
+            <summary>Does Hearth and Hamlet autosave?</summary>
+            <div className="faq__a">
+              <p>
+                Yes. Besides saving when you quit, the developer confirmed the
+                game also auto saves every minute. You do not need to panic-save
+                before every risky fight &mdash; but for the Ashenholt army
+                battle specifically, a manual save right before activating it is
+                still the only guaranteed rollback point.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>My save seems broken. Can it be repaired?</summary>
+            <div className="faq__a">
+              <p>
+                Often, yes. The developer has repeatedly repaired affected
+                players&apos; saves directly through the official{" "}
+                <a
+                  href="https://discord.gg/yhPTGSE3nE"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Discord
+                </a>{" "}
+                (bugged storage upgrades and stuck quest states are the two
+                cases he has publicly fixed this way), and asks players to
+                report remaining problems on the pinned Bug Reports thread with
+                the save attached. Never edit save files yourself as a first
+                move &mdash; ask first, and keep a backup copy before handing
+                anything over.
+              </p>
+            </div>
+          </details>
           <details>
             <summary>Is the reported save path officially confirmed?</summary>
             <div className="faq__a">

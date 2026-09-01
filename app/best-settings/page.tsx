@@ -74,7 +74,7 @@ export default function BestSettingsPage() {
         <h3>Official PC requirements</h3>
         <p>
           Requirements below were verified against the official Steam store
-          page on 2026-08-25. Hearth and Hamlet also ships on SteamOS and
+          page on 2026-08-31. Hearth and Hamlet also ships on SteamOS and
           Linux.
         </p>
         <div className="table-scroll">
@@ -101,12 +101,12 @@ export default function BestSettingsPage() {
               <tr>
                 <td>Memory</td>
                 <td>8 GB RAM</td>
-                <td>8 GB RAM</td>
+                <td>16 GB RAM (raised in patch 1.0.06)</td>
               </tr>
               <tr>
                 <td>Graphics</td>
-                <td>GeForce GTX 650 or Radeon HD 7770</td>
-                <td>GeForce GTX 750 Ti or Radeon R7 260X</td>
+                <td>GeForce GTX 650 or Radeon HD 7770 (2 GB VRAM)</td>
+                <td>GeForce GTX 750 Ti or Radeon R7 260X (2 GB VRAM)</td>
               </tr>
               <tr>
                 <td>DirectX</td>
@@ -145,12 +145,12 @@ export default function BestSettingsPage() {
               <tr>
                 <td>Memory</td>
                 <td>8 GB RAM</td>
-                <td>8 GB RAM</td>
+                <td>16 GB RAM (raised in patch 1.0.06)</td>
               </tr>
               <tr>
                 <td>Graphics</td>
-                <td>GeForce GTX 650 or Radeon HD 7770</td>
-                <td>GeForce GTX 750 Ti or Radeon R7 260X</td>
+                <td>GeForce GTX 650 or Radeon HD 7770 (2 GB VRAM)</td>
+                <td>GeForce GTX 750 Ti or Radeon R7 260X (2 GB VRAM)</td>
               </tr>
               <tr>
                 <td>Storage</td>
@@ -165,7 +165,12 @@ export default function BestSettingsPage() {
           game&apos;s lightweight 2D presentation: almost any desktop PC built
           in the last ten years clears the minimum, and laptops with
           integrated graphics are worth testing at 1600×900 if the frame rate
-          dips in dense late-game towns.
+          dips in dense late-game towns. The one-spec change to know about:
+          patch 1.0.06 (August 29, 2026) raised the <strong>recommended</strong>{" "}
+          memory to 16 GB because leaner asset memory usage still needs
+          headroom. The developer&apos;s own framing is that 8 GB &ldquo;can
+          still work flawlessly, but leaves little room for multitasking&rdquo;
+          &mdash; minimum requirements did not change.
         </p>
       </section>
 
@@ -260,20 +265,32 @@ export default function BestSettingsPage() {
         <h2 id="crashes">Crash &amp; VRAM fixes</h2>
         <p>
           Since release, some players have hit startup failures, crashes during
-          loading, or graphical glitches. Two official threads define the state
-          of play. First, the pinned Bug Reports post states that switching the
-          renderer to Vulkan resolves or greatly improves these problems in the
-          large majority of cases, and multiple Linux players confirmed their
-          crashes stopped after choosing Vulkan at launch. Second, the
-          developer&apos;s August 25 Ongoing Development Update identifies
-          systems whose VRAM is exhausted, or which rely on shared video memory,
-          as the remaining source &mdash; mostly laptops and, less often, the
-          Steam Deck &mdash; and commits to a substantial backend stability
-          patch.
+          loading, or graphical glitches &mdash; white squares and textures
+          failing to load are the visible signature. Two official threads plus
+          two patches define the current state of play. The pinned Bug Reports
+          post establishes the first fix: switching the renderer to{" "}
+          <strong>Vulkan</strong> resolves or greatly improves these problems
+          in the large majority of cases. The developer&apos;s August 25
+          Ongoing Development Update then diagnosed the remaining source as
+          systems whose VRAM is exhausted, or which rely on shared video memory
+          &mdash; mostly laptops and, less often, the Steam Deck &mdash; and
+          the promised fix wave has now shipped: patch 1.0.05 (August 27)
+          rebuilt &ldquo;hundreds of assets&rdquo; to be leaner as the
+          &ldquo;first wave of VRAM optimisation,&rdquo; and patch 1.0.06
+          (August 29) trimmed audio memory use on top. The developer&apos;s
+          Known Issues list, updated August 29, now rates the low-RAM/VRAM
+          crashes as &ldquo;greatly improved,&rdquo; with further optimisation
+          passes promised.
         </p>
 
         <h3>What to try first</h3>
         <ol>
+          <li>
+            <strong>Update to 1.0.06 or later before anything else.</strong>{" "}
+            If you last played on an earlier build, this alone may clear the
+            symptom &mdash; the asset rework specifically targets VRAM-related
+            crashes and the white-square/missing-texture glitches.
+          </li>
           <li>
             <strong>Relaunch in Vulkan mode.</strong> Use Steam&apos;s
             launch-option dialog (the selection window that appears when you
@@ -293,16 +310,11 @@ export default function BestSettingsPage() {
             own diagnosis.
           </li>
           <li>
-            <strong>Test on battery power versus plugged in.</strong> Laptops
-            sometimes downclock integrated GPUs on battery; plug in before
-            concluding the fix failed.
-          </li>
-          <li>
-            <strong>Wait for the patch if none of the above holds.</strong>{" "}
-            The developer describes the rework as &ldquo;a very large change to
-            the back end,&rdquo; so affected configurations are acknowledged
-            upstream rather than user-error; report persisting cases on the
-            official Discord or Bug Reports thread.
+            <strong>Report persisting cases upstream.</strong> The Known Issues
+            pin treats this as an actively worked problem rather than
+            user error, and the developer has been repairing affected saves
+            directly via Discord. Use the pinned Bug Reports thread or Discord
+            with your save file if crashes survive all of the above.
           </li>
         </ol>
 
@@ -360,9 +372,10 @@ export default function BestSettingsPage() {
             <summary>Does Hearth and Hamlet have a built-in FPS cap?</summary>
             <div className="faq__a">
               <p>
-                Yes. Version 1.0.04 fixes the frame rate at 60 through the
-                engine&apos;s exported settings, and the V-Sync toggle cannot
-                override it. High-refresh-display owners can remove the cap
+                Yes. The frame rate is fixed at 60 through the engine&apos;s
+                exported settings (verified in the v1.0.04 files), the V-Sync
+                toggle cannot override it, and no patch through 1.0.06 has
+                touched the cap. High-refresh-display owners can remove it
                 temporarily with <code>--max-fps 0</code> in Steam launch
                 options, as covered above.
               </p>
@@ -372,14 +385,40 @@ export default function BestSettingsPage() {
             <summary>Hearth and Hamlet keeps crashing. How do I fix it?</summary>
             <div className="faq__a">
               <p>
-                Try the Vulkan renderer first: pick it in Steam&apos;s launch
-                dialog before the game starts. The developer reports this alone
+                First, update &mdash; patches 1.0.05 and 1.0.06 shipped a VRAM
+                optimization wave the developer credits with greatly improving
+                the low-memory crashes. If you are current and still crashing,
+                try the Vulkan renderer next: pick it in Steam&apos;s launch
+                dialog before the game starts; the developer reports this alone
                 clears most crash and glitch cases, especially on Linux.
                 Remaining failures concentrate on systems out of VRAM, laptops
-                sharing main memory with the GPU, and some Steam Decks; a
-                backend patch targeting them was announced on August 25, 2026.
-                Until it ships, verify files, close VRAM-hungry apps, and use
-                the pinned Bug Reports thread for persistent cases.
+                sharing main memory with the GPU, and some Steam Decks. Verify
+                files, close VRAM-hungry apps, and use the pinned Bug Reports
+                thread or the official Discord for persistent cases &mdash; the
+                developer has been repairing affected saves there directly.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Why are my menus cut off or buttons unclickable?</summary>
+            <div className="faq__a">
+              <p>
+                This is the documented UI-scaling overflow: the UI Scaling
+                setting is too high for your resolution, so elements render
+                outside the screen and dialogs cannot be closed. The official
+                fix from the Known Issues list is to either lower UI Scaling or
+                enable <strong>Auto UI Scaling</strong>, which fits the
+                interface to your resolution automatically.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Why is the Incoming Enemy Tracker in the wrong place?</summary>
+            <div className="faq__a">
+              <p>
+                The Known Issues list confirms the tracker can end up misplaced
+                in the bottom-right after a resolution change. Saving and
+                exiting, then reloading, puts it back where it belongs.
               </p>
             </div>
           </details>
@@ -388,8 +427,11 @@ export default function BestSettingsPage() {
             <div className="faq__a">
               <p>
                 The Steam minimum lists Windows 10, 8 GB RAM, a GeForce GTX 650
-                or Radeon HD 7770, DirectX 11, and 1 GB of available storage.
-                Steam recommends Windows 11 and a GTX 750 Ti or Radeon R7 260X.
+                or Radeon HD 7770 (2 GB VRAM), DirectX 11, and 1 GB of
+                available storage. Since patch 1.0.06, the recommended spec is
+                Windows 11, 16 GB RAM, and a GTX 750 Ti or Radeon R7 260X
+                &mdash; the developer notes 8 GB still works, just with little
+                headroom for multitasking.
               </p>
             </div>
           </details>

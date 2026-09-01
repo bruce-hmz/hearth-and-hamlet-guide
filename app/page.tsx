@@ -55,6 +55,7 @@ const CARD_LABELS: Record<string, string> = {
   "best-settings": "Best Settings & Performance",
   "save-file-location": "Hearth and Hamlet Save File Location",
   codes: "Hearth and Hamlet Codes",
+  "similar-games": "Games Like Hearth and Hamlet",
 };
 
 const CARD_DESCRIPTIONS: Record<string, string> = {
@@ -82,6 +83,8 @@ const CARD_DESCRIPTIONS: Record<string, string> = {
     "Find, back up, and transfer your settlement data before moving computers or making changes to local game files.",
   codes:
     "Check the current status of any redemption system and see when the page was last reviewed—without promises of unverified codes.",
+  "similar-games":
+    "Finished the kingdom? See what the developer says about replayability, what is left in your save, and seven similar city builders worth trying next.",
 };
 
 const GAME_FACTS = [
@@ -140,6 +143,10 @@ const CARD_MEDIA: Record<string, { src: string; alt: string }> = {
   codes: {
     src: "/img/game-12.webp",
     alt: "A story dialog over the game world",
+  },
+  "similar-games": {
+    src: "/img/game-9.webp",
+    alt: "A river and waterfall district in a finished Hearth and Hamlet city",
   },
 };
 

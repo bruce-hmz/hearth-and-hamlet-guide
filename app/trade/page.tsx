@@ -48,11 +48,22 @@ export default function TradePage() {
         <div className="callout callout--moss">
           <span className="callout__icon" aria-hidden="true">&#10022;</span>
           <p>
-            <strong>Evidence boundary:</strong> no official source publishes per-route pricing,
-            distance modifiers, or caravan-versus-ship efficiency. Treat any fixed profit table
-            you find online as stale or invented until it can be reproduced in the current build.
+            <strong>Does distance matter?</strong> The developer answered this
+            directly in the Steam trade thread: &ldquo;Profits don&apos;t
+            directly change by distance; it just takes longer,&rdquo; adding
+            that shorter trips still win on economics because &ldquo;the less
+            travel time, the less supplies and wages you need.&rdquo; Pick
+            routes for the demand tags first, and treat travel time as a
+            supply-and-wage surtax rather than a price modifier.
           </p>
         </div>
+        <p>
+          One boundary still holds: no official source publishes per-route
+          price tables or caravan-versus-ship efficiency numbers. The base
+          values below and the live cost readout are what we have; treat any
+          fixed route-by-route profit table you find online as stale or
+          invented until it can be reproduced in the current build.
+        </p>
       </section>
 
       <section>
@@ -102,32 +113,42 @@ export default function TradePage() {
           </table>
         </div>
         <p>
-          Whether further tiers exist above High Demand - and how sharply prices move between
-          bands - has not been documented publicly. Judge each route by its legend tag plus the
-          live cost readout rather than by memorized numbers.
+          Whether further tiers exist above High Demand has not been documented
+          publicly. Why the same tag can pay differently between goods is now
+          partly explained, though: the developer confirmed hidden per-good
+          base values (basics at 1, Iron at 1.5) sit underneath the demand
+          system. Judge each route by its legend tag plus the live cost readout
+          rather than by memorized numbers.
         </p>
       </section>
 
       <section>
         <h2 id="timing">When a trade is worth it</h2>
         <p>
-          Player consensus from the Steam &quot;Tips for trade?&quot; discussion converges on a
-          simple filter: <strong>skip markets sitting near Normal or Reduced, and act when the
-          tag reads High.</strong> One participant sums up their habit as trading whenever
-          demand states sit one to two tiers apart between the two sides, while admitting that
-          judging whether a deal is worthwhile remains the hardest part.
+          The community&apos;s filter for when a trade is worth sending is now
+          developer-confirmed. Asked about it in the Steam &quot;Tips for
+          trade?&quot; thread, Phorust replied: &ldquo;Yeah, you are all
+          correct. The highest trade profits will be made when you: sell things
+          in high demand, buy things in low demand.&rdquo; He added that
+          off-tier trades still turn a profit, &ldquo;just a lot less,&rdquo; so
+          a marginal route is a slow path to income rather than a mistake.
         </p>
         <ul>
-          <li><strong>The consensus rule:</strong> &quot;normal or low demand, don&apos;t go for it - high and very high demand, go for it.&quot;</li>
-          <li><strong>Demand decays after you sell:</strong> completing a sale reportedly drops that good&apos;s demand tier by one - with food exempt - so dumping the same cargo into the same kingdom twice yields less the second time.</li>
+          <li><strong>The rule, confirmed:</strong> &ldquo;normal or low demand, don&apos;t go for it - high and very high demand, go for it&rdquo; - and the developer endorsed exactly this reading.</li>
+          <li><strong>Goods have hidden base values:</strong> per the developer, &ldquo;wood, stone, food = 1, Iron = 1.5, etc. These are hidden variables, but they also play a role.&rdquo; Iron shipments are worth structurally more than the same stack size of basics.</li>
+          <li><strong>Like-for-like trades can profit:</strong> the developer confirms selling Food and buying Food in the same trip earns a small margin if your goods are higher quality - &ldquo;like trading Wheat for Corn.&rdquo;</li>
+          <li><strong>Demand decays after you sell:</strong> players observe that each completed sale drops that good&apos;s local demand by one tier, so dumping the same cargo into the same kingdom twice yields less the second time. One exception reported in the thread: food demand from the warring states stays High no matter how many times you feed them.</li>
           <li><strong>Rotate targets:</strong> spread sales across goods and kingdoms so at least one high-demand lane is always open.</li>
         </ul>
         <div className="callout">
           <span className="callout__icon" aria-hidden="true">&#10022;</span>
           <p>
-            <strong>Player-reported, not patched:</strong> the one-tier decay behavior comes from
-            the discussion thread, not from official documentation. Watch the tags in your own
-            save and trust what they show over any external claim - including ours.
+            <strong>What&apos;s official vs observed:</strong> the
+            sell-high/buy-low rule, the hidden base values, and like-for-like
+            trades are developer statements from August 2026. The one-tier
+            demand decay and the warring-states food exception come from the
+            same thread&apos;s players - watch the tags in your own save and
+            trust what they show.
           </p>
         </div>
       </section>
@@ -161,7 +182,7 @@ export default function TradePage() {
         <h2 id="achievements">Two achievements revolve around trade</h2>
         <div className="table-scroll">
           <table className="data-table">
-            <caption>Steam achievements involving trade (unlock rates as of August 27, 2026)</caption>
+            <caption>Steam achievements involving trade (unlock rates as of September 1, 2026)</caption>
             <thead>
               <tr>
                 <th scope="col">Achievement</th>
@@ -174,30 +195,50 @@ export default function TradePage() {
               <tr>
                 <td>Merchant Kingdom</td>
                 <td>Trade with Distant Kingdoms 20 times</td>
-                <td>55.7%</td>
+                <td>58.9%</td>
                 <td>Lands naturally if you keep sending regular expeditions</td>
               </tr>
               <tr>
                 <td>Steadfast Resolve</td>
                 <td>Complete the game without ever trading with Ashenholt</td>
-                <td>4.2%</td>
+                <td>5.1%</td>
                 <td>Among the rarest achievements globally - commit to closed routes early</td>
               </tr>
             </tbody>
           </table>
         </div>
         <p>
-          Half of all players have earned Merchant Kingdom, which tells you routine trading is
-          nearly unavoidable. The flip side is Steadfast Resolve at 4.2%: almost everyone who
+          More than half of all players have earned Merchant Kingdom, which tells you routine trading is
+          nearly unavoidable. The flip side is Steadfast Resolve at 5.1%: almost everyone who
           finishes the game touches Ashenholt at least once. If you want the rare one, decide at
           the start of the save that those routes stay shut - the condition spans the entire
-          game, and one hurried expedition quietly ends the attempt.
+          game, and one hurried expedition quietly ends the attempt. There is mercy in the
+          rule, though: the developer confirmed the tracker is per saved game, so a spoiled
+          attempt only costs the current playthrough, not your account. Our{" "}
+          <a href="/achievements/">achievements guide</a> has the full ruling and run pairings.
         </p>
       </section>
 
       <section>
         <h2 id="faq">Trade FAQ</h2>
         <div className="faq">
+          <details>
+            <summary>How do I trade for magic?</summary>
+            <div className="faq__a"><p>
+              Through an expedition, not the research panel - and that is the
+              trap. The quest that asks you to acquire magic by trading sends
+              you to the Shipwright: start a trade expedition and use the{" "}
+              <strong>buying side</strong> of the trade screen, where magic
+              sits among the six goods you can purchase. Two players have now
+              described spending an hour hunting for a &ldquo;trade
+              magic&rdquo; tech before the developer clarified in the Steam
+              thread that you simply choose to buy magic on the right-hand
+              column of the expedition screen. The related research does exist
+              - <em>Magical Trade Goods</em> - but it lives in the Magic
+              Academy branch, not the early research flow, and the quest
+              description was reworded in a patch to point at the trade step.
+            </p></div>
+          </details>
           <details>
             <summary>Can I specialize fully in trade?</summary>
             <div className="faq__a"><p>
@@ -219,17 +260,22 @@ export default function TradePage() {
           <details>
             <summary>Where can I see exact trade prices?</summary>
             <div className="faq__a"><p>
-              Nowhere outside the game panel. The expedition screen reveals costs only after a
-              full loadout is selected, and no official table publishes per-good rates. Compare
-              routes live, and re-check them after updates.
+              Exact costs appear only inside the expedition panel once a full
+              loadout is selected - no official table publishes per-route
+              rates. What the developer has revealed is the layer underneath:
+              hidden base values per good (wood, stone, and food at 1, Iron at
+              1.5). Compare routes live, and re-check them after updates.
             </p></div>
           </details>
           <details>
             <summary>Does reduced demand recover after I sell?</summary>
             <div className="faq__a"><p>
-              Recovery behavior is not documented. What players observe is the opposite edge:
-              each sale drops the good&apos;s local demand one tier (food exempt), which is why
-              rotating across kingdoms beats dumping everything in one port.
+              Recovery behavior is not documented. What players observe is the
+              opposite edge: each sale drops the good&apos;s local demand one
+              tier - with one reported exception, food demand from the warring
+              states, which stays High no matter how many shipments arrive.
+              That is why rotating across kingdoms beats dumping everything in
+              one port.
             </p></div>
           </details>
           <details>

@@ -1037,3 +1037,14 @@ a:hover { color: #f09a58; text-decoration-color: currentColor; }
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ad slots */
+.ad-slot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-block: 2rem;
+  min-height: 1px;
+}
+.ad-slot--banner { margin-block: 2.5rem; }
+.ad-slot--banner:empty { display: none; }

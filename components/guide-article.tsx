@@ -4,6 +4,7 @@ import type { GuidePageMeta } from "@/content/pages";
 import { DATE_PUBLISHED, GAME_VERSION, LAST_REVIEWED } from "@/content/pages";
 import { GAME_NAME, SITE_URL, STEAM_URL } from "@/lib/site";
 import { GameFigure } from "./game-media";
+import { AdsterraBanner } from "./adsterra";
 
 const SOURCES = [
   { name: "Hearth and Hamlet on Steam (Phorust Studios / Runic Forge)", url: STEAM_URL },
@@ -126,6 +127,8 @@ export function GuideArticle({
 
           <div className="prose">
             {children}
+
+            <AdsterraBanner />
 
             <div className="sources">
               <h2>Sources</h2>

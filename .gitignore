@@ -5,3 +5,8 @@ out/
 .DS_Store
 .playwright-cli/
 output/
+.omx/
+
+# local research state (do not commit)
+.research/
+automation/
