@@ -4,7 +4,7 @@ import { guideMetadata } from "@/components/guide-shell";
 import { GUIDE_PAGES } from "@/content/pages";
 
 const description =
-  "How Hearth and Hamlet combat works: soldiers recruited from your population, happiness thresholds, raid timing, and the 120-soldier Ashenholt army fight.";
+  "How Hearth and Hamlet combat works: soldiers recruited from your population, happiness thresholds, raid timing, the 120-soldier Ashenholt army fight, and surviving the Ancient Evil zombie-horde siege.";
 
 export const metadata = { ...guideMetadata("combat"), description };
 
@@ -230,6 +230,71 @@ export default function CombatPage() {
       </section>
 
       <section>
+        <h2 id="ancient-evil">The Ancient Evil horde siege</h2>
+        <p>
+          Build the Keep and the quest line walks you toward the cathedral &mdash; and, with
+          no warning, into the hardest stretch of the run: the <strong>Ancient Evil</strong>.
+          The Steam thread where players compare notes on it describes the pattern: a
+          happiness debuff lands the moment the Keep goes up (players report it at roughly
+          &minus;50%; the developer has not published an exact number), food reads
+          permanently zero while the debuff is active, and zombie hordes keep coming &mdash;
+          one player counted <strong>a horde roughly every 30 seconds, each killing about
+          10% of his population</strong>. The Ancient Evil achievement (48.7% of players) is
+          the milestone for surviving it.
+        </p>
+
+        <div className="callout">
+          <span className="callout__icon" aria-hidden="true">&#10022;</span>
+          <p>
+            <strong>This section is not the 120-soldier fight.</strong> The checklist above
+            belongs to the scripted Ashenholt battle. The game itself tells you to hold 120
+            military for the horde siege too, but survivors call that number &ldquo;the 120
+            recommended death trap&rdquo;: hordes arrive back-to-back, and an army that just
+            lost a third of its strength cannot refill in time. Their rule is{" "}
+            <strong>at least 200 soldiers before you build the Keep</strong>.
+          </p>
+        </div>
+
+        <p>
+          Four community-tested rules separate the players who survive the event from the
+          ones who reload it:
+        </p>
+        <ul>
+          <li>
+            <strong>Keep troops under 5% of population when idle.</strong> Below that line
+            the army&apos;s happiness penalty disappears entirely, which is the only reason a
+            200-strong garrison is livable during the debuff. Players re-derived this rule in
+            two separate threads, one calling it a fix that &ldquo;works like a charm&rdquo;
+            even on lost battles.
+          </li>
+          <li>
+            <strong>Rush Consecrated Weapons the moment the cathedral unlocks it.</strong>{" "}
+            The developer&apos;s own verdict in the thread: &ldquo;The enemy will become
+            trivial once you research consecrated weapons.&rdquo; The research sits{" "}
+            <em>behind</em> the cathedral in the chain, so it is a two-step fix &mdash;
+            players describe it as a knowledge check on whether you stockpiled the resources
+            to buy it instantly. Per the community research catalogue it needs a Church at
+            level 4 and adds +20% damage against Undead while preventing their revival (see
+            our <Link href="/tech-tree/#undead">Undead-siege research section</Link>).
+          </li>
+          <li>
+            <strong>Buy Battle Loot: Undead to turn the siege into income.</strong> The
+            Mage-Tower research (level 3 per the catalogue) unlocks battle rewards from
+            defeated Undead, and players report <strong>50,000&ndash;100,000 gold and magic
+            per fight</strong> once it is running &mdash; the same stretch the developer
+            calls one of the most profitable parts of a run when handled well.
+          </li>
+          <li>
+            <strong>A lost battle is not a lost run.</strong> The developer is explicit:
+            &ldquo;Each time you lose a battle, the enemy spawn will be smaller and less
+            frequent,&rdquo; and he states a soft-lock is not possible. Players still ask for
+            a cooldown between hordes because the mid-event death spiral feels brutal &mdash;
+            but the mechanic itself digs you out if you keep rebuilding between waves.
+          </li>
+        </ul>
+      </section>
+
+      <section>
         <h2 id="faq">Combat FAQ</h2>
         <div className="faq">
           <details>
@@ -251,7 +316,10 @@ export default function CombatPage() {
               show up as unfilled jobs even on a victory. Reassign replacements
               manually once the population recovers; the answered Steam thread
               that established this also recommends sizing your standing army so
-              its happiness penalty stays at zero during peacetime.
+              its happiness penalty stays at zero during peacetime. One player-reported
+              wrinkle from the same thread: the post-battle results screen can claim
+              &ldquo;0 civilian losses&rdquo; while your working population still drops &mdash;
+              treat the screen as about battle deaths only, and reassign workers regardless.
             </p></div>
           </details>
           <details>
@@ -286,6 +354,20 @@ export default function CombatPage() {
               if it locks, use the pinned Bug Reports thread or Discord. The
               manual save before activating the battle remains the only
               guaranteed rollback.
+            </p></div>
+          </details>
+          <details>
+            <summary>How do I survive the Ancient Evil zombie hordes?</summary>
+            <div className="faq__a"><p>
+              Before building the Keep: stockpile at least 200 soldiers (the in-game 120
+              number is a death trap for this fight) and keep them under 5% of population
+              when idle so the happiness penalty stays at zero. Once the hordes start, rush
+              the Consecrated Weapons research behind the cathedral &mdash; the developer
+              says enemies become trivial with it &mdash; and buy Battle Loot: Undead to
+              farm 50k&ndash;100k gold and magic per successful defense. If you lose a
+              battle, the next spawn is smaller and less frequent (developer-confirmed), so
+              the event is survivable even after a bad wave. Full breakdown in the{" "}
+              <a href="#ancient-evil">Ancient Evil siege section</a> above.
             </p></div>
           </details>
           <details>

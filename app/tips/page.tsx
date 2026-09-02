@@ -380,6 +380,21 @@ export default function TipsPage() {
             </div>
           </details>
           <details>
+            <summary>What is congestion?</summary>
+            <div className="faq__a">
+              <p>
+                Congestion is a late-game happiness malus that shows up once your
+                population is high &mdash; the community&apos;s own definition, from the
+                Steam thread where two players had to ask what it even was. The developer
+                has not documented the mechanic, so no population threshold or exact
+                penalty value is public. The practical answer from players dealing with
+                it: there is no direct counter &mdash; offset it by producing happiness
+                elsewhere (entertainment buildings, gentler tax settings) and accept it as
+                part of running a big city.
+              </p>
+            </div>
+          </details>
+          <details>
             <summary>My gold storage is stuck below the 40,000-gold quest. What do I do?</summary>
             <div className="faq__a">
               <p>

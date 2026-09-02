@@ -23,7 +23,7 @@ export default function DifficultyPage() {
         </p>
         <div className="table-scroll">
           <table className="data-table">
-            <caption>Official completion achievements with global unlock rates (August 31, 2026)</caption>
+            <caption>Official completion achievements with global unlock rates (September 3, 2026)</caption>
             <thead>
               <tr>
                 <th scope="col">Mode</th>
@@ -36,25 +36,25 @@ export default function DifficultyPage() {
               <tr>
                 <td>Gentle</td>
                 <td>Gentle Rule - complete the game on Gentle difficulty</td>
-                <td>41.3%</td>
+                <td>42.5%</td>
                 <td>Roughly two in five players finishes at least a Gentle run</td>
               </tr>
               <tr>
                 <td>Steady</td>
                 <td>Steady Hands - complete the game on Steady difficulty</td>
-                <td>32.0%</td>
-                <td>Nine points below Gentle - a modest but real step up</td>
+                <td>33.0%</td>
+                <td>Roughly nine points below Gentle - a modest but real step up</td>
               </tr>
               <tr>
                 <td>Challenging</td>
                 <td>Rising Challenge - complete the game on Challenging difficulty</td>
-                <td>10.9%</td>
+                <td>11.4%</td>
                 <td>The wall: two-thirds of Steady finishers never clear Challenging</td>
               </tr>
               <tr>
                 <td>Intense</td>
                 <td>Against the Odds - complete the game on Intense difficulty</td>
-                <td>3.8%</td>
+                <td>4.0%</td>
                 <td>The rarest completion achievement in the game</td>
               </tr>
             </tbody>
@@ -64,7 +64,7 @@ export default function DifficultyPage() {
           <span className="callout__icon" aria-hidden="true">&#10022;</span>
           <p>
             <strong>Reading the funnel:</strong> unlock rates measure completed runs on that
-            mode or stricter, not attempts. The steep 32.0% to 10.9% to 3.8% drop-off is the clearest
+            mode or stricter, not attempts. The steep 33.0% to 11.4% to 4.0% drop-off is the clearest
             public evidence that difficulty ramps sharply after Steady.
           </p>
         </div>
@@ -79,10 +79,10 @@ export default function DifficultyPage() {
           bend run rules — treat it as orientation, then adjust to your own save:
         </p>
         <ul>
-          <li><strong>New to citybuilders or playing cozy:</strong> Gentle. A 41.3% completion rate is unusually high for a &quot;finish the game&quot; achievement; most players who want to see the ending will get it here.</li>
-          <li><strong>Comfortable with the loop, want some tension:</strong> Steady. The default middle path — noticeably harder than Gentle, still cleared by nearly one in three players.</li>
-          <li><strong>Confident planner chasing mastery:</strong> Challenging. This is where the funnel collapses to 10.9%. Expect hostile timings to punish slow openings.</li>
-          <li><strong>Completionists and masochists:</strong> Intense, ideally as a deliberate project after a successful Challenging run. At 3.8% completion it remains the rarest achievement in the game — but it is demonstrably beatable: the developer has finished it without losing a battle and posted his exact strategy, which our <a href="#intense">Intense section</a> breaks down.</li>
+          <li><strong>New to citybuilders or playing cozy:</strong> Gentle. A 42.5% completion rate is unusually high for a &quot;finish the game&quot; achievement; most players who want to see the ending will get it here.</li>
+          <li><strong>Comfortable with the loop, want some tension:</strong> Steady. The default middle path — noticeably harder than Gentle, still cleared by about one in three players.</li>
+          <li><strong>Confident planner chasing mastery:</strong> Challenging. This is where the funnel collapses to 11.4%. Expect hostile timings to punish slow openings.</li>
+          <li><strong>Completionists and masochists:</strong> Intense, ideally as a deliberate project after a successful Challenging run. At 4.0% completion it remains the rarest achievement in the game — but it is demonstrably beatable: the developer has finished it without losing a battle and posted his exact strategy, which our <a href="#intense">Intense section</a> breaks down.</li>
         </ul>
       </section>
 
@@ -107,19 +107,19 @@ export default function DifficultyPage() {
               <tr>
                 <td>Flawless Victory</td>
                 <td>Win the game without suffering any defeats</td>
-                <td>12.8%</td>
+                <td>13.3%</td>
                 <td>One lost fight voids the run - the no-defeat challenge below</td>
               </tr>
               <tr>
                 <td>Ancient Evil</td>
                 <td>Tied to a specific end-game quest line</td>
-                <td>47.5%</td>
+                <td>48.7%</td>
                 <td>Listed for contrast: story-critical, not rule-restricted</td>
               </tr>
               <tr>
                 <td>Steadfast Resolve</td>
                 <td>Complete the game without ever trading with Ashenholt</td>
-                <td>5.0%</td>
+                <td>5.2%</td>
                 <td>Closes your most convenient market for the entire save (tracked per save, per the developer)</td>
               </tr>
             </tbody>
@@ -130,10 +130,10 @@ export default function DifficultyPage() {
       <section>
         <h2 id="undefeated">No-defeat runs</h2>
         <p>
-          At 12.8%, Flawless Victory is three times rarer than a Gentle completion but more
+          At 13.3%, Flawless Victory is three times rarer than a Gentle completion but more
           than three times as common as an Intense one — it sits exactly in the band of
           &quot;achievable with discipline.&quot; Notably, it now unlocks more often than
-          Challenging completion (10.9%), which tells you most no-defeat hunters wisely pick
+          Challenging completion (11.4%), which tells you most no-defeat hunters wisely pick
           an easier mode. The official store page gives you the defensive toolkit in one
           sentence: <em>&quot;Recruit soldiers as your realm expands to protect what you&apos;ve
           built,&quot;</em> reinforced by city guard drafts that defend the population. The
@@ -150,7 +150,7 @@ export default function DifficultyPage() {
       <section>
         <h2 id="intense">Intense mode strategy</h2>
         <p>
-          Set expectations first: 3.8% of all players have finished Intense. It is the
+          Set expectations first: 4.0% of all players have finished Intense. It is the
           game&apos;s rarest completion achievement. Early in the game&apos;s life that
           number looked unreachably low — the thread&apos;s OP reported{' '}
           <em>&quot;after 8-12 restarts, passing the first 15 min after unlocking Town Guard
@@ -178,7 +178,9 @@ export default function DifficultyPage() {
           </li>
           <li>
             <strong>The zombie invasion.</strong> Survivable, but only with military
-            research kept current.
+            research kept current &mdash; our{" "}
+            <Link href="/combat/#ancient-evil">Ancient Evil siege section</Link> carries the
+            community-tested troop counts and research route.
           </li>
         </ol>
 
@@ -278,7 +280,7 @@ export default function DifficultyPage() {
             <summary>Do lower difficulties lock achievements?</summary>
             <div className="faq__a"><p>
               No — 19 of 24 achievements (everything except the five mode or rule-dependent
-              completions) can be earned on any difficulty. Gentle Rule alone is at 41.3%, so
+              completions) can be earned on any difficulty. Gentle Rule alone is at 42.5%, so
               plenty of players collect most of the list without ever leaving Gentle.
             </p></div>
           </details>
@@ -296,7 +298,7 @@ export default function DifficultyPage() {
               Yes — definitively now. The developer has beaten it without losing a single
               battle and published the exact strategy (see the Intense section above), and
               several players have followed it to a clear. It remains the rarest completion
-              at 3.8%, and the opening after Town Guards is still where most attempts die.
+              at 4.0%, and the opening after Town Guards is still where most attempts die.
               Read the strategy first; blind attempts are what produced the 8-12 restart
               stories.
             </p></div>

@@ -240,7 +240,8 @@ export default function TechTreePage() {
         </ul>
         <p>
           For how many soldiers to bring and how the waves behave, see the{" "}
-          <Link href="/combat/">combat guide</Link> &mdash; soldier count
+          <Link href="/combat/#ancient-evil">combat guide&apos;s Ancient Evil siege
+          section</Link> &mdash; soldier count
           scales from population, and that rule is what the siege punishes
           hardest. Surviving the siege is also the{" "}
           <Link href="/achievements/">Ancient Evil achievement</Link>, so the

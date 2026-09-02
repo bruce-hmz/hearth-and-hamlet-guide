@@ -109,6 +109,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Hearth and Hamlet: Best Early Game Tips and Tricks (Into Indie Games)",
         url: "https://intoindiegames.com/tips-and-guides/hearth-and-hamlet-best-early-game-tips-and-tricks/",
       },
+      {
+        name: "How to deal with congestion? - Steam thread (community definition, developer undocumented)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711668599/",
+      },
     ],
     toc: [
       { id: "food", label: "Keep food ahead of population" },
@@ -119,7 +123,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "mistakes", label: "Common early mistakes" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-31",
+    lastReviewed: "2026-09-03",
     prev: { slug: "guide", title: "Beginner Guide" },
     next: { slug: "layout", title: "Town Layouts" },
   },
@@ -308,7 +312,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "achievements", label: "Trade achievements" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-01",
+    lastReviewed: "2026-09-03",
     prev: { slug: "buildings", title: "Buildings" },
     next: { slug: "difficulty", title: "Difficulty" },
   },
@@ -343,7 +347,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "intense", label: "Intense mode strategy" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-31",
+    lastReviewed: "2026-09-03",
     prev: { slug: "trade", title: "Trade" },
     next: { slug: "combat", title: "Combat" },
   },
@@ -410,7 +414,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     h1: "Hearth and Hamlet Combat Guide",
     title: "Hearth and Hamlet Combat Guide: Soldiers, Garrisons & Battles",
     description:
-      "How Hearth and Hamlet combat works: the soldier-from-population rule, happiness thresholds, raid timing, garrison size for Ashenholt's 120-soldier fight, and why battles feel opaque.",
+      "How Hearth and Hamlet combat works: the soldier-from-population rule, happiness thresholds, raid timing, garrison size for Ashenholt's 120-soldier fight, surviving the Ancient Evil zombie-horde siege, and why battles feel opaque.",
     canonicalKeyword: "hearth and hamlet combat",
     heroImage: {
       src: "/img/game-6.webp",
@@ -422,9 +426,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "battles", label: "Resolving battles" },
       { id: "raids", label: "Raids & defense timing" },
       { id: "ashenholt", label: "The 120-soldier Ashenholt fight" },
+      { id: "ancient-evil", label: "The Ancient Evil horde siege" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-31",
+    lastReviewed: "2026-09-03",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "achievements", title: "Achievements" },
     sources: [
@@ -439,6 +444,14 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Bug: Skeletons are too strong at maximum difficulty - Steam thread with developer reply",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618315688/",
+      },
+      {
+        name: "ancient evil debuff - Steam thread with developer replies on horde sieges and consecrated weapons",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025095273/",
+      },
+      {
+        name: "Hearth and Hamlet Wiki - research catalogue (community, build 1.0.04)",
+        url: "https://hearthandhamlet.wikitactics.com/research",
       },
       {
         name: "Losing workers even after winning a battle with 0 losses - answered Steam thread",
@@ -473,12 +486,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "synergies", label: "Combining achievements in one run" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-01",
+    lastReviewed: "2026-09-03",
     prev: { slug: "combat", title: "Combat" },
     next: { slug: "best-settings", title: "Best Settings" },
     sources: [
       {
-        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 1, 2026)",
+        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 3, 2026)",
         url: "https://steamcommunity.com/stats/4315040/achievements",
       },
       {

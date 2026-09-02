@@ -183,7 +183,7 @@ export default function TradePage() {
         <h2 id="achievements">Two achievements revolve around trade</h2>
         <div className="table-scroll">
           <table className="data-table">
-            <caption>Steam achievements involving trade (unlock rates as of September 1, 2026)</caption>
+            <caption>Steam achievements involving trade (unlock rates as of September 3, 2026)</caption>
             <thead>
               <tr>
                 <th scope="col">Achievement</th>
@@ -196,13 +196,13 @@ export default function TradePage() {
               <tr>
                 <td>Merchant Kingdom</td>
                 <td>Trade with Distant Kingdoms 20 times</td>
-                <td>58.9%</td>
+                <td>59.4%</td>
                 <td>Lands naturally if you keep sending regular expeditions</td>
               </tr>
               <tr>
                 <td>Steadfast Resolve</td>
                 <td>Complete the game without ever trading with Ashenholt</td>
-                <td>5.1%</td>
+                <td>5.2%</td>
                 <td>Among the rarest achievements globally - commit to closed routes early</td>
               </tr>
             </tbody>
@@ -210,7 +210,7 @@ export default function TradePage() {
         </div>
         <p>
           More than half of all players have earned Merchant Kingdom, which tells you routine trading is
-          nearly unavoidable. The flip side is Steadfast Resolve at 5.1%: almost everyone who
+          nearly unavoidable. The flip side is Steadfast Resolve at 5.2%: almost everyone who
           finishes the game touches Ashenholt at least once. If you want the rare one, decide at
           the start of the save that those routes stay shut - the condition spans the entire
           game, and one hurried expedition quietly ends the attempt. There is mercy in the
