@@ -80,6 +80,42 @@ export default function CodesPage() {
       </section>
 
       <section>
+        <h2 id="trainers">Trainers, cheat engines &amp; auto-clickers</h2>
+        <p>
+          With no codes and no redemption system, players sometimes look at
+          third-party trainers or cheat engines instead. Here the honest
+          status is that <strong>nothing is officially documented either
+          way</strong>: the developer has published no policy on external
+          tools, no statement that they are safe, and no statement that they
+          are penalized. Claims you may see on trainer-download sites that
+          their tools are &ldquo;penalty-free&rdquo; for Hearth and Hamlet are
+          unverified marketing, not developer statements.
+        </p>
+        <p>
+          The closest thing to an official position comes from an August 22
+          Steam thread in which a player complained about Windows-key
+          auto-clicking no longer working. The developer replied that he was
+          &ldquo;not familiar with Windows key auto-click,&rdquo; pointed to
+          the game&apos;s <strong>built-in &ldquo;Hover to Click&rdquo;
+          option</strong> in the options menu, and did not announce any ban or
+          penalty policy for external tools in that thread. Review-level
+          mentions of auto-clicker users being banned exist but are unverified
+          hearsay &mdash; we do not repeat them as fact, and we have found no
+          confirmed case of enforcement either.
+        </p>
+        <p>
+          Practical takeaway: if your goal is less repetitive clicking, use
+          the developer-built <code>Hover to Click</code> setting described on
+          our <a href="/best-settings">best settings page</a> rather than an
+          unknown executable. If you do experiment with third-party tools, do
+          it on a backed-up save &mdash; see our{" "}
+          <a href="/save-file-location">save file location guide</a> &mdash;
+          because save edits are the realistic risk, and a corrupted save is
+          the one outcome no policy statement will undo.
+        </p>
+      </section>
+
+      <section>
         <h2 id="faq">FAQ</h2>
         <div className="faq">
           <details>
@@ -99,6 +135,22 @@ export default function CodesPage() {
                 No official entry location has been confirmed. If the feature is
                 added, look for a clearly labeled option in the title, pause, or
                 settings menus and verify it against an official announcement.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Are trainers or auto-clickers allowed? Will I be banned?</summary>
+            <div className="faq__a">
+              <p>
+                No official policy exists. In the only public thread on the
+                topic (August 22), the developer did not announce any ban or
+                penalty rule for external auto-clickers &mdash; he said he was
+                unfamiliar with the Windows-key method raised there and pointed
+                to the built-in &ldquo;Hover to Click&rdquo; option in the
+                settings menu. Claims that players were banned, or that
+                third-party tools are penalty-free, are both unverified. For
+                less clicking without any third-party software, enable Hover to
+                Click in the options menu.
               </p>
             </div>
           </details>

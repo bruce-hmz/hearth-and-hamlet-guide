@@ -242,6 +242,21 @@ export default function BuildingsPage() {
         <h2 id="faq">Buildings FAQ</h2>
         <div className="faq">
           <details>
+            <summary>Where did my warehouse go?</summary>
+            <div className="faq__a"><p>
+              It is most likely still there and fully upgraded. According to a
+              community answer on the game&apos;s Steam forum, several building
+              types &mdash; walls, roads, dwellings, and warehouses &mdash;
+              stop displaying in the town interface once they reach their final
+              upgrade, framed as intentional visual cleanup: &ldquo;If it&apos;s
+              gone, that means you&apos;re done with it.&rdquo; This behavior
+              is community-reported and not yet confirmed by the developer, but
+              if one of these buildings vanished right after you maxed it out,
+              that is the pattern players describe &mdash; not a bug or a lost
+              building.
+            </p></div>
+          </details>
+          <details>
             <summary>Is this every building in Hearth and Hamlet?</summary>
             <div className="faq__a"><p>No. It covers examples explicitly named in the official description: tents, taverns, castles, magical academies, and defensive fortifications. A complete list needs direct verification in the current game build.</p></div>
           </details>

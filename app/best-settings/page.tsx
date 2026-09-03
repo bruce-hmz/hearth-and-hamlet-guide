@@ -4,7 +4,7 @@ import { guideMetadata } from "@/components/guide-shell";
 import { GUIDE_PAGES } from "@/content/pages";
 
 const description =
-  "Hearth and Hamlet PC settings guide: official system requirements, practical resolution and FPS advice, and idle-play performance troubleshooting.";
+  "Hearth and Hamlet PC settings guide: official system requirements, practical resolution and FPS advice, Steam Deck notes, and idle-play performance troubleshooting.";
 
 export const metadata = { ...guideMetadata("best-settings"), description };
 
@@ -330,12 +330,52 @@ export default function BestSettingsPage() {
       </section>
 
       <section>
+        <h2 id="steam-deck">Steam Deck notes</h2>
+        <p>
+          Hearth and Hamlet is a light native SteamOS title: the store lists
+          SteamOS (Ubuntu 20.04+) among its supported systems, so the Deck runs
+          the native Linux build rather than a compatibility layer, and the
+          Deck&apos;s hardware sits far above the game&apos;s decade-old
+          minimum specification. One top-rated player review sums the current
+          experience up as &ldquo;Runs perfectly&rdquo; on Deck &mdash; a
+          single report, but consistent with how modest the requirements are.
+        </p>
+        <p>
+          The one Deck-specific history worth knowing is the VRAM crash wave:
+          the developer&apos;s August 25 Ongoing Development Update named the
+          Steam Deck, alongside laptops, among the shared-memory systems most
+          affected by the startup crashes and missing-texture glitches. That
+          diagnosis is what patches 1.0.05 and 1.0.06 shipped fixes for, and
+          the Known Issues list now rates the problem &ldquo;greatly
+          improved.&rdquo; Practically: make sure the game is updated to
+          1.0.06 or later, and if white squares or texture glitches still
+          appear, launch with the <strong>Vulkan</strong> renderer selected in
+          Steam&apos;s launch dialog &mdash; the same first fix recommended
+          for Linux desktops above.
+        </p>
+        <p>
+          For settings on the Deck&apos;s 1280&times;800 screen, the same
+          guidance applies with two adjustments: keep the built-in 60 FPS cap,
+          since extra frames only cost battery during idle sessions, and use{" "}
+          <strong>Auto UI Scaling</strong> if any menu overflows the smaller
+          display &mdash; it is the official fix for cut-off interfaces at
+          non-standard resolutions.
+        </p>
+      </section>
+
+      <section>
         <h2 id="accessibility">Accessibility &amp; input checks</h2>
         <p>
-          A complete, version-verified list of accessibility and input toggles
+          One input feature is developer-confirmed: the game has a{" "}
+          <strong>built-in auto-click function</strong>. Answering a player on
+          the Steam forums (August 22), the developer said, &ldquo;I have a
+          built-in auto-click function. You can turn on &lsquo;Hover to
+          Click&rsquo; in the options menu&rdquo; &mdash; the supported way to
+          cut down repetitive clicking while gathering. Beyond that, a
+          complete, version-verified list of accessibility and input toggles
           is not available in the official public material we reviewed. Check
           the current in-game Options menu before relying on features such as
-          hold-to-gather, hover interaction, interface scaling, or remapping.
+          hold-to-gather, interface scaling, or remapping.
         </p>
         <p>
           For a more comfortable management setup, prioritize readable native
@@ -396,6 +436,22 @@ export default function BestSettingsPage() {
                 files, close VRAM-hungry apps, and use the pinned Bug Reports
                 thread or the official Discord for persistent cases &mdash; the
                 developer has been repairing affected saves there directly.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>Does Hearth and Hamlet run well on Steam Deck?</summary>
+            <div className="faq__a">
+              <p>
+                It runs natively on SteamOS, and the Deck comfortably exceeds
+                the game&apos;s minimum requirements; one top-rated player
+                review calls it &ldquo;Runs perfectly&rdquo; on Deck. The one
+                Deck-relevant history: the developer named the Deck among the
+                systems hit by the VRAM crash wave, which patches 1.0.05 and
+                1.0.06 specifically addressed &mdash; so update first, and pick
+                the Vulkan renderer in the launch dialog if texture glitches
+                appear. For the 1280&times;800 screen, keep the 60 FPS cap for
+                battery life and enable Auto UI Scaling if menus overflow.
               </p>
             </div>
           </details>

@@ -264,6 +264,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Broken task is to pay 40,000 gold - Hearth and Hamlet Steam discussion",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025223107/",
       },
+      {
+        name: "Where did my warehouse go? - Steam thread with community answer on fully-upgraded buildings leaving the UI",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562598193632473/",
+      },
     ],
     toc: [
       { id: "production", label: "Production buildings" },
@@ -272,7 +276,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "wonder", label: "Late-game structures" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-27",
+    lastReviewed: "2026-09-04",
     prev: { slug: "tech-tree", title: "Tech Tree" },
     next: { slug: "trade", title: "Trade" },
   },
@@ -357,7 +361,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     h1: "Hearth and Hamlet Best Settings",
     title: "Hearth and Hamlet Best Settings for Performance & Idle Play",
     description:
-      "Practical Hearth and Hamlet PC settings guidance: official requirements, resolution picks, the confirmed 60 FPS cap and its launch-option fix, Vulkan-mode crash workarounds, and idle-play tuning.",
+      "Practical Hearth and Hamlet PC settings guidance: official requirements, resolution picks, the confirmed 60 FPS cap and its launch-option fix, Vulkan-mode crash workarounds, Steam Deck notes, and idle-play tuning.",
     canonicalKeyword: "hearth and hamlet best settings",
     heroImage: {
       src: "/img/game-7.webp",
@@ -375,10 +379,11 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "graphics", label: "Graphics & resolution" },
       { id: "fps", label: "The 60 FPS cap & how to lift it" },
       { id: "crashes", label: "Crash & VRAM fixes" },
+      { id: "steam-deck", label: "Steam Deck" },
       { id: "accessibility", label: "Accessibility & input checks" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-31",
+    lastReviewed: "2026-09-04",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "save-file-location", title: "Save File Location" },
     sources: [
@@ -405,6 +410,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Bug Reports (pinned) - Vulkan launch-mode guidance from Phorust",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711549152/",
+      },
+      {
+        name: "Steam thread with developer reply confirming the built-in \"Hover to Click\" auto-click option, Aug 22, 2026",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711778442/",
       },
     ],
   },
@@ -557,19 +566,30 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     h1: "Hearth and Hamlet Codes",
     title: "Hearth and Hamlet Codes Status — No Verified Redemption System",
     description:
-      "Current Hearth and Hamlet codes status, where an official redemption system would appear, and how we verify future code claims.",
+      "Current Hearth and Hamlet codes status, where an official redemption system would appear, the facts on trainers and auto-clickers, and how we verify future code claims.",
     canonicalKeyword: "hearth and hamlet codes",
     heroImage: {
       src: "/img/game-12.webp",
       alt: "A Hearth and Hamlet story dialog shown over the game world",
       caption: "No public redemption interface was found in the official material reviewed for this page.",
     },
+    sources: [
+      {
+        name: "Hearth and Hamlet on Steam (Phorust Studios)",
+        url: "https://store.steampowered.com/app/4315040/Hearth_and_Hamlet/",
+      },
+      {
+        name: "Steam thread with developer reply on auto-clicking and the built-in \"Hover to Click\" option, Aug 22, 2026",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711778442/",
+      },
+    ],
     toc: [
       { id: "active", label: "Current codes status" },
       { id: "redeem", label: "How redemption would work" },
+      { id: "trainers", label: "Trainers & auto-clickers" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-25",
+    lastReviewed: "2026-09-04",
     prev: { slug: "save-file-location", title: "Save File Location" },
     next: { slug: "similar-games", title: "Similar Games" },
   },
