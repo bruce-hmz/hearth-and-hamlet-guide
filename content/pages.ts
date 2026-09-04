@@ -40,7 +40,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     h1: "Hearth and Hamlet Beginner Guide",
     title: "Hearth and Hamlet Beginner Guide & Walkthrough",
     description:
-      "Complete Hearth and Hamlet beginner guide: campfire opening, worker allocation, resource balance, and the path from camp to kingdom.",
+      "Complete Hearth and Hamlet beginner guide: campfire opening, worker allocation, resource balance, the path from camp to kingdom, and what to do after the coronation ending.",
     canonicalKeyword: "hearth and hamlet guide",
     heroImage: {
       src: "/img/game-2.webp",
@@ -63,6 +63,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Hearth and Hamlet: Best Early Game Tips and Tricks (Into Indie Games)",
         url: "https://intoindiegames.com/tips-and-guides/hearth-and-hamlet-best-early-game-tips-and-tricks/",
       },
+      {
+        name: "Fun Once, Lack of Replayability - Steam thread with developer reply on the single-playthrough design",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025267671/",
+      },
     ],
     toc: [
       { id: "overview", label: "What kind of game is this?" },
@@ -71,9 +75,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "workers", label: "Worker allocation basics" },
       { id: "opening", label: "Opening moves" },
       { id: "policies", label: "Run your kingdom your way" },
+      { id: "post-game", label: "After the coronation" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-08-25",
+    lastReviewed: "2026-09-05",
     next: { slug: "tips", title: "Tips & Tricks" },
   },
   tips: {
@@ -306,6 +311,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Where is research to trade magic? - Steam thread with developer answer on buying magic via expeditions",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711687245/",
       },
+      {
+        name: "How can I obtain another caravan - Steam thread (community answer, developer unreplied)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711609291/",
+      },
     ],
     toc: [
       { id: "overview", label: "How trade works" },
@@ -316,7 +325,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "achievements", label: "Trade achievements" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-03",
+    lastReviewed: "2026-09-05",
     prev: { slug: "buildings", title: "Buildings" },
     next: { slug: "difficulty", title: "Difficulty" },
   },

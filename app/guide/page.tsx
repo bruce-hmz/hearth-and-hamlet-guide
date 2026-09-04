@@ -253,8 +253,57 @@ export default function GuidePage() {
       </section>
 
       <section>
+        <h2 id="post-game">After the coronation: what the ending means</h2>
+        <p>
+          The road from Campfire to Kingdom ends with your settlement&apos;s
+          coronation as a monarchy. That is the designed conclusion of the
+          campaign, not a stage you missed or a status you accidentally
+          triggered - and when players asked directly what the game offers
+          after it, the developer was candid. In the Steam thread{" "}
+          <em>Fun Once, Lack of Replayability</em>, Phorust replied:{" "}
+          <q>
+            Yes, I designed the game to be (mostly) a single playthrough
+            experience and tried to price it appropriately.
+          </q>
+        </p>
+        <p>
+          As of early September 2026 no expansion or content roadmap has been
+          announced on the game&apos;s Steam hub - the forum threads asking
+          for one remain unanswered - so the honest answer to &ldquo;what is
+          next?&rdquo; is the rest of the same save. The difficulty ladder is
+          the biggest lever: our{" "}
+          <a href="/difficulty/">difficulty guide</a> compares all four modes
+          and carries the developer&apos;s own Intense opening plan. The
+          rule-based achievements come second - no-defeat runs and never
+          trading with Ashenholt turn one completed kingdom into several
+          planned reruns, and the{" "}
+          <a href="/achievements/">achievements guide</a> maps which rules can
+          share a single save. And once a save is truly finished, our{" "}
+          <a href="/similar-games/">games-like-Hearth-and-Hamlet page</a> picks
+          up where the coronation leaves off.
+        </p>
+      </section>
+
+      <section>
         <h2 id="faq">FAQ</h2>
         <div className="faq">
+          <details>
+            <summary>Why does my settlement become a monarchy?</summary>
+            <div className="faq__a">
+              <p>
+                Because that is where the campaign is meant to take you. Your
+                settlement advances through the Campfire, Village, Town, and
+                Kingdom stages toward the story&apos;s coronation, and the
+                developer has described the game as a mostly single-playthrough
+                experience - reaching the monarchy is the ending, not a
+                penalty or a setting you tripped into. What follows is endgame
+                cleanup rather than new story: difficulty completions and
+                rule-based achievements, as covered in the{" "}
+                <a href="/difficulty/">difficulty</a> and{" "}
+                <a href="/achievements/">achievements</a> guides.
+              </p>
+            </div>
+          </details>
           <details>
             <summary>Is Hearth and Hamlet an idle game?</summary>
             <div className="faq__a">

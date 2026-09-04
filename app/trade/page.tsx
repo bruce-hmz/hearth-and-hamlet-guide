@@ -243,6 +243,21 @@ export default function TradePage() {
             </p></div>
           </details>
           <details>
+            <summary>How do I get another caravan?</summary>
+            <div className="faq__a"><p>
+              Additional transports are not bought outright - they come through
+              research. In the one Steam thread on the question, a player who
+              had dispatched the starting caravan once and burned through its
+              goods was told by another player that extra caravans, and later
+              ships, unlock via research once the relevant building is upgraded
+              to the required level. Two logistics notes from the same answer:
+              a trip&apos;s full cost is charged up front when you dispatch,
+              and the caravan itself is not consumed - it returns when the trip
+              ends and can be sent out again. That answer is community-written;
+              the developer has not replied in the thread.
+            </p></div>
+          </details>
+          <details>
             <summary>Can I specialize fully in trade?</summary>
             <div className="faq__a"><p>
               One Steam player reports abandoning wood and stone production entirely, living on
