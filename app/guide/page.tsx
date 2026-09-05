@@ -35,7 +35,7 @@ export default function GuidePage() {
         </p>
         <p>
           Steam user reviews stood at <em>Mostly Positive</em> — about 79% of
-          roughly 1,800 reviews — when this page was last reviewed. That is
+          roughly 1,900 reviews — when this page was last reviewed. That is
           context rather than a quality claim; for a launch-window game the
           number will keep moving.
         </p>
@@ -267,10 +267,19 @@ export default function GuidePage() {
           </q>
         </p>
         <p>
-          As of early September 2026 no expansion or content roadmap has been
-          announced on the game&apos;s Steam hub - the forum threads asking
-          for one remain unanswered - so the honest answer to &ldquo;what is
-          next?&rdquo; is the rest of the same save. The difficulty ladder is
+          No expansion has been announced, and when a player asked directly
+          about new content on the game&apos;s Steam hub (the thread{" "}
+          <em>Any new content is planned?</em>), the developer answered on
+          September 6, 2026: the plan is to work through the small issues and
+          improvements the community has highlighted first &mdash;{" "}
+          &ldquo;The past week or so has been spent purely on reducing the
+          games VRAM footprint&rdquo; &mdash; and &ldquo;I intend to continue
+          poshing [polishing] for some time. After that i&apos;d love to add
+          more content.&rdquo; Things are moving slower now that he is back at
+          his day job (Teacher), he noted, though he still fits in several
+          hours of work each day. So more content is hoped for, not promised
+          &mdash; and the honest answer to &ldquo;what is next?&rdquo; is
+          still the rest of the same save. The difficulty ladder is
           the biggest lever: our{" "}
           <a href="/difficulty/">difficulty guide</a> compares all four modes
           and carries the developer&apos;s own Intense opening plan. The

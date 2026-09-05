@@ -15,7 +15,7 @@ export default function AchievementsPage() {
         <h2 id="list">All 24 achievements</h2>
         <p>
           Rates below are the official global unlock percentages from Steam,
-          retrieved on September 3, 2026. Steam only publishes written
+          retrieved on September 6, 2026. Steam only publishes written
           descriptions for some of them; where none is shown, the entry lists
           what the community has verified about how it unlocks. Names are
           official; interpretations are ours and marked as such.
@@ -23,7 +23,7 @@ export default function AchievementsPage() {
 
         <div className="table-scroll">
           <table className="data-table">
-            <caption>Hearth and Hamlet achievements by global unlock rate (Steam, Sep 3, 2026)</caption>
+            <caption>Hearth and Hamlet achievements by global unlock rate (Steam, Sep 6, 2026)</caption>
             <thead>
               <tr>
                 <th scope="col">#</th>
@@ -36,27 +36,27 @@ export default function AchievementsPage() {
               <tr><td>1</td><td>Humble Beginning</td><td>98.5%</td><td>Named progression milestone in the opening sequence.</td></tr>
               <tr><td>2</td><td>A Place to Call Home</td><td>94.6%</td><td>Early settlement establishment.</td></tr>
               <tr><td>3</td><td>Hearth and Hamlet</td><td>92.1%</td><td>Title-drop milestone most players reach naturally.</td></tr>
-              <tr><td>4</td><td>First Contact</td><td>85.2%</td><td>First meeting with a neighboring power.</td></tr>
-              <tr><td>5</td><td>Coin for the Realm</td><td>82.5%</td><td>First major economy milestone.</td></tr>
-              <tr><td>6</td><td>A Merchant&apos;s Tale</td><td>71.9%</td><td>Trade introduction.</td></tr>
-              <tr><td>7</td><td>Educated Minds</td><td>71.4%</td><td>Research/library progression.</td></tr>
-              <tr><td>8</td><td>Walls of Stone</td><td>65.8%</td><td>Defensive construction.</td></tr>
-              <tr><td>9</td><td>He&apos;s a Wizard</td><td>64.3%</td><td>Magic branch intro.</td></tr>
-              <tr><td>10</td><td>Just Pay It With Magic</td><td>62.4%</td><td>Magic application milestone.</td></tr>
-              <tr><td>11</td><td>Merchant Kingdom</td><td>59.4%</td><td><strong>Official:</strong> trade with Distant Kingdoms 20 times.</td></tr>
-              <tr><td>12</td><td>A City Rises</td><td>56.5%</td><td>Mid-game settlement growth.</td></tr>
-              <tr><td>13</td><td>Standing Strong</td><td>54.4%</td><td>Defense milestone, likely siege survival.</td></tr>
-              <tr><td>14</td><td>My Home and Castle</td><td>53.3%</td><td>Castle construction or upgrade.</td></tr>
-              <tr><td>15</td><td>Ancient Evil</td><td>48.7%</td><td>Survive the end-game Ancient Evil plague that starts when you build the Keep (community mapping; API name ACH_SURVIVE_PLAGUE).</td></tr>
-              <tr><td>16</td><td>We love it here!</td><td>43.9%</td><td><strong>Official:</strong> reach a happiness of 200%.</td></tr>
-              <tr><td>17</td><td>A Kingdom is Born</td><td>43.6%</td><td>Coronation after defeating the Ashenholt army.</td></tr>
-              <tr><td>18</td><td>Gentle Rule</td><td>42.5%</td><td><strong>Official:</strong> complete the game on Gentle difficulty.</td></tr>
-              <tr><td>19</td><td>Master Builder</td><td>37.6%</td><td><strong>Official:</strong> fully upgrade your city.</td></tr>
-              <tr><td>20</td><td>Steady Hands</td><td>33.0%</td><td><strong>Official:</strong> complete the game on Steady difficulty.</td></tr>
-              <tr><td>21</td><td>Flawless Victory</td><td>13.3%</td><td><strong>Official:</strong> win the game without suffering any defeats.</td></tr>
-              <tr><td>22</td><td>Rising Challenge</td><td>11.4%</td><td><strong>Official:</strong> complete the game on Challenging difficulty.</td></tr>
-              <tr><td>23</td><td>Steadfast Resolve</td><td>5.2%</td><td><strong>Official:</strong> complete the game without ever trading with Ashenholt.</td></tr>
-              <tr><td>24</td><td>Against the Odds</td><td>4.0%</td><td><strong>Official:</strong> complete the game on Intense difficulty.</td></tr>
+              <tr><td>4</td><td>First Contact</td><td>85.3%</td><td>First meeting with a neighboring power.</td></tr>
+              <tr><td>5</td><td>Coin for the Realm</td><td>82.6%</td><td>First major economy milestone.</td></tr>
+              <tr><td>6</td><td>A Merchant&apos;s Tale</td><td>72.2%</td><td>Trade introduction.</td></tr>
+              <tr><td>7</td><td>Educated Minds</td><td>71.7%</td><td>Research/library progression.</td></tr>
+              <tr><td>8</td><td>Walls of Stone</td><td>66.3%</td><td>Defensive construction.</td></tr>
+              <tr><td>9</td><td>He&apos;s a Wizard</td><td>64.8%</td><td>Magic branch intro.</td></tr>
+              <tr><td>10</td><td>Just Pay It With Magic</td><td>63.0%</td><td>Magic application milestone.</td></tr>
+              <tr><td>11</td><td>Merchant Kingdom</td><td>59.9%</td><td><strong>Official:</strong> trade with Distant Kingdoms 20 times.</td></tr>
+              <tr><td>12</td><td>A City Rises</td><td>57.2%</td><td>Mid-game settlement growth.</td></tr>
+              <tr><td>13</td><td>Standing Strong</td><td>55.2%</td><td>Defense milestone, likely siege survival.</td></tr>
+              <tr><td>14</td><td>My Home and Castle</td><td>54.1%</td><td>Castle construction or upgrade.</td></tr>
+              <tr><td>15</td><td>Ancient Evil</td><td>49.5%</td><td>Survive the end-game Ancient Evil plague that starts when you build the Keep (community mapping; API name ACH_SURVIVE_PLAGUE).</td></tr>
+              <tr><td>16</td><td>We love it here!</td><td>44.5%</td><td><strong>Official:</strong> reach a happiness of 200%.</td></tr>
+              <tr><td>17</td><td>A Kingdom is Born</td><td>44.5%</td><td>Coronation after defeating the Ashenholt army.</td></tr>
+              <tr><td>18</td><td>Gentle Rule</td><td>43.4%</td><td><strong>Official:</strong> complete the game on Gentle difficulty.</td></tr>
+              <tr><td>19</td><td>Master Builder</td><td>38.4%</td><td><strong>Official:</strong> fully upgrade your city.</td></tr>
+              <tr><td>20</td><td>Steady Hands</td><td>33.7%</td><td><strong>Official:</strong> complete the game on Steady difficulty.</td></tr>
+              <tr><td>21</td><td>Flawless Victory</td><td>13.7%</td><td><strong>Official:</strong> win the game without suffering any defeats.</td></tr>
+              <tr><td>22</td><td>Rising Challenge</td><td>11.8%</td><td><strong>Official:</strong> complete the game on Challenging difficulty.</td></tr>
+              <tr><td>23</td><td>Steadfast Resolve</td><td>5.5%</td><td><strong>Official:</strong> complete the game without ever trading with Ashenholt.</td></tr>
+              <tr><td>24</td><td>Against the Odds</td><td>4.2%</td><td><strong>Official:</strong> complete the game on Intense difficulty.</td></tr>
             </tbody>
           </table>
         </div>
@@ -76,7 +76,7 @@ export default function AchievementsPage() {
       <section>
         <h2 id="hardest">The rare ones &amp; how to plan them</h2>
 
-        <h3>Against the Odds (4.0%) &mdash; Intense completion</h3>
+        <h3>Against the Odds (4.2%) &mdash; Intense completion</h3>
         <p>
           Roughly one in twenty-five players finish the game on Intense. The
           dedicated discussion thread records a player who restarted 8&ndash;12
@@ -89,13 +89,13 @@ export default function AchievementsPage() {
           early guard duty is the wall, not the late game.
         </p>
 
-        <h3>Steadfast Resolve (5.2%) &mdash; never trade with Ashenholt</h3>
+        <h3>Steadfast Resolve (5.5%) &mdash; never trade with Ashenholt</h3>
         <p>
           This is a restraint achievement: complete the whole game while never
           sending a single shipment to Ashenholt. It pairs naturally with a
           normal economy elsewhere &mdash; just treat that one kingdom as
           off-limits from turn one and route all trade through the others using
-          our <Link href="/trade/">trade guide</Link>. The 5.2% rate shows how
+          our <Link href="/trade/">trade guide</Link>. The 5.5% rate shows how
           easy it is to fire off one convenient shipment before remembering the
           restriction.
         </p>
@@ -109,7 +109,7 @@ export default function AchievementsPage() {
           the clean retry is a new save, not a hunt through old ones.
         </p>
 
-        <h3>Flawless Victory (13.3%) &mdash; no defeats</h3>
+        <h3>Flawless Victory (13.7%) &mdash; no defeats</h3>
         <p>
           Win without suffering any defeat, on any difficulty. Most players
           combine it with a Gentle or Steady run where threat timing is
@@ -119,14 +119,14 @@ export default function AchievementsPage() {
           risky battles if a flawless run matters to you.
         </p>
 
-        <h3>The difficulty ladder (42.5% / 33.0% / 11.4% / 4.0%)</h3>
+        <h3>The difficulty ladder (43.4% / 33.7% / 11.8% / 4.2%)</h3>
         <p>
           Each mode-completion achievement requires finishing on that setting;
-          the drop from Steady to Challenging (33.0% to 11.4%) is where runs
+          the drop from Steady to Challenging (33.7% to 11.8%) is where runs
           start failing in bulk. Plan these as separate deliberate runs rather
           than hoping one save accumulates them. One telling detail in the
-          September 3 rates: Flawless Victory (13.3%) still sits <em>above</em>{" "}
-          Rising Challenge (11.4%), our read being that a chunk of players skip
+          September 6 rates: Flawless Victory (13.7%) still sits <em>above</em>{" "}
+          Rising Challenge (11.8%), our read being that a chunk of players skip
           Challenging entirely and hunt no-defeat wins on easier modes instead
           &mdash; which is exactly the pairing strategy below. And once every
           tier is cleared, our{" "}
@@ -180,7 +180,7 @@ export default function AchievementsPage() {
             <summary>How many achievements does Hearth and Hamlet have?</summary>
             <div className="faq__a"><p>
               24. The full list above is sorted by official global unlock rate,
-              from Humble Beginning (98.5%) down to Against the Odds (4.0%).
+              from Humble Beginning (98.5%) down to Against the Odds (4.2%).
             </p></div>
           </details>
           <details>
@@ -197,8 +197,8 @@ export default function AchievementsPage() {
           <details>
             <summary>What is the rarest achievement?</summary>
             <div className="faq__a"><p>
-              Against the Odds at 4.0% &mdash; complete the game on Intense.
-              Steadfast Resolve (5.2%, never trade with Ashenholt) is the only
+              Against the Odds at 4.2% &mdash; complete the game on Intense.
+              Steadfast Resolve (5.5%, never trade with Ashenholt) is the only
               other one below 10%. Community evidence so far suggests Intense&apos;s
               opening window after the Town Guard unlock is where most attempts
               die.

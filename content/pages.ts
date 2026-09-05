@@ -31,7 +31,7 @@ export type GuidePageMeta = {
 
 export const DATE_PUBLISHED = "2026-08-21";
 export const LAST_REVIEWED = "2026-08-21";
-export const GAME_VERSION = "v1.0.06 (Aug 29, 2026)";
+export const GAME_VERSION = "v1.0.07 (Sep 5, 2026)";
 
 export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
   guide: {
@@ -67,6 +67,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Fun Once, Lack of Replayability - Steam thread with developer reply on the single-playthrough design",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025267671/",
       },
+      {
+        name: "Any new content is planned? - Steam thread with developer reply on post-1.0.07 plans (Sep 6, 2026)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562598193866862/",
+      },
     ],
     toc: [
       { id: "overview", label: "What kind of game is this?" },
@@ -78,7 +82,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "post-game", label: "After the coronation" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-05",
+    lastReviewed: "2026-09-06",
     next: { slug: "tips", title: "Tips & Tricks" },
   },
   tips: {
@@ -392,7 +396,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "accessibility", label: "Accessibility & input checks" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-04",
+    lastReviewed: "2026-09-06",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "save-file-location", title: "Save File Location" },
     sources: [
@@ -407,6 +411,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Patch 1.0.06 notes, Aug 29, 2026 - VRAM/memory optimisation and 16 GB recommendation",
         url: "https://store.steampowered.com/news/app/4315040/view/1842212951304898/",
+      },
+      {
+        name: "Patch 1.0.07 notes, Sep 5, 2026 - VRAM footprint cut by about 1.1 GB",
+        url: "https://store.steampowered.com/news/app/4315040/view/670627391477908816",
       },
       {
         name: "[issue] 60 FPS cap on Linux native build (v1.0.04) - Steam discussion",
@@ -504,12 +512,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "synergies", label: "Combining achievements in one run" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-03",
+    lastReviewed: "2026-09-06",
     prev: { slug: "combat", title: "Combat" },
     next: { slug: "best-settings", title: "Best Settings" },
     sources: [
       {
-        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 3, 2026)",
+        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 6, 2026)",
         url: "https://steamcommunity.com/stats/4315040/achievements",
       },
       {

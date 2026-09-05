@@ -198,7 +198,10 @@ export default function BestSettingsPage() {
           type <code>--max-fps 0</code> into the Launch Options box. The report
           that established this fix comes from a 170 Hz display running an RX
           7800 XT on the Linux native build; results on other GPUs have not
-          been independently verified.
+          been independently verified. The developer said in August 2026 that
+          he is considering adding a frame-rate option to the in-game menu in a
+          future patch; nothing like that has shipped through patch 1.0.07, so
+          the launch option remains the only way to lift the cap.
         </p>
 
         <div className="callout">
@@ -267,8 +270,8 @@ export default function BestSettingsPage() {
           Since release, some players have hit startup failures, crashes during
           loading, or graphical glitches &mdash; white squares and textures
           failing to load are the visible signature. Two official threads plus
-          two patches define the current state of play. The pinned Bug Reports
-          post establishes the first fix: switching the renderer to{" "}
+          a string of patches define the current state of play. The pinned Bug
+          Reports post establishes the first fix: switching the renderer to{" "}
           <strong>Vulkan</strong> resolves or greatly improves these problems
           in the large majority of cases. The developer&apos;s August 25
           Ongoing Development Update then diagnosed the remaining source as
@@ -276,20 +279,33 @@ export default function BestSettingsPage() {
           &mdash; mostly laptops and, less often, the Steam Deck &mdash; and
           the promised fix wave has now shipped: patch 1.0.05 (August 27)
           rebuilt &ldquo;hundreds of assets&rdquo; to be leaner as the
-          &ldquo;first wave of VRAM optimisation,&rdquo; and patch 1.0.06
-          (August 29) trimmed audio memory use on top. The developer&apos;s
-          Known Issues list, updated August 29, now rates the low-RAM/VRAM
-          crashes as &ldquo;greatly improved,&rdquo; with further optimisation
-          passes promised.
+          &ldquo;first wave of VRAM optimisation,&rdquo; patch 1.0.06
+          (August 29) trimmed audio memory use on top, and patch 1.0.07
+          (September 5, 2026) is &ldquo;focused entirely on reducing the
+          game&apos;s memory footprint&rdquo; &mdash; by the developer&apos;s
+          count, &ldquo;hundreds of changes&rdquo; have cut VRAM usage by about{" "}
+          <strong>1.1 GB</strong>, which &ldquo;should improve stability,
+          especially on lower-spec hardware.&rdquo; The developer&apos;s
+          Known Issues list, updated August 29, rated the low-RAM/VRAM crashes
+          &ldquo;greatly improved&rdquo; before this latest patch, and 1.0.07
+          continues the same effort rather than changing any gameplay.
+        </p>
+        <p>
+          With that patch installed, treat the steps below as fallbacks rather
+          than first-line fixes. They matter most on the profile the developer
+          keeps describing: 8 GB machines, GPUs with 2 GB of VRAM, and systems
+          that share main memory with the graphics chip.
         </p>
 
         <h3>What to try first</h3>
         <ol>
           <li>
-            <strong>Update to 1.0.06 or later before anything else.</strong>{" "}
+            <strong>Update to 1.0.07 or later before anything else.</strong>{" "}
             If you last played on an earlier build, this alone may clear the
-            symptom &mdash; the asset rework specifically targets VRAM-related
-            crashes and the white-square/missing-texture glitches.
+            symptom &mdash; the VRAM-optimisation wave (1.0.05&ndash;1.0.07)
+            specifically targets VRAM-related crashes and the
+            white-square/missing-texture glitches, and 1.0.07 alone cut VRAM
+            use by roughly 1.1 GB.
           </li>
           <li>
             <strong>Relaunch in Vulkan mode.</strong> Use Steam&apos;s
@@ -346,10 +362,13 @@ export default function BestSettingsPage() {
           Steam Deck, alongside laptops, among the shared-memory systems most
           affected by the startup crashes and missing-texture glitches. That
           diagnosis is what patches 1.0.05 and 1.0.06 shipped fixes for, and
-          the Known Issues list now rates the problem &ldquo;greatly
-          improved.&rdquo; Practically: make sure the game is updated to
-          1.0.06 or later, and if white squares or texture glitches still
-          appear, launch with the <strong>Vulkan</strong> renderer selected in
+          patch 1.0.07 (September 5, 2026) is the same story continued:
+          its roughly 1.1 GB VRAM cut lands hardest on shared-memory systems
+          like the Deck, where every gigabyte of video memory is borrowed from
+          system RAM. The Known Issues list rated the problem &ldquo;greatly
+          improved&rdquo; before 1.0.07. Practically: make sure the game is
+          updated to 1.0.07 or later, and if white squares or texture glitches
+          still appear, launch with the <strong>Vulkan</strong> renderer selected in
           Steam&apos;s launch dialog &mdash; the same first fix recommended
           for Linux desktops above.
         </p>
@@ -414,7 +433,7 @@ export default function BestSettingsPage() {
               <p>
                 Yes. The frame rate is fixed at 60 through the engine&apos;s
                 exported settings (verified in the v1.0.04 files), the V-Sync
-                toggle cannot override it, and no patch through 1.0.06 has
+                toggle cannot override it, and no patch through 1.0.07 has
                 touched the cap. High-refresh-display owners can remove it
                 temporarily with <code>--max-fps 0</code> in Steam launch
                 options, as covered above.
@@ -425,12 +444,14 @@ export default function BestSettingsPage() {
             <summary>Hearth and Hamlet keeps crashing. How do I fix it?</summary>
             <div className="faq__a">
               <p>
-                First, update &mdash; patches 1.0.05 and 1.0.06 shipped a VRAM
-                optimization wave the developer credits with greatly improving
-                the low-memory crashes. If you are current and still crashing,
-                try the Vulkan renderer next: pick it in Steam&apos;s launch
-                dialog before the game starts; the developer reports this alone
-                clears most crash and glitch cases, especially on Linux.
+                First, update &mdash; patches 1.0.05 through 1.0.07 shipped a
+                VRAM optimisation wave (1.0.07, September 5, 2026, alone cut
+                VRAM use by about 1.1 GB) that the developer credits with
+                greatly improving the low-memory crashes. If you are current
+                and still crashing, try the Vulkan renderer next: pick it in
+                Steam&apos;s launch dialog before the game starts; the
+                developer reports this alone clears most crash and glitch
+                cases, especially on Linux.
                 Remaining failures concentrate on systems out of VRAM, laptops
                 sharing main memory with the GPU, and some Steam Decks. Verify
                 files, close VRAM-hungry apps, and use the pinned Bug Reports
@@ -447,11 +468,14 @@ export default function BestSettingsPage() {
                 the game&apos;s minimum requirements; one top-rated player
                 review calls it &ldquo;Runs perfectly&rdquo; on Deck. The one
                 Deck-relevant history: the developer named the Deck among the
-                systems hit by the VRAM crash wave, which patches 1.0.05 and
-                1.0.06 specifically addressed &mdash; so update first, and pick
-                the Vulkan renderer in the launch dialog if texture glitches
-                appear. For the 1280&times;800 screen, keep the 60 FPS cap for
-                battery life and enable Auto UI Scaling if menus overflow.
+                systems hit by the VRAM crash wave, which patches 1.0.05
+                through 1.0.07 specifically addressed &mdash; 1.0.07
+                (September 5, 2026) cut VRAM use by about 1.1 GB, a change that
+                matters most on shared-memory systems like the Deck &mdash; so
+                update first, and pick the Vulkan renderer in the launch dialog
+                if texture glitches appear. For the 1280&times;800 screen, keep
+                the 60 FPS cap for battery life and enable Auto UI Scaling if
+                menus overflow.
               </p>
             </div>
           </details>
