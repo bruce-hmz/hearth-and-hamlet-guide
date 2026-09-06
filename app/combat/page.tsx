@@ -292,6 +292,17 @@ export default function CombatPage() {
             but the mechanic itself digs you out if you keep rebuilding between waves.
           </li>
         </ul>
+
+        <p>
+          The developer returned to the thread on September 5 with the scaling
+          rule behind the whole siege: &ldquo;The larger your population, the more
+          enemies you attract.&rdquo; He also named the intended pressure valve,
+          bluntly: &ldquo;Simply turn down the difficulty if it is too annoying&rdquo;
+          &mdash; adding that being able to lower difficulty is what the option
+          exists for. If the siege is crushing a run you care about, our{" "}
+          <Link href="/difficulty/">difficulty guide</Link> compares the four
+          modes and what each step up costs.
+        </p>
       </section>
 
       <section>
@@ -313,13 +324,25 @@ export default function CombatPage() {
             <summary>Why did I lose workers after winning a battle?</summary>
             <div className="faq__a"><p>
               Soldiers are recruited from your working population, so casualties
-              show up as unfilled jobs even on a victory. Reassign replacements
-              manually once the population recovers; the answered Steam thread
-              that established this also recommends sizing your standing army so
-              its happiness penalty stays at zero during peacetime. One player-reported
-              wrinkle from the same thread: the post-battle results screen can claim
-              &ldquo;0 civilian losses&rdquo; while your working population still drops &mdash;
-              treat the screen as about battle deaths only, and reassign workers regardless.
+              show up as unfilled jobs even on a victory. A developer-endorsed
+              Steam thread spells out the math behind it: defenders count toward
+              your total population, and a new worker arrives each time population
+              crosses the next threshold &mdash; roughly one worker per 14
+              population in the player-worked example the developer endorsed. If
+              battle losses drop you back across a threshold, that worker is
+              removed again; the developer confirmed the explanation, noting it
+              &ldquo;makes winning battles without taking losses more beneficial.&rdquo;
+              Reassign replacements manually once the population recovers; the
+              answered Steam thread that established this also recommends sizing
+              your standing army so its happiness penalty stays at zero during
+              peacetime. One player-reported wrinkle from the same thread: the
+              post-battle results screen can claim &ldquo;0 civilian losses&rdquo;
+              while your working population still drops &mdash; treat the screen
+              as about battle deaths only, and reassign workers regardless.
+              Expect to hunt for the gap, too: the game gives no hint which job
+              site lost its worker (a missing-warning gap players keep
+              complaining about), so after a big battle, walk your production
+              buildings and look for the one standing empty.
             </p></div>
           </details>
           <details>

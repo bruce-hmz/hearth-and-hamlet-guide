@@ -369,6 +369,23 @@ export default function TipsPage() {
             </div>
           </details>
           <details>
+            <summary>Why am I not getting more workers?</summary>
+            <div className="faq__a">
+              <p>
+                Workers trail population by design, and the gap widens as you
+                progress: each new worker needs more population than the last
+                (roughly one worker per 14 population in the
+                developer-endorsed community example). Hover the status icons
+                in the bottom-left corner to see where you stand. At the
+                population cap no new workers arrive at all, so if the count is
+                stuck, raise housing first. The same math runs in reverse after
+                battles &mdash; our{" "}
+                <Link href="/combat/#faq">combat FAQ</Link> explains why a won
+                fight can still cost you a worker.
+              </p>
+            </div>
+          </details>
+          <details>
             <summary>Is trading worth it in the mid game?</summary>
             <div className="faq__a">
               <p>
@@ -384,13 +401,18 @@ export default function TipsPage() {
             <div className="faq__a">
               <p>
                 Congestion is a late-game happiness malus that shows up once your
-                population is high &mdash; the community&apos;s own definition, from the
-                Steam thread where two players had to ask what it even was. The developer
-                has not documented the mechanic, so no population threshold or exact
-                penalty value is public. The practical answer from players dealing with
-                it: there is no direct counter &mdash; offset it by producing happiness
-                elsewhere (entertainment buildings, gentler tax settings) and accept it as
-                part of running a big city.
+                population is high &mdash; the community&apos;s own definition,
+                from the Steam thread where two players had to ask what it even
+                was. The developer has since answered that thread directly
+                (September 5, 2026): &ldquo;Yeah, nothing you can do about
+                Congestion.&rdquo; The city is &ldquo;just getting
+                bigger/noisier/more crowded,&rdquo; and the happiness hit is
+                meant to be offset by your other positive upgrades &mdash; his
+                example: &ldquo;Sure, it&apos;s crowded, but there is a great
+                tavern!&rdquo; No population threshold or exact penalty value is
+                public. Treat it as a fixed cost of running a big city and stack
+                happiness elsewhere (entertainment buildings, gentler tax
+                settings).
               </p>
             </div>
           </details>

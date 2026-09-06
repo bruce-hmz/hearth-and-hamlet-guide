@@ -270,7 +270,7 @@ export default function GuidePage() {
           No expansion has been announced, and when a player asked directly
           about new content on the game&apos;s Steam hub (the thread{" "}
           <em>Any new content is planned?</em>), the developer answered on
-          September 6, 2026: the plan is to work through the small issues and
+          September 5, 2026: the plan is to work through the small issues and
           improvements the community has highlighted first &mdash;{" "}
           &ldquo;The past week or so has been spent purely on reducing the
           games VRAM footprint&rdquo; &mdash; and &ldquo;I intend to continue

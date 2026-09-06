@@ -68,7 +68,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025267671/",
       },
       {
-        name: "Any new content is planned? - Steam thread with developer reply on post-1.0.07 plans (Sep 6, 2026)",
+        name: "Any new content is planned? - Steam thread with developer reply on post-1.0.07 plans (Sep 5, 2026)",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589562598193866862/",
       },
     ],
@@ -119,8 +119,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         url: "https://intoindiegames.com/tips-and-guides/hearth-and-hamlet-best-early-game-tips-and-tricks/",
       },
       {
-        name: "How to deal with congestion? - Steam thread (community definition, developer undocumented)",
+        name: "How to deal with congestion? - Steam thread (community definition + developer answer, Sep 5, 2026)",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711668599/",
+      },
+      {
+        name: "Worker count vs Population - answered Steam thread on worker growth and the population cap",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562920377088398/",
       },
     ],
     toc: [
@@ -132,7 +136,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "mistakes", label: "Common early mistakes" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-03",
+    lastReviewed: "2026-09-07",
     prev: { slug: "guide", title: "Beginner Guide" },
     next: { slug: "layout", title: "Town Layouts" },
   },
@@ -355,6 +359,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Intense impossible without defeat? - Hearth and Hamlet Steam discussion",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589561964325296211/",
       },
+      {
+        name: "too easy - Steam thread with developer reply on difficulty design intent (Sep 5, 2026)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618295794/",
+      },
     ],
     toc: [
       { id: "modes", label: "The four difficulty modes" },
@@ -364,7 +372,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "intense", label: "Intense mode strategy" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-03",
+    lastReviewed: "2026-09-07",
     prev: { slug: "trade", title: "Trade" },
     next: { slug: "combat", title: "Combat" },
   },
@@ -455,7 +463,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "ancient-evil", label: "The Ancient Evil horde siege" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-03",
+    lastReviewed: "2026-09-07",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "achievements", title: "Achievements" },
     sources: [
@@ -482,6 +490,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Losing workers even after winning a battle with 0 losses - answered Steam thread",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025274130/",
+      },
+      {
+        name: "Losing a Worker After Victory - Steam thread with developer-endorsed population-breakpoint explanation",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025048897/",
       },
       {
         name: "[Spoiler][BUG] Quest completes automatically even if you fail? - Steam thread with dev reply",

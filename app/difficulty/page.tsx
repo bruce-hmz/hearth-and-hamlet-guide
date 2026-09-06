@@ -293,6 +293,22 @@ export default function DifficultyPage() {
             </p></div>
           </details>
           <details>
+            <summary>Is the game supposed to be easy? Will it get harder?</summary>
+            <div className="faq__a"><p>
+              Relaxing is the design, and no rebalance has been announced. Answering
+              the &ldquo;too easy&rdquo; thread on Steam (September 5, 2026), the
+              developer explained the difficulty options exist because playtesters
+              described his original Challenging difficulty as &ldquo;WAY to hard&rdquo; &mdash;
+              the options let people play as they prefer, with this game focused on
+              being a &ldquo;Relaxing&rdquo; experience. He agrees it stops being hard
+              once you know the systems (his own hardest-difficulty run lost no
+              battles) and says he would love to explore a more challenging game in
+              the future, but no balance tuning for this one has been announced. If
+              you want more tension, the answer is the Intense mode above, not a
+              patch.
+            </p></div>
+          </details>
+          <details>
             <summary>Is Intense actually beatable?</summary>
             <div className="faq__a"><p>
               Yes — definitively now. The developer has beaten it without losing a single
