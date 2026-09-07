@@ -4,7 +4,7 @@ import { guideMetadata } from "@/components/guide-shell";
 import { GUIDE_PAGES } from "@/content/pages";
 
 const description =
-  "Hearth and Hamlet PC settings guide: official system requirements, practical resolution and FPS advice, Steam Deck notes, and idle-play performance troubleshooting.";
+  "Hearth and Hamlet PC settings guide: official system requirements, practical resolution and FPS advice, crash and launch-error fixes, Steam Deck notes, and idle-play performance troubleshooting.";
 
 export const metadata = { ...guideMetadata("best-settings"), description };
 
@@ -457,6 +457,57 @@ export default function BestSettingsPage() {
                 files, close VRAM-hungry apps, and use the pinned Bug Reports
                 thread or the official Discord for persistent cases &mdash; the
                 developer has been repairing affected saves there directly.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Hearth and Hamlet won&apos;t launch with &ldquo;An Application
+              Control policy has blocked this file&rdquo; (error 0x11C7). How
+              do I fix it?
+            </summary>
+            <div className="faq__a">
+              <p>
+                This is Windows <strong>Smart App Control</strong> blocking the
+                game&apos;s executable, not a broken install. The full message
+                reads &ldquo;Failed to start process for this game:
+                &lsquo;An Application Control policy has blocked this
+                file.&rsquo;&rdquo; The developer confirmed the cause in the
+                Steam thread &mdash; the game comes from a publisher Windows
+                has no track record for yet. In his words, &ldquo;It seems
+                windows is still trying to figure out if i&apos;m
+                dodgy.&rdquo;
+              </p>
+              <ol>
+                <li>
+                  <strong>Verify the game files.</strong> In Steam, open
+                  Properties → Installed Files → Verify integrity. This fixed
+                  the original poster, it is the fix Steam Support itself
+                  suggests, and the developer endorsed it.
+                </li>
+                <li>
+                  <strong>Just try launching again.</strong> One player reports
+                  the game started normally after three or four attempts.
+                </li>
+                <li>
+                  <strong>
+                    Last resort: exempt or disable Smart App Control.
+                  </strong>{" "}
+                  Windows Security → App &amp; browser control → Smart App
+                  Control settings &mdash; add an exclusion for the game, or
+                  turn the feature off. Many players refuse the off switch
+                  because it is effectively one-way: Windows offers no simple
+                  way to turn Smart App Control back on.
+                </li>
+              </ol>
+              <p>
+                Running the game as administrator alone does not clear the
+                block. Some players also stay blocked even after reinstalling
+                and verifying &mdash; most recently reported in September 2026
+                &mdash; and the developer has not yet answered those reports,
+                so the exclusion route above is the known remaining fix for
+                now. Once the game starts, keep local save backups as described
+                on our <a href="/save-file-location">save file location page</a>.
               </p>
             </div>
           </details>

@@ -382,7 +382,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
     h1: "Hearth and Hamlet Best Settings",
     title: "Hearth and Hamlet Best Settings for Performance & Idle Play",
     description:
-      "Practical Hearth and Hamlet PC settings guidance: official requirements, resolution picks, the confirmed 60 FPS cap and its launch-option fix, Vulkan-mode crash workarounds, Steam Deck notes, and idle-play tuning.",
+      "Practical Hearth and Hamlet PC settings guidance: official requirements, resolution picks, the confirmed 60 FPS cap and its launch-option fix, crash workarounds and the Smart App Control 0x11C7 won't-launch fix, Steam Deck notes, and idle-play tuning.",
     canonicalKeyword: "hearth and hamlet best settings",
     heroImage: {
       src: "/img/game-7.webp",
@@ -404,7 +404,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "accessibility", label: "Accessibility & input checks" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-06",
+    lastReviewed: "2026-09-08",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "save-file-location", title: "Save File Location" },
     sources: [
@@ -439,6 +439,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Steam thread with developer reply confirming the built-in \"Hover to Click\" auto-click option, Aug 22, 2026",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435430711778442/",
+      },
+      {
+        name: "\"Blocked by smart app control?\" - 0x11C7 launch-block thread, developer reply Aug 22, 2026",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025062495/",
       },
     ],
   },
