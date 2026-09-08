@@ -173,10 +173,15 @@ export default function SimilarGamesPage() {
             <div className="faq__a"><p>
               Recent reviewers most often describe reaching the end of a first
               kingdom in roughly ten hours, and length is the most common
-              criticism in the current review wave. The honest counterweight:
-              the four mode-completion achievements plus the no-defeat and
-              no-Ashenholt-trade rules turn one ten-hour run into several
-              planned reruns if you chase them.
+              criticism in the current review wave. A September 2026 community
+              thread lands a bit lower: about eight hours per full playthrough,
+              with the core loop &mdash; combat, trading, quests, and building
+              upgrades &mdash; all visible within roughly the first three hours
+              (&ldquo;once you unlock trading, I&apos;d say you&apos;ve seen
+              the full loop&rdquo;, as one player put it; community-reported).
+              The honest counterweight: the four mode-completion achievements
+              plus the no-defeat and no-Ashenholt-trade rules turn one run into
+              several planned reruns if you chase them.
             </p></div>
           </details>
           <details>

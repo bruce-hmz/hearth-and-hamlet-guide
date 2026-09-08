@@ -234,6 +234,14 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "Broken task is to pay 40,000 gold - Steam thread with dev reply",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025223107/",
       },
+      {
+        name: "'Pin research, just like a building' - Steam thread with developer reply (Aug 22, 2026)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025005841/",
+      },
+      {
+        name: "'Is there a way to track research like you can track buildings?' - Steam thread (Sep 7, 2026)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562920377220165/",
+      },
     ],
     toc: [
       { id: "overview", label: "Research system overview" },
@@ -244,7 +252,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "policies", label: "Kingdom Policies" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-02",
+    lastReviewed: "2026-09-09",
     prev: { slug: "layout", title: "Town Layouts" },
     next: { slug: "buildings", title: "Buildings" },
   },
@@ -645,7 +653,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "list", label: "Games like Hearth and Hamlet" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-01",
+    lastReviewed: "2026-09-09",
     prev: { slug: "codes", title: "Codes" },
     sources: [
       {
@@ -655,6 +663,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Games like this - unanswered Steam thread asking for similar games",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618463556/",
+      },
+      {
+        name: "'How long to beat?' - Steam thread with player time estimates (Sep 8, 2026)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/589562920377266308/",
       },
     ],
   },
