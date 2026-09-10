@@ -4,7 +4,7 @@ import { guideMetadata } from "@/components/guide-shell";
 import { GUIDE_PAGES } from "@/content/pages";
 
 const description =
-  "Hearth and Hamlet PC settings guide: official system requirements, practical resolution and FPS advice, crash and launch-error fixes, Steam Deck notes, and idle-play performance troubleshooting.";
+  "Hearth and Hamlet PC settings guide: official system requirements, practical resolution and FPS advice, which launch option to pick, crash and launch-error fixes, Steam Deck notes, and idle-play performance troubleshooting.";
 
 export const metadata = { ...guideMetadata("best-settings"), description };
 
@@ -273,7 +273,8 @@ export default function BestSettingsPage() {
           a string of patches define the current state of play. The pinned Bug
           Reports post establishes the first fix: switching the renderer to{" "}
           <strong>Vulkan</strong> resolves or greatly improves these problems
-          in the large majority of cases. The developer&apos;s August 25
+          in 95% of cases, by the developer&apos;s own count. The
+          developer&apos;s August 25
           Ongoing Development Update then diagnosed the remaining source as
           systems whose VRAM is exhausted, or which rely on shared video memory
           &mdash; mostly laptops and, less often, the Steam Deck &mdash; and
@@ -506,8 +507,41 @@ export default function BestSettingsPage() {
                 and verifying &mdash; most recently reported in September 2026
                 &mdash; and the developer has not yet answered those reports,
                 so the exclusion route above is the known remaining fix for
-                now. Once the game starts, keep local save backups as described
-                on our <a href="/save-file-location">save file location page</a>.
+                now. Answering a different launch-block report on September 10,
+                2026, the developer also looked past Smart App Control to the
+                wider class of blockers: &ldquo;It could also be some security
+                software you have conflicting with it.&rdquo; Once the game
+                starts, keep local save backups as described on our{" "}
+                <a href="/save-file-location">save file location page</a>.
+              </p>
+            </div>
+          </details>
+          <details>
+            <summary>
+              Which launch option should I pick: Normal, DirectX 12, or Vulkan?
+            </summary>
+            <div className="faq__a">
+              <p>
+                The selection window that appears when you press Play offers
+                three ways to start the game: Normal, DirectX 12, and Vulkan.
+                Start with <strong>Normal</strong>. The developer&apos;s pinned
+                guidance treats problems as the exception &mdash; Vulkan is the
+                remedy he points to once crashes or graphical glitches actually
+                appear, not the everyday default, so a Normal start is the
+                expected path for most systems.
+              </p>
+              <p>
+                If the game does crash or show white squares and missing
+                textures, relaunch with the <strong>Vulkan</strong> entry
+                selected: the pinned Bug Reports guidance credits Vulkan with
+                resolving or greatly improving stability issues &ldquo;in 95%
+                of cases,&rdquo; and the <a href="#crashes">crash section
+                above</a> has the full fix sequence. DirectX 12 is not singled
+                out anywhere in the developer&apos;s public guidance, so treat
+                it as an alternative renderer rather than a fix. And keep
+                Vulkan&apos;s track record in scope: it is a remedy for crashes
+                and graphical glitches specifically, not a general fix for
+                unrelated problems.
               </p>
             </div>
           </details>
