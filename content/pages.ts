@@ -82,7 +82,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "post-game", label: "After the coronation" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-06",
+    lastReviewed: "2026-09-14",
     next: { slug: "tips", title: "Tips & Tricks" },
   },
   tips: {
@@ -371,6 +371,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
         name: "too easy - Steam thread with developer reply on difficulty design intent (Sep 5, 2026)",
         url: "https://steamcommunity.com/app/4315040/discussions/0/589562254618295794/",
       },
+      {
+        name: "Highest Difficulty Guide - Steam thread with community population-control tactics (Sep 12, 2026)",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/573800735755643369/",
+      },
     ],
     toc: [
       { id: "modes", label: "The four difficulty modes" },
@@ -380,7 +384,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "intense", label: "Intense mode strategy" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-07",
+    lastReviewed: "2026-09-14",
     prev: { slug: "trade", title: "Trade" },
     next: { slug: "combat", title: "Combat" },
   },
@@ -540,12 +544,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "synergies", label: "Combining achievements in one run" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-06",
+    lastReviewed: "2026-09-14",
     prev: { slug: "combat", title: "Combat" },
     next: { slug: "best-settings", title: "Best Settings" },
     sources: [
       {
-        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 6, 2026)",
+        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 14, 2026)",
         url: "https://steamcommunity.com/stats/4315040/achievements",
       },
       {

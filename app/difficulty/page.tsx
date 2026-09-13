@@ -221,6 +221,32 @@ export default function DifficultyPage() {
           with it, so keeping population low until buildings and critical research are
           finished is a legitimate Intense playbook.
         </p>
+        <p>
+          Two community-reported levers make that playbook actionable (from a
+          September 2026 highest-difficulty thread; the developer has not
+          confirmed either one):
+        </p>
+        <ul>
+          <li>
+            <strong>Defer or skip dwelling upgrades.</strong> Attack-wave size
+            scales with population, so one finisher deliberately left dwellings
+            alone after unlocking the farm &mdash; &ldquo;fewer people results
+            in smaller waves&rdquo; &mdash; and completed the mode with
+            dwellings still at level 2.
+          </li>
+          <li>
+            <strong>Run food in the red to freeze growth.</strong> Population
+            does not grow while food is negative, so one player kept it
+            deliberately in the red through the first third of the run, raising
+            it only for a specific upgrade and dropping it back &mdash;
+            &ldquo;no problems at all.&rdquo;
+          </li>
+        </ul>
+        <p>
+          Both levers only manage the rule the developer confirmed in our{" "}
+          <Link href="/combat/#ancient-evil">Ancient Evil siege section</Link>:
+          the larger your population, the more enemies you attract.
+        </p>
 
         <h3>The zombie invasion (point 3)</h3>
         <p>
