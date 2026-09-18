@@ -82,7 +82,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "post-game", label: "After the coronation" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-14",
+    lastReviewed: "2026-09-19",
     next: { slug: "tips", title: "Tips & Tricks" },
   },
   tips: {
@@ -483,7 +483,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "ancient-evil", label: "The Ancient Evil horde siege" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-07",
+    lastReviewed: "2026-09-19",
     prev: { slug: "difficulty", title: "Difficulty" },
     next: { slug: "achievements", title: "Achievements" },
     sources: [
@@ -514,6 +514,10 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       {
         name: "Losing a Worker After Victory - Steam thread with developer-endorsed population-breakpoint explanation",
         url: "https://steamcommunity.com/app/4315040/discussions/0/588435738025048897/",
+      },
+      {
+        name: "Losing citizens/workers during the fight - video-backed Steam thread on soldier revival after battle",
+        url: "https://steamcommunity.com/app/4315040/discussions/0/573801338485446545/",
       },
       {
         name: "[Spoiler][BUG] Quest completes automatically even if you fail? - Steam thread with dev reply",

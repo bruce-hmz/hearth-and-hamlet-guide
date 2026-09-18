@@ -35,7 +35,7 @@ export default function GuidePage() {
         </p>
         <p>
           Steam user reviews stood at <em>Mostly Positive</em> — about 79% of
-          roughly 2,000 reviews — when this page was last reviewed. That is
+          roughly 2,100 reviews — when this page was last reviewed. That is
           context rather than a quality claim; for a launch-window game the
           number will keep moving.
         </p>

@@ -335,7 +335,13 @@ export default function CombatPage() {
               Reassign replacements manually once the population recovers; the
               answered Steam thread that established this also recommends sizing
               your standing army so its happiness penalty stays at zero during
-              peacetime. One player-reported wrinkle from the same thread: the
+              peacetime. Why the worker count sometimes rebounds: in a second,
+              video-backed Steam thread, soldiers killed in the battle revive
+              once it ends, so the population dip &mdash; and the worker removed
+              at the threshold &mdash; comes back on its own after the fight
+              (community-reported; the developer has confirmed the threshold
+              math, not the revival detail). One player-reported wrinkle from
+              the original breakpoint thread: the
               post-battle results screen can claim &ldquo;0 civilian losses&rdquo;
               while your working population still drops &mdash; treat the screen
               as about battle deaths only, and reassign workers regardless.
