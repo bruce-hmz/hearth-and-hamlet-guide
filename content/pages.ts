@@ -548,12 +548,12 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "synergies", label: "Combining achievements in one run" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-14",
+    lastReviewed: "2026-09-21",
     prev: { slug: "combat", title: "Combat" },
     next: { slug: "best-settings", title: "Best Settings" },
     sources: [
       {
-        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 14, 2026)",
+        name: "Hearth and Hamlet - Steam global achievement stats (retrieved Sep 21, 2026)",
         url: "https://steamcommunity.com/stats/4315040/achievements",
       },
       {
