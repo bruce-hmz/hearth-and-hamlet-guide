@@ -82,7 +82,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "post-game", label: "After the coronation" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-19",
+    lastReviewed: "2026-09-23",
     next: { slug: "tips", title: "Tips & Tricks" },
   },
   tips: {
