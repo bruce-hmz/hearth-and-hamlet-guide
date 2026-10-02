@@ -401,19 +401,16 @@ export default function TechTreePage() {
             <summary>Can I track or pin a research goal like I can with buildings?</summary>
             <div className="faq__a">
               <p>
-                Not in the current build. Buildings can be starred so the game
-                tracks them for you, but players looking for the same option on
-                research nodes have only found that it doesn&apos;t exist, and
-                a chosen research goal also isn&apos;t remembered between
-                play sessions (community-reported; the developer has not said
-                it is impossible). The developer has acknowledged the request
+                Yes &mdash; as of patch 1.1.0 (October 1, 2026), research
+                pinning is in the game: research can now be pinned like
+                buildings, and pinned research and buildings are
+                saved and restored when you reload a save, so your session
+                goal survives between play sessions. This answered a long-running
+                request: the developer had acknowledged it early
                 &mdash; &ldquo;I&apos;ve had a few people request this feature
                 now, so I&apos;ve moved it up on my priority list&rdquo;
-                (August 22, 2026) &mdash; and says the main challenge is
-                fitting it on small displays like the Steam Deck. Until it
-                ships, keep your usual pinned building as the session goal and
-                glance at the research panel when you sit down to play to
-                remind yourself what you were saving toward.
+                (August 22, 2026) &mdash; and 1.1.0 shipped it alongside the
+                save/restore behaviour players also asked for.
               </p>
             </div>
           </details>

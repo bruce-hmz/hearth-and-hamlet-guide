@@ -31,7 +31,7 @@ export type GuidePageMeta = {
 
 export const DATE_PUBLISHED = "2026-08-21";
 export const LAST_REVIEWED = "2026-08-21";
-export const GAME_VERSION = "v1.0.07 (Sep 5, 2026)";
+export const GAME_VERSION = "v1.1.0 (Oct 1, 2026)";
 
 export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
   guide: {
@@ -82,7 +82,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "post-game", label: "After the coronation" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-23",
+    lastReviewed: "2026-10-03",
     next: { slug: "tips", title: "Tips & Tricks" },
   },
   tips: {
@@ -252,7 +252,7 @@ export const GUIDE_PAGES: Record<string, GuidePageMeta> = {
       { id: "policies", label: "Kingdom Policies" },
       { id: "faq", label: "FAQ" },
     ],
-    lastReviewed: "2026-09-09",
+    lastReviewed: "2026-10-03",
     prev: { slug: "layout", title: "Town Layouts" },
     next: { slug: "buildings", title: "Buildings" },
   },

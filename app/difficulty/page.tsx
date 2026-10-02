@@ -296,10 +296,15 @@ export default function DifficultyPage() {
           <details>
             <summary>Can you change difficulty mid-run?</summary>
             <div className="faq__a"><p>
-              The game does not document a mid-run difficulty switch, and the mode-specific
-              achievements are worded as completing the game on that setting. Plan your run
-              around the choice made at save creation; do not assume you can downshift after
-              hitting a wall.
+              The game has never documented a mid-run difficulty switch, so plan
+              your run around the choice made at save creation. Patch 1.1.0
+              (October 1, 2026) adds the strongest signal yet that lowering is
+              possible mid-run: the game now warns you when lowering the
+              difficulty would affect the completion achievements. A warning
+              like that only matters if downshifting an existing save is
+              something players can do &mdash; and it exists precisely because
+              doing so can forfeit the mode-completion achievements. Do not
+              count on downshifting to keep an achievement run alive.
             </p></div>
           </details>
           <details>
@@ -308,6 +313,9 @@ export default function DifficultyPage() {
               No — 19 of 24 achievements (everything except the five mode or rule-dependent
               completions) can be earned on any difficulty. Gentle Rule alone is at 42.5%, so
               plenty of players collect most of the list without ever leaving Gentle.
+              Since patch 1.1.0 (October 1, 2026), the game also warns you at
+              the moment you lower the difficulty if the change would affect
+              the completion achievements.
             </p></div>
           </details>
           <details>

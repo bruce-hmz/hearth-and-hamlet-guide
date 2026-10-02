@@ -200,7 +200,8 @@ export default function BestSettingsPage() {
           7800 XT on the Linux native build; results on other GPUs have not
           been independently verified. The developer said in August 2026 that
           he is considering adding a frame-rate option to the in-game menu in a
-          future patch; nothing like that has shipped through patch 1.0.07, so
+          future patch; nothing like that has shipped through patch 1.1.0
+          (October 1, 2026), so
           the launch option remains the only way to lift the cap.
         </p>
 
@@ -288,8 +289,12 @@ export default function BestSettingsPage() {
           <strong>1.1 GB</strong>, which &ldquo;should improve stability,
           especially on lower-spec hardware.&rdquo; The developer&apos;s
           Known Issues list, updated August 29, rated the low-RAM/VRAM crashes
-          &ldquo;greatly improved&rdquo; before this latest patch, and 1.0.07
-          continues the same effort rather than changing any gameplay.
+          &ldquo;greatly improved&rdquo; before that patch, and 1.0.07
+          continued the same effort rather than changing any gameplay. Patch
+          1.1.0 (October 1, 2026) went further still: its notes state that
+          &ldquo;memory usage has been greatly optimised, further reducing RAM
+          requirements beyond the improvements in previous patches,&rdquo;
+          alongside significantly improved load times.
         </p>
         <p>
           With that patch installed, treat the steps below as fallbacks rather
@@ -301,12 +306,12 @@ export default function BestSettingsPage() {
         <h3>What to try first</h3>
         <ol>
           <li>
-            <strong>Update to 1.0.07 or later before anything else.</strong>{" "}
+            <strong>Update to 1.1.0 or later before anything else.</strong>{" "}
             If you last played on an earlier build, this alone may clear the
-            symptom &mdash; the VRAM-optimisation wave (1.0.05&ndash;1.0.07)
+            symptom &mdash; the VRAM-optimisation wave (1.0.05&ndash;1.1.0)
             specifically targets VRAM-related crashes and the
-            white-square/missing-texture glitches, and 1.0.07 alone cut VRAM
-            use by roughly 1.1 GB.
+            white-square/missing-texture glitches, 1.0.07 alone cut VRAM
+            use by roughly 1.1 GB, and 1.1.0 further reduced memory use.
           </li>
           <li>
             <strong>Relaunch in Vulkan mode.</strong> Use Steam&apos;s
@@ -366,9 +371,11 @@ export default function BestSettingsPage() {
           patch 1.0.07 (September 5, 2026) is the same story continued:
           its roughly 1.1 GB VRAM cut lands hardest on shared-memory systems
           like the Deck, where every gigabyte of video memory is borrowed from
-          system RAM. The Known Issues list rated the problem &ldquo;greatly
-          improved&rdquo; before 1.0.07. Practically: make sure the game is
-          updated to 1.0.07 or later, and if white squares or texture glitches
+          system RAM; patch 1.1.0 (October 1, 2026) continued the effort with
+          further memory optimisation. The Known Issues list rated the problem
+          &ldquo;greatly improved&rdquo; before 1.0.07. Practically: make sure
+          the game is
+          updated to 1.1.0 or later, and if white squares or texture glitches
           still appear, launch with the <strong>Vulkan</strong> renderer selected in
           Steam&apos;s launch dialog &mdash; the same first fix recommended
           for Linux desktops above.
@@ -434,7 +441,7 @@ export default function BestSettingsPage() {
               <p>
                 Yes. The frame rate is fixed at 60 through the engine&apos;s
                 exported settings (verified in the v1.0.04 files), the V-Sync
-                toggle cannot override it, and no patch through 1.0.07 has
+                toggle cannot override it, and no patch through 1.1.0 has
                 touched the cap. High-refresh-display owners can remove it
                 temporarily with <code>--max-fps 0</code> in Steam launch
                 options, as covered above.
@@ -445,9 +452,10 @@ export default function BestSettingsPage() {
             <summary>Hearth and Hamlet keeps crashing. How do I fix it?</summary>
             <div className="faq__a">
               <p>
-                First, update &mdash; patches 1.0.05 through 1.0.07 shipped a
-                VRAM optimisation wave (1.0.07, September 5, 2026, alone cut
-                VRAM use by about 1.1 GB) that the developer credits with
+                First, update &mdash; patches 1.0.05 through 1.1.0 shipped a
+                memory optimisation wave (1.0.07, September 5, 2026, alone cut
+                VRAM use by about 1.1 GB, and 1.1.0 further reduced memory
+                use) that the developer credits with
                 greatly improving the low-memory crashes. If you are current
                 and still crashing, try the Vulkan renderer next: pick it in
                 Steam&apos;s launch dialog before the game starts; the
@@ -554,9 +562,10 @@ export default function BestSettingsPage() {
                 review calls it &ldquo;Runs perfectly&rdquo; on Deck. The one
                 Deck-relevant history: the developer named the Deck among the
                 systems hit by the VRAM crash wave, which patches 1.0.05
-                through 1.0.07 specifically addressed &mdash; 1.0.07
-                (September 5, 2026) cut VRAM use by about 1.1 GB, a change that
-                matters most on shared-memory systems like the Deck &mdash; so
+                through 1.1.0 specifically addressed &mdash; 1.0.07
+                (September 5, 2026) cut VRAM use by about 1.1 GB and 1.1.0
+                further reduced memory use, changes that
+                matter most on shared-memory systems like the Deck &mdash; so
                 update first, and pick the Vulkan renderer in the launch dialog
                 if texture glitches appear. For the 1280&times;800 screen, keep
                 the 60 FPS cap for battery life and enable Auto UI Scaling if
